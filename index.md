@@ -1,7 +1,7 @@
 ---
 layout: page
-title: RLFD
-tagline: Making robots less dumb
+title: Artificial Intelligence
+tagline: Making machines less dumb since 1955
 ---
 {% include JB/setup %}
 
