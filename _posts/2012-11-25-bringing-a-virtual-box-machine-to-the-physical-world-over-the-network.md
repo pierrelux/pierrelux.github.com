@@ -8,17 +8,17 @@ tagline :
 
 ## On the target machine
 
-Prior to the following, you would first need to create and boot from a USB stick any sort of linux distrogiving you access to netcat and dd.
+Prior to the following, you would first need to create and boot from a USB stick any sort of linux distro giving you access to `netcat` and `dd`.
 
     $ nc -l 9901 | dd of=/dev/sda
 
-where /dev/sda obvi­ously cor­re­spond to the drive on which you wish to install the sys­tem. If you are unsure, check with:
+where /dev/sda corresponds to the drive on which you wish to install the system. If you are unsure, check with:
 
     $ fdisk -l
 
 ## On the VirtualBox host
 
-  $ VBoxManage internalcommands converttoraw ubuntu1204.vdi ubuntu1204.raw
-  $ dd if=ubuntu1204.raw | nc 192.168.3.135 9901
+    $ VBoxManage internalcommands converttoraw ubuntu1204.vdi ubuntu1204.raw
+    $ dd if=ubuntu1204.raw | nc 192.168.3.135 9901
 
 Here `192.168.3.135` is the IP of the target system running the `nc` command.
