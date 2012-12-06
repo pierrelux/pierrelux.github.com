@@ -1,7 +1,7 @@
 ---
-layout: page
-title: Artificial Intelligence
-tagline: Making machines less dumb since 1955
+layout: index_page
+title:
+tagline:
 ---
 {% include JB/setup %}
 
