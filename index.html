@@ -1,0 +1,26 @@
+---
+layout: index_page
+title:
+tagline:
+---
+{% include JB/setup %}
+
+{% for post in site.posts %}
+{% if post.draft != true %}
+{% capture modulo %}{{ forloop.index0 | mod:2 }}{% endcapture %}
+   {% if modulo == '0' or forloop.first %}
+   <div class="row">
+   {% endif %}
+
+    <div class='span6'>
+      <h3><a href="{{ BASE_PATH }}{{ post.url }}">{{ post.title }}</a></br><small>{{ post.date | date_to_string }}</small></h3>
+      <p>{{ post.content | strip_html | truncatewords:75}}</p>
+      <a href="{{ post.url }}">Read more...</a>
+    </div>
+
+    {% if modulo == '1' or forloop.last %}
+    </div>
+    {% endif %}
+
+{% endif %}
+{% endfor %}
