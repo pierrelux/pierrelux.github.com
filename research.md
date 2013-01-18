@@ -29,21 +29,21 @@ description: ""
  <div class="span12"><p>Here are some of the class projects that I worked on over 2011-2012 for my Master's degree.</p></div>
 
   <div class="span4">
-  <h3><a href="optionsdetect.pdf">Automatic Options Discovery</a></h3>
+  <h3><a href="assets/papers/optionsdetect.pdf">Automatic Options Discovery</a></h3>
   Based on the bottleneck concept, I proposed a near-linear incremental
   options discovery algorithm based on a label propagation algorithm for
   community detection in networks.
   </div>
 
   <div class="span4">
-   <h3><a href="hmmskin.pdf">Gesture Recognition</a> <small>for an Artificial Skin</small></h3>
+   <h3><a href="assets/papers/hmmskin.pdf">Gesture Recognition</a> <small>for an Artificial Skin</small></h3>
    An HMM-based algorithm for detecting tactile patterns on a novel type
    of artificial skin sensor manufactured by Meka Robotics LLC was designed.
   </div>
 
 
   <div class="span4">
-   <h3><a href="rrfpose.pdf">Continuous Head Pose Estimation</a></h3>
+   <h3><a href="assets/papers/rrfpose.pdf">Continuous Head Pose Estimation</a></h3>
      <!--<ul class="thumbnails">
         <li class="span2"><a href="#" class="thumbnail"><img src="http://placehold.it/160x120" alt=""></a></li>
         <li class="span2"><a href="#" class="thumbnail"><img src="http://placehold.it/160x120" alt=""></a></li>
