@@ -1,13 +1,14 @@
 
-http://pierrelux.github.com/research.html
-http://pierrelux.github.com/about.html
 http://pierrelux.github.com/archive.html
-http://pierrelux.github.com/sitemap.txt
-http://pierrelux.github.com/tags.html
 http://pierrelux.github.com/atom.xml
 http://pierrelux.github.com/categories.html
-http://pierrelux.github.com/pages.html
+http://pierrelux.github.com/contact.html
+http://pierrelux.github.com/cv.html
 http://pierrelux.github.com/index.html
+http://pierrelux.github.com/pages.html
+http://pierrelux.github.com/research.html
+http://pierrelux.github.com/sitemap.txt
+http://pierrelux.github.com/tags.html
 
 http://pierrelux.github.com/2012/11/25/bringing-a-virtual-box-machine-to-the-physical-world-over-the-network
 http://pierrelux.github.com/2011/11/19/asynchronous-timer-expiry-notification
