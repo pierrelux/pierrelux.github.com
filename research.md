@@ -4,28 +4,38 @@ title: "Research"
 description: ""
 ---
 {% include JB/setup %}
+
+<p>I have recently submitted my master's thesis under the supervision of Professor
+<a href="http://www.cs.mcgill.ca/~dprecup/">Doina Precup</a></p>
+
+<p> This coming fall 2013, I will also embark on a PhD with Professor Precup and we will attempt to pursue the current research on the options discovery problem.</p>
+
+<div class="page-header">
+  <h1>Master's Thesis</h1>
+</div>
+
 <div class="row">
   <div class="span12">
-   <p>I am currently working on my master's thesis under the supervision of Professor
-   <a href="http://www.cs.mcgill.ca/~dprecup/">Doina Precup</a> in the <a href="http://rl.cs.mcgill.ca">Reasoning and Learning Laboratory</a>.</p>
+    <p>In my master's thesis, I explored the widely used Bottleneck Concept for options discovery in Reinforcement Learning. This intuition has lead a number of authors to
+    propose algorithmic solutions to automatically find useful problem decompositions for speeding up learning. Despite a rich body of work on the topic, proper theoretical
+    motivations are still lacking. Furthermore, most of the approaches have fallen to a view of the bottleneck concept which tries to find geometrical features of the
+    environment rather than proper structures of the solution space. We explain that the essence of the bottleneck concept can be understood through the properties of the graph Laplacian of the MDP which, if accessible, would not show such a weakness. This thesis is an initial foray towards laying down some theoretical basis for understanding the
+    bottleneck concept. An options discovery algorithm applicable in continuous state space was also proposed based on the graph partitioning perspective underlying
+    this concept. This is the fist such algorithm which attempts to escape the beaten pathways of the pathologically optimal four-rooms grid-world domain.</p>
 
-   <p>Reinforcement learning has proven to be a powerful approach for solving many sequential
-   decision making problems. Robotics lends itself also quite naturally to RL which considers
-   the process of acquiring knowledge through the interaction of an agent with its
-   environment. My research goal is to create RL-based systems that could leverage the
-   knowledge of a robot teacher through demonstrations. More precisely, I'm interested in the problem of
-   hierchical subtask decompositions from demonstrations for options learning.</p>
+    <p>This work allowed me to set up my research agenda for my PhD. I am particularly interested at the moment in the possible information theoretic interpretation of
+    options discovery. It would not only bridge with the previous work on graph partitioning approaches but also shed some light towards possibly stronger
+    principle underlying temporal abstraction in general.</p>
 
-   <p>Given a demonstration, we would want an RL agent to find meaningful subtask boundaries and learn a corresponding
-   consistent set of options. </p>
+    <p><cite>Bacon, Pierre-Luc. "On the Bottleneck Concept: Theoretical Underpinnings and Extension in Continuous State Spaces". Master's Thesis. McGill University</cite></p>
   </div>
  </div>
+
 <div class="page-header">
     <h1>Projects</h1>
-  </div>
+ </div>
 
  <div class="row">
-
  <div class="span12"><p>Here are some of the class projects that I worked on over 2011-2012 for my Master's degree.</p></div>
 
   <div class="span4">
