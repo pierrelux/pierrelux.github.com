@@ -6,42 +6,26 @@
     <title>Pierre-Luc Bacon</title>
     <meta name="description" content="">
     <meta name="author" content="Pierre-Luc Bacon">
-
-    <!-- Le HTML5 shim, for IE6-8 support of HTML elements -->
-    <!--[if lt IE 9]>
-      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
-
-    <!-- Le styles -->
     <link href="/assets/themes/twitter/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- Le fav and touch icons -->
-  <!-- Update these with your own images
-    <link rel="shortcut icon" href="images/favicon.ico">
-    <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
-  -->
+    <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
   </head>
 
   <body>
-
-    <div class="navbar navbar-inverse">
-      <div class="navbar-inner">
+    <div class="navbar">
+      <div class="navbar-inner" style="background:#566371">
         <div class="container">
-          <a class="brand" href="/">Pierre-Luc Bacon</a>
+          <a class="brand" style="background:#CA614E" href="/">Pierre-Luc Bacon</a>
           <ul class="nav">
-		  <li><a href="/research.html">Research</a></li>
-		  <li><a href="/cv.html">Resume</a></li>
-		  <li><a href="/contact.html">Contact</a></li>
+		  <li style="background:#80B49E"><a href="/research.html">Research</a></li>
+		  <li style="background:#E6D674"><a href="/cv.html">Resume</a></li>
+		  <li style="background:#DAD7C8"><a href="/contact.html">Contact</a></li>
           </ul>
         </div>
       </div>
     </div>
 
     <div class="container">
-
-      <div class="content">
+      <div class="content" style="font-size:16px; line-height:1.75em">
         
 <div class="page-header">
   <h1>Research </h1>
@@ -49,11 +33,18 @@
 
 <div class="row">
   <div class="span12">
-    <p>I have recently submitted my master's thesis under the supervision of Professor
-<a href='http://www.cs.mcgill.ca/~dprecup/'>Doina Precup</a></p><p> This coming fall 2013, I will also embark on a PhD with Professor Precup and we will attempt to pursue the current research on the options discovery problem.</p><div class='page-header'>
-  <h1>Master's Thesis</h1>
-</div><div class='row'>
-  <div class='span12'>
+    
+<p>I have recently submitted my master's thesis under the supervision of Professor
+<a href="http://www.cs.mcgill.ca/~dprecup/">Doina Precup</a></p>
+
+<p> This coming fall 2013, I will also embark on a PhD with Professor Precup and we will attempt to pursue the current research on the options discovery problem.</p>
+
+<div class="page-header">
+  <h3>Master's Thesis</h3>
+</div>
+
+<div class="row">
+  <div class="span12">
     <p>In my master's thesis, I explored the widely used Bottleneck Concept for options discovery in Reinforcement Learning. This intuition has lead a number of authors to
     propose algorithmic solutions to automatically find useful problem decompositions for speeding up learning. Despite a rich body of work on the topic, proper theoretical
     motivations are still lacking. Furthermore, most of the approaches have fallen to a view of the bottleneck concept which tries to find geometrical features of the
@@ -67,27 +58,31 @@
 
     <p><cite>Bacon, Pierre-Luc. "On the Bottleneck Concept: Theoretical Underpinnings and Extension in Continuous State Spaces". Master's Thesis. McGill University</cite></p>
   </div>
- </div><div class='page-header'>
-    <h1>Projects</h1>
- </div><div class='row'>
- <div class='span12'><p>Here are some of the class projects that I worked on over 2011-2012 for my Master's degree.</p></div>
+ </div>
 
-  <div class='span4'>
-  <h3><a href='assets/papers/optionsdetect.pdf'>Automatic Options Discovery</a></h3>
+<div class="page-header">
+    <h3>Projects</h3>
+ </div>
+
+<div class="row">
+ <div class="span12"><p>Here are some of the class projects that I worked on over 2011-2012 for my Master's degree.</p></div>
+
+  <div class="span4">
+  <h4><a href="assets/papers/optionsdetect.pdf">Automatic Options Discovery</a></h4>
   Based on the bottleneck concept, I proposed a near-linear incremental
   options discovery algorithm based on a label propagation algorithm for
   community detection in networks.
   </div>
 
-  <div class='span4'>
-   <h3><a href='assets/papers/hmmskin.pdf'>Gesture Recognition</a> <small>for an Artificial Skin</small></h3>
+  <div class="span4">
+   <h4><a href="assets/papers/hmmskin.pdf">Gesture Recognition</a> <small>for an Artificial Skin</small></h4>
    An HMM-based algorithm for detecting tactile patterns on a novel type
    of artificial skin sensor manufactured by Meka Robotics LLC was designed.
   </div>
 
 
-  <div class='span4'>
-   <h3><a href='assets/papers/rrfpose.pdf'>Continuous Head Pose Estimation</a></h3>
+  <div class="span4">
+   <h4><a href="assets/papers/rrfpose.pdf">Continuous Head Pose Estimation</a></h4>
      <!--<ul class="thumbnails">
         <li class="span2"><a href="#" class="thumbnail"><img src="http://placehold.it/160x120" alt=""></a></li>
         <li class="span2"><a href="#" class="thumbnail"><img src="http://placehold.it/160x120" alt=""></a></li>
@@ -100,12 +95,13 @@
    trained over SURF features.
   </div>
  </div>
+
+
   </div>
 </div>
 
 
       </div>
-
     </div> <!-- /container -->
 
     

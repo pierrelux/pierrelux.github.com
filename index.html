@@ -6,42 +6,26 @@
     <title>Pierre-Luc Bacon</title>
     
     <meta name="author" content="Pierre-Luc Bacon">
-
-    <!-- Le HTML5 shim, for IE6-8 support of HTML elements -->
-    <!--[if lt IE 9]>
-      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
-
-    <!-- Le styles -->
     <link href="/assets/themes/twitter/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- Le fav and touch icons -->
-  <!-- Update these with your own images
-    <link rel="shortcut icon" href="images/favicon.ico">
-    <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
-  -->
+    <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
   </head>
 
   <body>
-
-    <div class="navbar navbar-inverse">
-      <div class="navbar-inner">
+    <div class="navbar">
+      <div class="navbar-inner" style="background:#566371">
         <div class="container">
-          <a class="brand" href="/">Pierre-Luc Bacon</a>
+          <a class="brand" style="background:#CA614E" href="/">Pierre-Luc Bacon</a>
           <ul class="nav">
-		  <li><a href="/research.html">Research</a></li>
-		  <li><a href="/cv.html">Resume</a></li>
-		  <li><a href="/contact.html">Contact</a></li>
+		  <li style="background:#80B49E"><a href="/research.html">Research</a></li>
+		  <li style="background:#E6D674"><a href="/cv.html">Resume</a></li>
+		  <li style="background:#DAD7C8"><a href="/contact.html">Contact</a></li>
           </ul>
         </div>
       </div>
     </div>
 
     <div class="container">
-
-      <div class="content">
+      <div class="content" style="font-size:16px; line-height:1.75em">
         
 
 
@@ -53,9 +37,18 @@
    
 
     <div class='span6'>
-      <h3><a href="/2012/11/25/bringing-a-virtual-box-machine-to-the-physical-world-over-the-network">Bringing A Virtual Box Machine To The Physical World Over The Network</a></br><small>25 Nov 2012</small></h3>
-      <p>On the target machine Prior to the following, you would first need to create and boot from a USB stick any sort of linux distro giving you access to netcat and dd. $ nc -l 9901 | dd of=/dev/sda where /dev/sda corresponds to the drive on which you wish to install the system. If you are unsure, check with: $ fdisk -l On the VirtualBox host $ VBoxManage internalcommands converttoraw ubuntu1204.vdi ubuntu1204.raw $ dd if=ubuntu1204.raw...</p>
-      <a href="/2012/11/25/bringing-a-virtual-box-machine-to-the-physical-world-over-the-network">Read more...</a>
+      <h3><a href="/2013/08/18/pinball-domain-reinforcement-learning">Konidaris' Pinball Domain now Available in Python</a></br><small>18 Aug 2013</small></h3>
+      <p>
+As part of my Master&rsquo;s thesis, I implemented George Konidaris&rsquo; Pinball domain for reinforcement Learning.
+Konidaris had already made available his original implementation in Java. The environment could also be reached through an RL-Glue socket interface.
+
+Porting it to Python however made the transition to Will Dabney&rsquo;s Python-Rl much easier while avoiding the performance bottleneck due socket communication.
+
+And I love working with Python
+
+On Github: pypinball
+</p>
+      <a href="/2013/08/18/pinball-domain-reinforcement-learning">Read more...</a>
     </div>
 
     
@@ -67,9 +60,9 @@
    
 
     <div class='span6'>
-      <h3><a href="/2011/11/19/asynchronous-timer-expiry-notification">Asynchronous Timer Expiry Notification</a></br><small>19 Nov 2011</small></h3>
-      <p>In some recent TCP experiment that I carried in the user space, I faced the problem of generating relatively precise timer events in an asynchronous way. Furthermore, multiple timers had to be maintained simultaneously. The timerfd mechanism in Linux (man timerfd_create(2)) allows one to create different types of timers that communicate expiry events through a file descriptor. The standard read(), select(), poll() functions can then be used to detect and process the expiration notifications. As...</p>
-      <a href="/2011/11/19/asynchronous-timer-expiry-notification">Read more...</a>
+      <h3><a href="/2012/11/25/bringing-a-virtual-box-machine-to-the-physical-world-over-the-network">Bringing A Virtual Box Machine To The Physical World Over The Network</a></br><small>25 Nov 2012</small></h3>
+      <p>On the target machine Prior to the following, you would first need to create and boot from a USB stick any sort of linux distro giving you access to netcat and dd. $ nc -l 9901 | dd of=/dev/sda where /dev/sda corresponds to the drive on which you wish to install the system. If you are unsure, check with: $ fdisk -l On the VirtualBox host $ VBoxManage internalcommands converttoraw ubuntu1204.vdi ubuntu1204.raw $ dd if=ubuntu1204.raw...</p>
+      <a href="/2012/11/25/bringing-a-virtual-box-machine-to-the-physical-world-over-the-network">Read more...</a>
     </div>
 
     
@@ -85,9 +78,9 @@
    
 
     <div class='span6'>
-      <h3><a href="/2011/10/12/Applying-a-function-to-every-row-or-column-of-a-matrix-in-Matlab">Applying A Function To Every Row Or Column Of A Matrix In Matlab</a></br><small>12 Oct 2011</small></h3>
-      <p>Sure we have arrayfun, but it applies a function every element of a matrix. What if we want to compute the sum over each row or column for example ? The trick that I&#8217;m presenting here lies in the use of the num2cell function. In the example below, we add a 1x4 vector to every row of a matrix A.&#160;&#187; A = magic(4) A = 16 2 3 13 5 11 10 8 9 7...</p>
-      <a href="/2011/10/12/Applying-a-function-to-every-row-or-column-of-a-matrix-in-Matlab">Read more...</a>
+      <h3><a href="/2011/11/19/asynchronous-timer-expiry-notification">Asynchronous Timer Expiry Notification</a></br><small>19 Nov 2011</small></h3>
+      <p>In some recent TCP experiment that I carried in the user space, I faced the problem of generating relatively precise timer events in an asynchronous way. Furthermore, multiple timers had to be maintained simultaneously. The timerfd mechanism in Linux (man timerfd_create(2)) allows one to create different types of timers that communicate expiry events through a file descriptor. The standard read(), select(), poll() functions can then be used to detect and process the expiration notifications. As...</p>
+      <a href="/2011/11/19/asynchronous-timer-expiry-notification">Read more...</a>
     </div>
 
     
@@ -96,6 +89,24 @@
 
 
 
+   
+
+    <div class='span6'>
+      <h3><a href="/2011/10/12/Applying-a-function-to-every-row-or-column-of-a-matrix-in-Matlab">Applying A Function To Every Row Or Column Of A Matrix In Matlab</a></br><small>12 Oct 2011</small></h3>
+      <p>Sure we have arrayfun, but it applies a function every element of a matrix. What if we want to compute the sum over each row or column for example ? The trick that I&rsquo;m presenting here lies in the use of the num2cell function. In the example below, we add a 1x4 vector to every row of a matrix A. &nbsp;&raquo; A = magic(4) A = 16 2 3 13 5 11 10 8 9...</p>
+      <a href="/2011/10/12/Applying-a-function-to-every-row-or-column-of-a-matrix-in-Matlab">Read more...</a>
+    </div>
+
+    
+    </div>
+    
+
+
+
+
+
+   
+   <div class="row">
    
 
     <div class='span6'>
@@ -114,7 +125,6 @@
 
 
       </div>
-
     </div> <!-- /container -->
 
     

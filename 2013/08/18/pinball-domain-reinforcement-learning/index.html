@@ -28,62 +28,30 @@
       <div class="content" style="font-size:16px; line-height:1.75em">
         
 <div class="page-header">
-	<h1>Indexing Diagonal Matrix Elements In Matlab <small></small></h1>
+	<h1>Konidaris' Pinball Domain now Available in Python <small></small></h1>
 </div>
 
 <div class="row">
   <div class="span8">
     
-<p>I have came across this problem very often, but always ended up solving it in a different way each time. Here is what looks to me to be the most concise way of doing it.</p>
+<p>As part of my Master&rsquo;s thesis, I implemented <a href="http://www-all.cs.umass.edu/~gdk/pinball/">George Konidaris&rsquo;</a> Pinball domain for reinforcement Learning.
+Konidaris had already made available his original implementation in Java. The environment could also be reached through an <a href="http://glue.rl-community.org/wiki/RL-Glue_Core">RL-Glue</a> socket interface.</p>
 
-<h2 id="indexing-the-diagonal">Indexing the diagonal</h2>
+<p>Porting it to Python however made the transition to Will Dabney&rsquo;s <a href="https://github.com/amarack/python-rl">Python-Rl</a> much easier while avoiding the performance bottleneck due socket communication.</p>
 
-<pre><code>&gt;&gt; A = magic(4)
-A =
-16     2     3    13
- 5    11    10     8
- 9     7     6    12
- 4    14    15     1
+<p>And I love working with Python</p>
 
-&gt;&gt; A(1:length(A)+1:numel(A))
-ans =
-16    11     6     1
-
-&gt;&gt; A(1:length(A)+1:numel(A)) = 1
-A =
- 1     2     3    13
- 5     1    10     8
- 9     7     1    12
- 4    14    15     1
-</code></pre>
-
-<h2 id="selecting-off-diagonal-entries">Selecting off-diagonal entries</h2>
-
-<pre><code>&gt;&gt; A = magic(4)
-A =
-16     2     3    13
- 5    11    10     8
- 9     7     6    12
- 4    14    15     1
-
-&gt;&gt; A(setdiff(1:numel(A), 1:length(A)+1:numel(A))) = 0
-A =
-16     0     0     0
- 0    11     0     0
- 0     0     6     0
- 0     0     0     1
-&gt;&gt;
-</code></pre>
+<p>On Github: <a href="https://github.com/pierrelux/pypinball">pypinball</a></p>
 
     <hr>
     <div class="pagination">
       <ul>
       
-        <li class="prev disabled"><a>&larr; Previous</a></li>
+        <li class="prev"><a href="/2012/11/25/bringing-a-virtual-box-machine-to-the-physical-world-over-the-network" title="Bringing A Virtual Box Machine To The Physical World Over The Network">&larr; Previous</a></li>
       
         <li><a href="/archive.html">Archive</a></li>
       
-        <li class="next"><a href="/2011/10/12/Applying-a-function-to-every-row-or-column-of-a-matrix-in-Matlab" title="Applying A Function To Every Row Or Column Of A Matrix In Matlab">Next &rarr;</a></li>
+        <li class="next disabled"><a>Next &rarr;</a>
       
       </ul>
     </div>
@@ -113,7 +81,7 @@ A =
   
   <div class="span4">
     <h4>Published</h4>
-    <div class="date"><span>28 September 2011</span></div>
+    <div class="date"><span>18 August 2013</span></div>
 
   
     <h4>Tags</h4>
@@ -124,9 +92,11 @@ A =
 
   
      
-    	<li><a href="/tags.html#matlab-ref">matlab <span>2</span></a></li>
+    	<li><a href="/tags.html#fft-ref">fft <span>1</span></a></li>
      
-    	<li><a href="/tags.html#matrix-ref">matrix <span>2</span></a></li>
+    	<li><a href="/tags.html#time series-ref">time series <span>1</span></a></li>
+     
+    	<li><a href="/tags.html#autocorrelation-ref">autocorrelation <span>1</span></a></li>
     
   
 

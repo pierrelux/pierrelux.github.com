@@ -6,42 +6,26 @@
     <title>Pierre-Luc Bacon</title>
     
     <meta name="author" content="Pierre-Luc Bacon">
-
-    <!-- Le HTML5 shim, for IE6-8 support of HTML elements -->
-    <!--[if lt IE 9]>
-      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
-
-    <!-- Le styles -->
     <link href="/assets/themes/twitter/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- Le fav and touch icons -->
-  <!-- Update these with your own images
-    <link rel="shortcut icon" href="images/favicon.ico">
-    <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
-  -->
+    <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
   </head>
 
   <body>
-
-    <div class="navbar navbar-inverse">
-      <div class="navbar-inner">
+    <div class="navbar">
+      <div class="navbar-inner" style="background:#566371">
         <div class="container">
-          <a class="brand" href="/">Pierre-Luc Bacon</a>
+          <a class="brand" style="background:#CA614E" href="/">Pierre-Luc Bacon</a>
           <ul class="nav">
-		  <li><a href="/research.html">Research</a></li>
-		  <li><a href="/cv.html">Resume</a></li>
-		  <li><a href="/contact.html">Contact</a></li>
+		  <li style="background:#80B49E"><a href="/research.html">Research</a></li>
+		  <li style="background:#E6D674"><a href="/cv.html">Resume</a></li>
+		  <li style="background:#DAD7C8"><a href="/contact.html">Contact</a></li>
           </ul>
         </div>
       </div>
     </div>
 
     <div class="container">
-
-      <div class="content">
+      <div class="content" style="font-size:16px; line-height:1.75em">
         
 <div class="page-header">
 	<h1>Applying A Function To Every Row Or Column Of A Matrix In Matlab <small></small></h1>
@@ -49,11 +33,14 @@
 
 <div class="row">
   <div class="span8">
-    <p>Sure we have arrayfun, but it applies a function every element of a matrix. What if we want to compute the sum over each row or column for example ?</p>
+    
+<p>Sure we have arrayfun, but it applies a function every element of a matrix. What if we want to compute the sum over each row or column for example ?</p>
 
-<p>The trick that I&#8217;m presenting here lies in the use of the <code>num2cell</code> function.</p>
+<p>The trick that I&rsquo;m presenting here lies in the use of the <code>num2cell</code> function.</p>
 
-<p>In the example below, we add a 1x4 vector to every row of a matrix A.&#160;&#187; A = magic(4) A =</p>
+<p>In the example below, we add a 1x4 vector to every row of a matrix A. 
+   &nbsp;&raquo; A = magic(4)
+    A =</p>
 
 <pre><code>16     2     3    13
  5    11    10     8
@@ -77,9 +64,12 @@ ans =
 17     4     6    17
  6    13    13    12
 10     9     9    16
- 5    16    18     5</code></pre>
+ 5    16    18     5
+</code></pre>
 
-<p>If we wanted to do a similar operation but this time over the columns, we would write <code>num2cell(A, 1)</code> : &#8220;1&#8221; instead of &#8220;2&#8221;.</p>
+<p>If we wanted to do a similar operation but this time over the columns, we would write <code>num2cell(A, 1)</code> : &ldquo;1&rdquo; instead of &ldquo;2&rdquo;. </p>
+
+
     <hr>
     <div class="pagination">
       <ul>
@@ -144,7 +134,6 @@ ans =
 
 
       </div>
-
     </div> <!-- /container -->
 
     

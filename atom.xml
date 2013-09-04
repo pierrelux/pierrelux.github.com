@@ -4,7 +4,7 @@
  <title>Pierre-Luc Bacon</title>
  <link href="http://pierrelux.github.com/atom.xml" rel="self"/>
  <link href="http://pierrelux.github.com"/>
- <updated>2013-08-14T14:25:42-04:00</updated>
+ <updated>2013-09-03T22:48:54-04:00</updated>
  <id>http://pierrelux.github.com</id>
  <author>
    <name>Pierre-Luc Bacon</name>
@@ -13,26 +13,48 @@
 
  
  <entry>
+   <title>Konidaris' Pinball Domain now Available in Python</title>
+   <link href="http://pierrelux.github.com/2013/08/18/pinball-domain-reinforcement-learning"/>
+   <updated>2013-08-18T00:00:00-04:00</updated>
+   <id>http://pierrelux.github.com/2013/08/18/pinball-domain-reinforcement-learning</id>
+   <content type="html">
+&lt;p&gt;As part of my Master&amp;rsquo;s thesis, I implemented &lt;a href=&quot;http://www-all.cs.umass.edu/~gdk/pinball/&quot;&gt;George Konidaris&amp;rsquo;&lt;/a&gt; Pinball domain for reinforcement Learning.
+Konidaris had already made available his original implementation in Java. The environment could also be reached through an &lt;a href=&quot;http://glue.rl-community.org/wiki/RL-Glue_Core&quot;&gt;RL-Glue&lt;/a&gt; socket interface.&lt;/p&gt;
+
+&lt;p&gt;Porting it to Python however made the transition to Will Dabney&amp;rsquo;s &lt;a href=&quot;https://github.com/amarack/python-rl&quot;&gt;Python-Rl&lt;/a&gt; much easier while avoiding the performance bottleneck due socket communication.&lt;/p&gt;
+
+&lt;p&gt;And I love working with Python&lt;/p&gt;
+
+&lt;p&gt;On Github: &lt;a href=&quot;https://github.com/pierrelux/pypinball&quot;&gt;pypinball&lt;/a&gt;&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
    <title>Bringing A Virtual Box Machine To The Physical World Over The Network</title>
    <link href="http://pierrelux.github.com/2012/11/25/bringing-a-virtual-box-machine-to-the-physical-world-over-the-network"/>
    <updated>2012-11-25T00:00:00-05:00</updated>
    <id>http://pierrelux.github.com/2012/11/25/bringing-a-virtual-box-machine-to-the-physical-world-over-the-network</id>
-   <content type="html">&lt;h2 id='on_the_target_machine'&gt;On the target machine&lt;/h2&gt;
+   <content type="html">
+&lt;h2 id=&quot;on-the-target-machine&quot;&gt;On the target machine&lt;/h2&gt;
 
 &lt;p&gt;Prior to the following, you would first need to create and boot from a USB stick any sort of linux distro giving you access to &lt;code&gt;netcat&lt;/code&gt; and &lt;code&gt;dd&lt;/code&gt;.&lt;/p&gt;
 
-&lt;pre&gt;&lt;code&gt;$ nc -l 9901 | dd of=/dev/sda&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;$ nc -l 9901 | dd of=/dev/sda
+&lt;/code&gt;&lt;/pre&gt;
 
 &lt;p&gt;where /dev/sda corresponds to the drive on which you wish to install the system. If you are unsure, check with:&lt;/p&gt;
 
-&lt;pre&gt;&lt;code&gt;$ fdisk -l&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;$ fdisk -l
+&lt;/code&gt;&lt;/pre&gt;
 
-&lt;h2 id='on_the_virtualbox_host'&gt;On the VirtualBox host&lt;/h2&gt;
+&lt;h2 id=&quot;on-the-virtualbox-host&quot;&gt;On the VirtualBox host&lt;/h2&gt;
 
 &lt;pre&gt;&lt;code&gt;$ VBoxManage internalcommands converttoraw ubuntu1204.vdi ubuntu1204.raw
-$ dd if=ubuntu1204.raw | nc 192.168.3.135 9901&lt;/code&gt;&lt;/pre&gt;
+$ dd if=ubuntu1204.raw | nc 192.168.3.135 9901
+&lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;Here &lt;code&gt;192.168.3.135&lt;/code&gt; is the IP of the target system running the &lt;code&gt;nc&lt;/code&gt; command.&lt;/p&gt;</content>
+&lt;p&gt;Here &lt;code&gt;192.168.3.135&lt;/code&gt; is the IP of the target system running the &lt;code&gt;nc&lt;/code&gt; command.&lt;/p&gt;
+</content>
  </entry>
  
  <entry>
@@ -40,7 +62,8 @@ $ dd if=ubuntu1204.raw | nc 192.168.3.135 9901&lt;/code&gt;&lt;/pre&gt;
    <link href="http://pierrelux.github.com/2011/11/19/asynchronous-timer-expiry-notification"/>
    <updated>2011-11-19T00:00:00-05:00</updated>
    <id>http://pierrelux.github.com/2011/11/19/asynchronous-timer-expiry-notification</id>
-   <content type="html">&lt;p&gt;In some recent TCP experiment that I carried in the user space, I faced the problem of generating relatively precise timer events in an asynchronous way. Furthermore, multiple timers had to be maintained simultaneously.&lt;/p&gt;
+   <content type="html">
+&lt;p&gt;In some recent TCP experiment that I carried in the user space, I faced the problem of generating relatively precise timer events in an asynchronous way. Furthermore, multiple timers had to be maintained simultaneously.&lt;/p&gt;
 
 &lt;p&gt;The &lt;code&gt;timerfd&lt;/code&gt; mechanism in Linux (&lt;code&gt;man timerfd_create(2)&lt;/code&gt;) allows one to create different types of timers that communicate expiry events through a file descriptor. The standard &lt;code&gt;read()&lt;/code&gt;, &lt;code&gt;select()&lt;/code&gt;, &lt;code&gt;poll()&lt;/code&gt; functions can then be used to detect and process the expiration notifications. As for the clock granularity, with &lt;code&gt;CLOCK_REALTIME&lt;/code&gt; and with High Resolution Timer (HRT) support, I get very respectable 1.000000e-09 seconds on my system. To see this, you can compile (using the &lt;code&gt;-lrt&lt;/code&gt; flag) and run the following :&lt;/p&gt;
 
@@ -50,17 +73,18 @@ $ dd if=ubuntu1204.raw | nc 192.168.3.135 9901&lt;/code&gt;&lt;/pre&gt;
 
 int main(void)
 {
-printf(&amp;quot;System Clock Granularity %ld\n&amp;quot;, sysconf(_SC_CLK_TCK));
+printf(&quot;System Clock Granularity %ld\n&quot;, sysconf(_SC_CLK_TCK));
 
 struct timespec gran;
 if (clock_getres(CLOCK_MONOTONIC, &amp;amp;gran) &amp;lt; 0) {
-    perror(&amp;quot;clock_getres()&amp;quot;);
+    perror(&quot;clock_getres()&quot;);
     return -1;
 }
-printf(&amp;quot;CLOCK_MONOTONIC granularity %ld %ld\n&amp;quot;, gran.tv_sec, gran.tv_nsec);
+printf(&quot;CLOCK_MONOTONIC granularity %ld %ld\n&quot;, gran.tv_sec, gran.tv_nsec);
 
 return 0;
-}&lt;/code&gt;&lt;/pre&gt;
+}
+&lt;/code&gt;&lt;/pre&gt;
 
 &lt;p&gt;Both periodic and non-periodic timers can be created a timer obtained through timerfd_create(). This behavior is configurable via the itermerspec structure passed as an argument to the &lt;code&gt;timerfd_settime()&lt;/code&gt; function:&lt;/p&gt;
 
@@ -71,19 +95,21 @@ timerSpec.it_value.tv_sec = sec;
 timerSpec.it_value.tv_nsec = nsec;
 
 timerSpec.it_interval.tv_sec = intsec;
-timerSpec.it_interval.tv_nsec = intnsec;&lt;/code&gt;&lt;/pre&gt;
+timerSpec.it_interval.tv_nsec = intnsec;
+&lt;/code&gt;&lt;/pre&gt;
 
 &lt;p&gt;Whenever the it_value field has both its &lt;code&gt;tv_sec&lt;/code&gt; and &lt;code&gt;tv_nsec&lt;/code&gt; fields set to 0, the timer is effectively disarmed and no future timer expiry events should take place.&lt;/p&gt;
 
 &lt;p&gt;Once a timer has been set, &lt;code&gt;read()&lt;/code&gt; will report the number of timer expirations events that have occurred since the last call.&lt;/p&gt;
 
-&lt;h2 id='epoll'&gt;Epoll&lt;/h2&gt;
+&lt;h2 id=&quot;epoll&quot;&gt;Epoll&lt;/h2&gt;
 
-&lt;p&gt;Having the ability to generate timer events, wouldn&amp;#8217;t be nice if we could only register a callback function that would get call automatically from the outside to handle any processing that would have to be done ?&lt;/p&gt;
+&lt;p&gt;Having the ability to generate timer events, wouldn&amp;rsquo;t be nice if we could only register a callback function that would get call automatically from the outside to handle any processing that would have to be done ?&lt;/p&gt;
 
 &lt;p&gt;Linux provides the epoll functionality which appears much more elegant and easy to use that its traditional &lt;code&gt;select()&lt;/code&gt; counterpart. Even better maybe, it is said to be O(1) versus O(n) : this claim is reported here then taken to Wikipedia and discussed on Stackoverflow.&lt;/p&gt;
 
-&lt;p&gt;One cool thing for sure is its ability to deliver event notifications on the set of file descriptors that it watches under either edge or level-triggered modes. In the first case, &lt;code&gt;epoll_wait()&lt;/code&gt; (normally a blocking call that you would place in a mainloop) will return as long as there is remaining data on one of its file descriptor. By contrast, when one sets the &lt;code&gt;EPOLLONESHOT&lt;/code&gt; flag, &lt;code&gt;epoll_wait()&lt;/code&gt; will generate only one event after which the associated file descriptor will be disabled. Cooking up the final solution&lt;/p&gt;
+&lt;p&gt;One cool thing for sure is its ability to deliver event notifications on the set of file descriptors that it watches under either edge or level-triggered modes. In the first case, &lt;code&gt;epoll_wait()&lt;/code&gt; (normally a blocking call that you would place in a mainloop) will return as long as there is remaining data on one of its file descriptor. By contrast, when one sets the &lt;code&gt;EPOLLONESHOT&lt;/code&gt; flag, &lt;code&gt;epoll_wait()&lt;/code&gt; will generate only one event after which the associated file descriptor will be disabled.
+Cooking up the final solution&lt;/p&gt;
 
 &lt;p&gt;Before going any further : yes libevent exists and also uses epoll. The point here is not to use it.&lt;/p&gt;
 
@@ -101,21 +127,24 @@ timerSpec.it_interval.tv_nsec = intnsec;&lt;/code&gt;&lt;/pre&gt;
 struct epoll_event {
     uint32_t     events;      /* Epoll events */
     epoll_data_t data;        /* User data variable */
-};&lt;/code&gt;&lt;/pre&gt;
+};
+&lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;&lt;code&gt;void *ptr&lt;/code&gt; you said ? Yep that&amp;#8217;s it : here&amp;#8217;s our function pointer. Since epoll_data is a union, we will probably want to record more than one element under ptr. To do so, we can wrap all the information we need under a structure such as :&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;void *ptr&lt;/code&gt; you said ? Yep that&amp;rsquo;s it : here&amp;rsquo;s our function pointer. Since epoll_data is a union, we will probably want to record more than one element under ptr. To do so, we can wrap all the information we need under a structure such as :&lt;/p&gt;
 
 &lt;pre&gt;&lt;code&gt;typedef struct {
   int tfd;
   void (*timed_action_handler)(void*);
   void* arg;
-} timed_action_t;&lt;/code&gt;&lt;/pre&gt;
+} timed_action_t;
+&lt;/code&gt;&lt;/pre&gt;
 
 &lt;p&gt;Now when &lt;code&gt;epoll_wait()&lt;/code&gt; unblocks we will be able to get access to the associated &lt;code&gt;epoll_event&lt;/code&gt; and execute the callback passing its arg argument from the &lt;code&gt;timed_action_t&lt;/code&gt; structure.&lt;/p&gt;
 
-&lt;h2 id='github'&gt;GitHub&lt;/h2&gt;
+&lt;h2 id=&quot;github&quot;&gt;GitHub&lt;/h2&gt;
 
-&lt;p&gt;You can checkout a sketch of the approach explained above at &lt;a href='https://github.com/pierrelux/timedaction'&gt;https://github.com/pierrelux/timedaction&lt;/a&gt;&lt;/p&gt;</content>
+&lt;p&gt;You can checkout a sketch of the approach explained above at &lt;a href=&quot;https://github.com/pierrelux/timedaction&quot;&gt;https://github.com/pierrelux/timedaction&lt;/a&gt;&lt;/p&gt;
+</content>
  </entry>
  
  <entry>
@@ -123,11 +152,14 @@ struct epoll_event {
    <link href="http://pierrelux.github.com/2011/10/12/Applying-a-function-to-every-row-or-column-of-a-matrix-in-Matlab"/>
    <updated>2011-10-12T00:00:00-04:00</updated>
    <id>http://pierrelux.github.com/2011/10/12/Applying-a-function-to-every-row-or-column-of-a-matrix-in-Matlab</id>
-   <content type="html">&lt;p&gt;Sure we have arrayfun, but it applies a function every element of a matrix. What if we want to compute the sum over each row or column for example ?&lt;/p&gt;
+   <content type="html">
+&lt;p&gt;Sure we have arrayfun, but it applies a function every element of a matrix. What if we want to compute the sum over each row or column for example ?&lt;/p&gt;
 
-&lt;p&gt;The trick that I&amp;#8217;m presenting here lies in the use of the &lt;code&gt;num2cell&lt;/code&gt; function.&lt;/p&gt;
+&lt;p&gt;The trick that I&amp;rsquo;m presenting here lies in the use of the &lt;code&gt;num2cell&lt;/code&gt; function.&lt;/p&gt;
 
-&lt;p&gt;In the example below, we add a 1x4 vector to every row of a matrix A.&amp;#160;&amp;#187; A = magic(4) A =&lt;/p&gt;
+&lt;p&gt;In the example below, we add a 1x4 vector to every row of a matrix A. 
+   &amp;nbsp;&amp;raquo; A = magic(4)
+    A =&lt;/p&gt;
 
 &lt;pre&gt;&lt;code&gt;16     2     3    13
  5    11    10     8
@@ -151,9 +183,12 @@ ans =
 17     4     6    17
  6    13    13    12
 10     9     9    16
- 5    16    18     5&lt;/code&gt;&lt;/pre&gt;
+ 5    16    18     5
+&lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;If we wanted to do a similar operation but this time over the columns, we would write &lt;code&gt;num2cell(A, 1)&lt;/code&gt; : &amp;#8220;1&amp;#8221; instead of &amp;#8220;2&amp;#8221;.&lt;/p&gt;</content>
+&lt;p&gt;If we wanted to do a similar operation but this time over the columns, we would write &lt;code&gt;num2cell(A, 1)&lt;/code&gt; : &amp;ldquo;1&amp;rdquo; instead of &amp;ldquo;2&amp;rdquo;. &lt;/p&gt;
+
+</content>
  </entry>
  
  <entry>
@@ -161,9 +196,10 @@ ans =
    <link href="http://pierrelux.github.com/2011/09/28/indexing-diagonal-matrix-elements-in-matlab"/>
    <updated>2011-09-28T00:00:00-04:00</updated>
    <id>http://pierrelux.github.com/2011/09/28/indexing-diagonal-matrix-elements-in-matlab</id>
-   <content type="html">&lt;p&gt;I have came across this problem very often, but always ended up solving it in a different way each time. Here is what looks to me to be the most concise way of doing it.&lt;/p&gt;
+   <content type="html">
+&lt;p&gt;I have came across this problem very often, but always ended up solving it in a different way each time. Here is what looks to me to be the most concise way of doing it.&lt;/p&gt;
 
-&lt;h2 id='indexing_the_diagonal'&gt;Indexing the diagonal&lt;/h2&gt;
+&lt;h2 id=&quot;indexing-the-diagonal&quot;&gt;Indexing the diagonal&lt;/h2&gt;
 
 &lt;pre&gt;&lt;code&gt;&amp;gt;&amp;gt; A = magic(4)
 A =
@@ -181,9 +217,10 @@ A =
  1     2     3    13
  5     1    10     8
  9     7     1    12
- 4    14    15     1&lt;/code&gt;&lt;/pre&gt;
+ 4    14    15     1
+&lt;/code&gt;&lt;/pre&gt;
 
-&lt;h2 id='selecting_offdiagonal_entries'&gt;Selecting off-diagonal entries&lt;/h2&gt;
+&lt;h2 id=&quot;selecting-off-diagonal-entries&quot;&gt;Selecting off-diagonal entries&lt;/h2&gt;
 
 &lt;pre&gt;&lt;code&gt;&amp;gt;&amp;gt; A = magic(4)
 A =
@@ -198,7 +235,9 @@ A =
  0    11     0     0
  0     0     6     0
  0     0     0     1
-&amp;gt;&amp;gt;&lt;/code&gt;&lt;/pre&gt;</content>
+&amp;gt;&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+</content>
  </entry>
  
  

@@ -6,42 +6,26 @@
     <title>Pierre-Luc Bacon</title>
     
     <meta name="author" content="Pierre-Luc Bacon">
-
-    <!-- Le HTML5 shim, for IE6-8 support of HTML elements -->
-    <!--[if lt IE 9]>
-      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
-
-    <!-- Le styles -->
     <link href="/assets/themes/twitter/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- Le fav and touch icons -->
-  <!-- Update these with your own images
-    <link rel="shortcut icon" href="images/favicon.ico">
-    <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
-  -->
+    <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
   </head>
 
   <body>
-
-    <div class="navbar navbar-inverse">
-      <div class="navbar-inner">
+    <div class="navbar">
+      <div class="navbar-inner" style="background:#566371">
         <div class="container">
-          <a class="brand" href="/">Pierre-Luc Bacon</a>
+          <a class="brand" style="background:#CA614E" href="/">Pierre-Luc Bacon</a>
           <ul class="nav">
-		  <li><a href="/research.html">Research</a></li>
-		  <li><a href="/cv.html">Resume</a></li>
-		  <li><a href="/contact.html">Contact</a></li>
+		  <li style="background:#80B49E"><a href="/research.html">Research</a></li>
+		  <li style="background:#E6D674"><a href="/cv.html">Resume</a></li>
+		  <li style="background:#DAD7C8"><a href="/contact.html">Contact</a></li>
           </ul>
         </div>
       </div>
     </div>
 
     <div class="container">
-
-      <div class="content">
+      <div class="content" style="font-size:16px; line-height:1.75em">
         
 <div class="page-header">
 	<h1>Bringing A Virtual Box Machine To The Physical World Over The Network <small></small></h1>
@@ -49,22 +33,27 @@
 
 <div class="row">
   <div class="span8">
-    <h2 id='on_the_target_machine'>On the target machine</h2>
+    
+<h2 id="on-the-target-machine">On the target machine</h2>
 
 <p>Prior to the following, you would first need to create and boot from a USB stick any sort of linux distro giving you access to <code>netcat</code> and <code>dd</code>.</p>
 
-<pre><code>$ nc -l 9901 | dd of=/dev/sda</code></pre>
+<pre><code>$ nc -l 9901 | dd of=/dev/sda
+</code></pre>
 
 <p>where /dev/sda corresponds to the drive on which you wish to install the system. If you are unsure, check with:</p>
 
-<pre><code>$ fdisk -l</code></pre>
+<pre><code>$ fdisk -l
+</code></pre>
 
-<h2 id='on_the_virtualbox_host'>On the VirtualBox host</h2>
+<h2 id="on-the-virtualbox-host">On the VirtualBox host</h2>
 
 <pre><code>$ VBoxManage internalcommands converttoraw ubuntu1204.vdi ubuntu1204.raw
-$ dd if=ubuntu1204.raw | nc 192.168.3.135 9901</code></pre>
+$ dd if=ubuntu1204.raw | nc 192.168.3.135 9901
+</code></pre>
 
 <p>Here <code>192.168.3.135</code> is the IP of the target system running the <code>nc</code> command.</p>
+
     <hr>
     <div class="pagination">
       <ul>
@@ -73,7 +62,7 @@ $ dd if=ubuntu1204.raw | nc 192.168.3.135 9901</code></pre>
       
         <li><a href="/archive.html">Archive</a></li>
       
-        <li class="next disabled"><a>Next &rarr;</a>
+        <li class="next"><a href="/2013/08/18/pinball-domain-reinforcement-learning" title="Konidaris' Pinball Domain now Available in Python">Next &rarr;</a></li>
       
       </ul>
     </div>
@@ -129,7 +118,6 @@ $ dd if=ubuntu1204.raw | nc 192.168.3.135 9901</code></pre>
 
 
       </div>
-
     </div> <!-- /container -->
 
     

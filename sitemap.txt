@@ -10,6 +10,7 @@ http://pierrelux.github.com/research.html
 http://pierrelux.github.com/sitemap.txt
 http://pierrelux.github.com/tags.html
 
+http://pierrelux.github.com/2013/08/18/pinball-domain-reinforcement-learning
 http://pierrelux.github.com/2012/11/25/bringing-a-virtual-box-machine-to-the-physical-world-over-the-network
 http://pierrelux.github.com/2011/11/19/asynchronous-timer-expiry-notification
 http://pierrelux.github.com/2011/10/12/Applying-a-function-to-every-row-or-column-of-a-matrix-in-Matlab
