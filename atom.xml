@@ -4,13 +4,34 @@
  <title>Pierre-Luc Bacon</title>
  <link href="http://pierrelux.github.com/atom.xml" rel="self"/>
  <link href="http://pierrelux.github.com"/>
- <updated>2013-09-03T22:48:54-04:00</updated>
+ <updated>2013-09-09T17:55:17-04:00</updated>
  <id>http://pierrelux.github.com</id>
  <author>
    <name>Pierre-Luc Bacon</name>
    <email>pierrelucbacon@gmail.com</email>
  </author>
 
+ 
+ <entry>
+   <title>The Ubiquitous RL Agent Interaction Diagram in Tikz</title>
+   <link href="http://pierrelux.github.com/2013/09/09/Tikz-RL-Agent-Interaction-Diag"/>
+   <updated>2013-09-09T00:00:00-04:00</updated>
+   <id>http://pierrelux.github.com/2013/09/09/Tikz-RL-Agent-Interaction-Diag</id>
+   <content type="html">
+&lt;p&gt;It is present in almost all of the presentation about Reinforcement Learning.
+I&amp;rsquo;m talking here about the Agent-Environment interaction diagram originally found in Sutton and Barto&amp;rsquo;s &lt;a href=&quot;http://www.amazon.ca/Reinforcement-Learning-Introduction-Richard-Sutton/dp/0262193981/&quot;&gt;Reinforcement Learning: an Introduction&lt;/a&gt; on page 52 in the third chapter entitled &lt;em&gt;The Reinforcement Learning Problem&lt;/em&gt;.&lt;/p&gt;
+
+&lt;p&gt;I perpetuated the tradition for my Master&amp;rsquo;s thesis and used it in the background section.
+I adapted the figure for Latex using Tikz and made the code snippet available as a Gist on Github.
+&lt;script src=&quot;https://gist.github.com/pierrelux/6501790.js&quot;&gt;&lt;/script&gt;&lt;/p&gt;
+
+&lt;p&gt;It&amp;rsquo;s only while writing these lines that I realized that the original post-script files could be obtained from &lt;a href=&quot;http://webdocs.cs.ualberta.ca/~sutton/book/figures/figures.html&quot;&gt;Sutton&amp;rsquo;s website&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;There is always room for improvement and you might find better ways of illustrate the RL approach: feel free to hack !&lt;/p&gt;
+
+&lt;p&gt;Online version of &lt;em&gt;Reinforcement Learning: an introduction&lt;/em&gt;: &lt;a href=&quot;http://webdocs.cs.ualberta.ca/~sutton/book/3/node2.html#SECTION00110000000000000000&quot;&gt;chapter 3&lt;/a&gt;&lt;/p&gt;
+</content>
+ </entry>
  
  <entry>
    <title>Konidaris' Pinball Domain now Available in Python</title>
