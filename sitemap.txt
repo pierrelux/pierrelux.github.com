@@ -4,6 +4,7 @@ http://pierrelux.github.com/atom.xml
 http://pierrelux.github.com/categories.html
 http://pierrelux.github.com/contact.html
 http://pierrelux.github.com/cv.html
+http://pierrelux.github.com/feed.xml
 http://pierrelux.github.com/index.html
 http://pierrelux.github.com/pages.html
 http://pierrelux.github.com/research.html
