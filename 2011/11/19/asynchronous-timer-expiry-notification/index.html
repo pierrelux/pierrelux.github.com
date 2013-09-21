@@ -76,7 +76,7 @@ timerSpec.it_interval.tv_nsec = intnsec;
 
 <h2 id="epoll">Epoll</h2>
 
-<p>Having the ability to generate timer events, wouldn&rsquo;t be nice if we could only register a callback function that would get call automatically from the outside to handle any processing that would have to be done ?</p>
+<p>Having the ability to generate timer events, wouldn&#8217;t be nice if we could only register a callback function that would get call automatically from the outside to handle any processing that would have to be done ?</p>
 
 <p>Linux provides the epoll functionality which appears much more elegant and easy to use that its traditional <code>select()</code> counterpart. Even better maybe, it is said to be O(1) versus O(n) : this claim is reported here then taken to Wikipedia and discussed on Stackoverflow.</p>
 
@@ -102,7 +102,7 @@ struct epoll_event {
 };
 </code></pre>
 
-<p><code>void *ptr</code> you said ? Yep that&rsquo;s it : here&rsquo;s our function pointer. Since epoll_data is a union, we will probably want to record more than one element under ptr. To do so, we can wrap all the information we need under a structure such as :</p>
+<p><code>void *ptr</code> you said ? Yep that&#8217;s it : here&#8217;s our function pointer. Since epoll_data is a union, we will probably want to record more than one element under ptr. To do so, we can wrap all the information we need under a structure such as :</p>
 
 <pre><code>typedef struct {
   int tfd;

@@ -37,10 +37,10 @@
     
 <p>Sure we have arrayfun, but it applies a function every element of a matrix. What if we want to compute the sum over each row or column for example ?</p>
 
-<p>The trick that I&rsquo;m presenting here lies in the use of the <code>num2cell</code> function.</p>
+<p>The trick that I’m presenting here lies in the use of the <code>num2cell</code> function.</p>
 
 <p>In the example below, we add a 1x4 vector to every row of a matrix A. 
-   &nbsp;&raquo; A = magic(4)
+    » A = magic(4)
     A =</p>
 
 <pre><code>16     2     3    13
@@ -68,7 +68,7 @@ ans =
  5    16    18     5
 </code></pre>
 
-<p>If we wanted to do a similar operation but this time over the columns, we would write <code>num2cell(A, 1)</code> : &ldquo;1&rdquo; instead of &ldquo;2&rdquo;. </p>
+<p>If we wanted to do a similar operation but this time over the columns, we would write <code>num2cell(A, 1)</code> : “1” instead of “2”. </p>
 
 
     <hr>
