@@ -1,17 +1,17 @@
 ---
 layout: post
 category : thesis
-tags : [reinforcement learning, options]
+tags : [reinforcement learning, options, motor skills]
 title : A Fresh Perspective on HRL with Mixture of Options
 ---
 {% include JB/setup %}
 
-Recent work by {% cite Daniel2012 %} as well as
-similar independent research by {% cite Thomas2012 %} has started to make me think that
+Recent work by {% cite Daniel2012 --style apa-intext %} as well as
+similar independent research by {% cite Thomas2012 --style apa-intext %} has started to make me think that
 we might benefit from revisiting the classical HRL model. Under the perpective taken
 by these authors, hiearchical polices are obtained by *mixing* lower level policies
 in a similar way to *product of experts* {% cite Hinton2002 %} or ensemble methods in supervised learning.
-Using the terminology and notation of {% cite Sutton1999 %}, the Hi-REPS algorithm of {% cite Daniel2012 %} takes the summation
+Using the terminology and notation of {% cite Sutton1999 --style apa-intext %}, the Hi-REPS algorithm of {% cite Daniel2012 --style apa-intext %} takes the summation
 over all of the available options as follow:
 
 $$
@@ -21,14 +21,14 @@ $$
 In this model, the initiation component $$\mathcal{I}$$ is ignored, making options
 available under every state. Furthermore, the termination function $$\beta$$ is defined
 in such a way that options can only last one step. These assumptions, together with a well-defined parametrization,
-seem to be sufficient to make the discovery problem tractable. Hi-REPS combines the Relative Entropy Policy Search (REPS) method of {% cite Peter2010 %}
+seem to be sufficient to make the discovery problem tractable. Hi-REPS combines the Relative Entropy Policy Search (REPS) method of {% cite Peter2010 --style apa-intext %}
 with an expectation-maximization formulation for finding an optimal hierarchy. The resulting algorithm
 is shown to be usable for the simulated robot domain of Tetherball and
 outperforms the flat REPS baseline algorithm.
 
-{% cite Thomas2012 %} proposes a similar model but
+{% cite Thomas2012 --style apa-intext %} proposes a similar model but
 also establishes some interesting parallels to a biological model for the frog
-by {% cite MussaIvaldi2000 %} which explains the emergence of higher level
+by {% cite MussaIvaldi2000 --style apa-intext %} which explains the emergence of higher level
 motor skills as the linear combination of other lower level primitives. Here again, a parametrization is assumed
 for the motor skills and the behavior policy modulates their relative contribution given the current state $$x$$.
 The gradient of the policy over the skills depends recursively on the
