@@ -4,13 +4,51 @@
  <title>Pierre-Luc Bacon</title>
  <link href="http://pierrelux.github.com/atom.xml" rel="self"/>
  <link href="http://pierrelux.github.com"/>
- <updated>2013-09-28T23:18:25-04:00</updated>
+ <updated>2013-12-26T21:50:52-05:00</updated>
  <id>http://pierrelux.github.com</id>
  <author>
    <name>Pierre-Luc Bacon</name>
    <email>pierrelucbacon@gmail.com</email>
  </author>
 
+ 
+ <entry>
+   <title>Machine Learning and Data Crunching at Pycon</title>
+   <link href="http://pierrelux.github.com/2013/12/26/machine-learning-pycon"/>
+   <updated>2013-12-26T00:00:00-05:00</updated>
+   <id>http://pierrelux.github.com/2013/12/26/machine-learning-pycon</id>
+   <content type="html">
+&lt;p&gt;Pycon is taking place in Montreal next year from April 9 to 17. Here are a few talks related to machine learning and data mining:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://us.pycon.org/2014/schedule/presentation/154/&quot;&gt;How to Get Started with Machine Learning&lt;/a&gt; by Melanie Warwick &lt;a href=&quot;https://twitter.com/nyghtowl&quot;&gt;@nyghtowl&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://us.pycon.org/2014/schedule/presentation/188/&quot;&gt;Know Thy Neighbor: Scikit and the K-Nearest Neighbor Algorithm&lt;/a&gt; by Portia Burton &lt;a href=&quot;https://twitter.com/pkafei&quot;&gt;@pkafei&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://us.pycon.org/2014/schedule/presentation/224/&quot;&gt;Realtime predictive analytics using scikit-learn &amp;amp; RabbitMQ&lt;/a&gt; by &lt;a href=&quot;https://github.com/mdbecker&quot;&gt;Michael Becker&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://us.pycon.org/2014/schedule/presentation/163/&quot;&gt;Enough Machine Learning to Make Hacker News Readable Again&lt;/a&gt; by Ned Jackson Lovely
+ &lt;a href=&quot;https://twitter.com/nedjl&quot;&gt;@nedjl&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://us.pycon.org/2014/schedule/presentation/148/&quot;&gt;Diving into Open Data with IPython Notebook &amp;amp; Pandas&lt;/a&gt; by Julia Evans &lt;a href=&quot;https://twitter.com/b0rk&quot;&gt;@b0rk&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://us.pycon.org/2014/schedule/presentation/181/&quot;&gt;Data intensive biology in the cloud: instrumenting ALL the things&lt;/a&gt; by &lt;a href=&quot;http://ivory.idyll.org/blog/&quot;&gt;Titus Brown&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;The conference talk list can be found here: &lt;a href=&quot;https://us.pycon.org/2014/schedule/talks/list/&quot;&gt;https://us.pycon.org/2014/schedule/talks/list/&lt;/a&gt;&lt;/p&gt;
+
+&lt;h1 id=&quot;tutorials&quot;&gt;Tutorials&lt;/h1&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://us.pycon.org/2014/schedule/presentation/137/&quot;&gt;How to formulate a (science) problem and analyze it using Python code&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://us.pycon.org/2014/schedule/presentation/132/&quot;&gt;Dynamics and Control with Python&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://us.pycon.org/2014/schedule/presentation/62&quot;&gt;Diving deeper into Machine Learning with Scikit-learn&lt;/a&gt; by Olivier Grisel &lt;a href=&quot;https://twitter.com/ogrisel&quot;&gt;@ogrisel&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://us.pycon.org/2014/schedule/presentation/63/&quot;&gt;Hands-on with Pydata: how to build a minimal recommendation engine.&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://us.pycon.org/2014/schedule/presentation/67/&quot;&gt;Bayesian statistics made simple&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://us.pycon.org/2014/schedule/presentation/134/&quot;&gt;Mining Social Web APIs with IPython Notebook&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://us.pycon.org/2014/schedule/presentation/131/&quot;&gt;Exploring Machine Learning with Scikit-learn&lt;/a&gt; by Jake Vanderplas &lt;a href=&quot;https://twitter.com/jakevdp&quot;&gt;@jakevdp&lt;/a&gt; and Olivier Grisel&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Unfortunately, according to &lt;a href=&quot;https://us.pycon.org/2014/registration/#Tutorial&quot;&gt;https://us.pycon.org/2014/registration/#Tutorial&lt;/a&gt; it seems that each tutorial costs $200. A price which makes sense for companies and self-employed contractors, but not so much for students or general enthusiasts.&lt;/p&gt;
+
+&lt;p&gt;Financial aid is offered for the main conference or on a per-tutorial basis: &lt;a href=&quot;https://us.pycon.org/2014/assistance/&quot;&gt;https://us.pycon.org/2014/assistance/&lt;/a&gt;&lt;/p&gt;
+</content>
+ </entry>
  
  <entry>
    <title>Temporal and Spatial Components of Motor Skills Learning in Birdsong</title>
