@@ -4,13 +4,203 @@
  <title>Pierre-Luc Bacon</title>
  <link href="http://pierrelux.github.com/atom.xml" rel="self"/>
  <link href="http://pierrelux.github.com"/>
- <updated>2013-12-26T21:50:52-05:00</updated>
+ <updated>2014-01-01T17:04:02-05:00</updated>
  <id>http://pierrelux.github.com</id>
  <author>
    <name>Pierre-Luc Bacon</name>
    <email>pierrelucbacon@gmail.com</email>
  </author>
 
+ 
+ <entry>
+   <title>Upcoming Conferences on AI and Machine Learning</title>
+   <link href="http://pierrelux.github.com/2014/01/01/ai-ml-quebec"/>
+   <updated>2014-01-01T00:00:00-05:00</updated>
+   <id>http://pierrelux.github.com/2014/01/01/ai-ml-quebec</id>
+   <content type="html">
+&lt;p&gt;Quebec city will be the host of an astonishing number of key conferences in AI and ML this year.
+I have compiled them here in a short list, ordered by date.&lt;/p&gt;
+
+&lt;h3 id=&quot;ai-2014--27th-canadian-conference-on-artificial-intelligence&quot;&gt;AI 2014 : 27th Canadian Conference on Artificial Intelligence&lt;/h3&gt;
+
+&lt;table&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;When&lt;/td&gt;
+      &lt;td&gt;May 7, 2014 - May 9, 2014&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Where&lt;/td&gt;
+      &lt;td&gt;Montreal, Quebec, Canada&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Submission&lt;/td&gt;
+      &lt;td&gt;Jan 9, 2014&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Notification&lt;/td&gt;
+      &lt;td&gt;Feb 13, 2014&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Final Version&lt;/td&gt;
+      &lt;td&gt;Feb 22, 2014&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Website&lt;/td&gt;
+      &lt;td&gt;&lt;a href=&quot;https://cs.uwaterloo.ca/conferences/ai2014/index.html&quot;&gt;https://cs.uwaterloo.ca/conferences/ai2014/index.html&lt;/a&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;h3 id=&quot;uai-2014--30th-conference-on-uncertainty-in-artificial-intelligence&quot;&gt;UAI 2014 : 30th Conference on Uncertainty in Artificial Intelligence&lt;/h3&gt;
+
+&lt;table&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;When&lt;/td&gt;
+      &lt;td&gt;Jul 23, 2014 - Jul 27, 2014&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Where&lt;/td&gt;
+      &lt;td&gt;Quebec City, Quebec, Canada&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Submission&lt;/td&gt;
+      &lt;td&gt;Mar 19, 2014&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Notification&lt;/td&gt;
+      &lt;td&gt;May 30, 2014&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Final Version&lt;/td&gt;
+      &lt;td&gt;Jun 16, 2014&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Website&lt;/td&gt;
+      &lt;td&gt;&lt;a href=&quot;http://www.auai.org/uai2014&quot;&gt;http://www.auai.org/uai2014&lt;/a&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;h3 id=&quot;cogsci-2014--the-36th-annual-meeting-of-the-cognitive-science-society&quot;&gt;CogSci 2014 : The 36th annual meeting of the Cognitive Science Society&lt;/h3&gt;
+
+&lt;table&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;When&lt;/td&gt;
+      &lt;td&gt;Jul 23, 2014 - Jul 26, 2014&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Where&lt;/td&gt;
+      &lt;td&gt;Quebec City, Canada&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Submission&lt;/td&gt;
+      &lt;td&gt;Feb 1, 2014&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Notification&lt;/td&gt;
+      &lt;td&gt;Apr 1, 2014&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Final Version&lt;/td&gt;
+      &lt;td&gt;May 1, 2014&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Website&lt;/td&gt;
+      &lt;td&gt;&lt;a href=&quot;http://cognitivesciencesociety.org/conference2014/index.html&quot;&gt;http://cognitivesciencesociety.org/conference2014/index.html&lt;/a&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;h3 id=&quot;aaai-2014--28th-aaai-conference-on-artificial-intelligence&quot;&gt;AAAI 2014 : 28th AAAI Conference on Artificial Intelligence&lt;/h3&gt;
+
+&lt;table&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;When&lt;/td&gt;
+      &lt;td&gt;Jul 27, 2014 - Jul 31, 2014&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Where&lt;/td&gt;
+      &lt;td&gt;Quebec City, Canada&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Submission&lt;/td&gt;
+      &lt;td&gt;Feb 4, 2014&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Notification&lt;/td&gt;
+      &lt;td&gt;Apr 7, 2014&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Final Version&lt;/td&gt;
+      &lt;td&gt;Apr 22, 2014&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Website&lt;/td&gt;
+      &lt;td&gt;&lt;a href=&quot;http://www.aaai.org/Conferences/AAAI/aaai14.php&quot;&gt;http://www.aaai.org/Conferences/AAAI/aaai14.php&lt;/a&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;h3 id=&quot;agi-2014--artificial-general-intelligence&quot;&gt;AGI 2014 : Artificial General Intelligence&lt;/h3&gt;
+
+&lt;table&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;When&lt;/td&gt;
+      &lt;td&gt;Aug 1, 2014 - Aug 4, 2014&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Where&lt;/td&gt;
+      &lt;td&gt;Quebec City, Canada&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Submission&lt;/td&gt;
+      &lt;td&gt;Mar 15, 2014&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Notification&lt;/td&gt;
+      &lt;td&gt;Apr 30, 2014&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Final Version&lt;/td&gt;
+      &lt;td&gt;May 15, 2014&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Website&lt;/td&gt;
+      &lt;td&gt;&lt;a href=&quot;http://agi-conf.org/2014&quot;&gt;http://agi-conf.org/2014&lt;/a&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;h3 id=&quot;nips-2014--neural-information-processing-systems-conference&quot;&gt;NIPS 2014 : Neural Information Processing Systems Conference&lt;/h3&gt;
+
+&lt;table&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;When&lt;/td&gt;
+      &lt;td&gt;Dec 8, 2014 - Dec 13, 2014&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Where&lt;/td&gt;
+      &lt;td&gt;Montreal, Quebec, Canada&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Submission&lt;/td&gt;
+      &lt;td&gt;TBD&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Website&lt;/td&gt;
+      &lt;td&gt;&lt;a href=&quot;http://nips.cc/FutureConferences/&quot;&gt;http://nips.cc/FutureConferences/&lt;/a&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+</content>
+ </entry>
  
  <entry>
    <title>Machine Learning and Data Crunching at Pycon</title>

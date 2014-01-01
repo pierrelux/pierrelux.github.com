@@ -10,6 +10,7 @@ http://pierrelux.github.com/research.html
 http://pierrelux.github.com/sitemap.txt
 http://pierrelux.github.com/tags.html
 
+http://pierrelux.github.com/2014/01/01/ai-ml-quebec
 http://pierrelux.github.com/2013/12/26/machine-learning-pycon
 http://pierrelux.github.com/2013/09/28/birds-motor-skills
 http://pierrelux.github.com/2013/09/20/2013-mixture-of-options
