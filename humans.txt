@@ -1,0 +1,14 @@
+/* TEAM */
+Creator: Pierre-Luc Bacon
+Contact: pierrelucbacon@gmail.com
+Twitter: pierrelux
+Location: Montreal, QC
+                           
+/* THANKS */                           
+Creator of Balzac theme: Cole Townsend
+Twitter: @twnsndco
+
+/* SITE */                         
+Last update: 2014-07-18
+Standards: HTML, SCSS, Jekyll                        
+Software: git

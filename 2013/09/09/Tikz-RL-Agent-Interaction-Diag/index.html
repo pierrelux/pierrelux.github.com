@@ -1,78 +1,163 @@
 
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <title>Pierre-Luc Bacon</title>
-    
-    <meta name="author" content="Pierre-Luc Bacon">
-    <link href="/assets/themes/twitter/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-    <link href="atom.xml" type="application/atom+xml" rel="alternate" title="Pierre-Luc Bacon">
-    <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
-  </head>
 
-  <body>
-    <div class="navbar">
-      <div class="navbar-inner" style="background:#566371">
-        <div class="container">
-          <a class="brand" style="background:#CA614E" href="/">Pierre-Luc Bacon</a>
-          <ul class="nav">
-		  <li style="background:#80B49E"><a href="/research.html">Research</a></li>
-		  <li style="background:#E6D674"><a href="/cv.html">Resume</a></li>
-		  <li style="background:#DAD7C8"><a href="/contact.html">Contact</a></li>
+<meta charset="utf-8">
+<title>The Ubiquitous RL Agent Interaction Diagram in Tikz &#8211; Commonplaces</title>
+<meta name="description" content="">
+<meta name="keywords" content="reinforcement learning, latex">
+
+
+<meta property="og:locale" content="en_US">
+<meta property="og:title" content="The Ubiquitous RL Agent Interaction Diagram in Tikz &#8211; Commonplaces">
+<meta property="og:description" content="It is present in almost all of the presentation about Reinforcement Learning.I'm talking here about the Agent-Environ...">
+<meta property="og:url" content="/2013/09/09/Tikz-RL-Agent-Interaction-Diag">
+<meta property="og:site_name" content="Commonplaces">
+
+
+<link href="/feed.xml" type="application/atom+xml" rel="alternate" title="Commonplaces Feed">
+
+<!-- http://t.co/dKP3o1e -->
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- Type -->
+<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Crimson+Text:400,400italic,700,700italic" rel='stylesheet' type='text/css' />
+<link href="//fonts.googleapis.com/css?family=Source+Sans+Pro:400,700" rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="/assets/css/entypo.css" media="all">
+
+<!-- In order to use Calendas Plus, you must first purchase it. Then, create a font-face package using FontSquirrel.
+<link rel='stylesheet' href='/assets/cal.css' media='all' />
+-->
+
+
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="/assets/css/i.css">
+
+<!-- Fresh Squeezed jQuery -->
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+
+<meta http-equiv="cleartype" content="on">
+
+<!-- Load Modernizr -->
+<script src="/assets/js/vendor/modernizr-2.6.2.custom.min.js"></script>
+
+<!-- Load MathJax -->
+<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+<!-- Icons -->
+
+<div id="bump">
+  <body class="">
+    <header class="site-header darken">
+      <div class="wrap">
+        <hgroup>
+          <h1><a href="/">Commonplaces</a></h1>
+        </hgroup>
+        <a href="#nav" class="menu"><span class='icons'>☰</span></a>
+        <nav role="navigation">
+          <ul>
+            <li>
+              <a href="/" title="Commonplaces">Home</a>
+            </li>
+            
+            
+                <li><a href="/about" >About</a></li>
+            
+                <li><a href="https://github.com/pierrelux" target="_blank">Github</a></li>
+            
+
           </ul>
-        </div>
+        </nav>
       </div>
-    </div>
+    </header>
 
-    <div class="container">
-      <div class="content" style="font-size:19px; line-height:31px">
-        
-<div class="page-header">
-	<h1>The Ubiquitous RL Agent Interaction Diagram in Tikz <small></small></h1>
-    <div class="date"><span>09 September 2013</span></div>
-</div>
 
-<div class="row">
-  <div class="span12">
-    
-<p>It is present in almost all of the presentation about Reinforcement Learning.
-I&#8217;m talking here about the Agent-Environment interaction diagram originally found in Sutton and Barto&#8217;s <a href="http://www.amazon.ca/Reinforcement-Learning-Introduction-Richard-Sutton/dp/0262193981/">Reinforcement Learning: an Introduction</a> on page 52 in the third chapter entitled <em>The Reinforcement Learning Problem</em>.</p>
+<section class="article pad-top">
 
-<p>I perpetuated the tradition for my Master&#8217;s thesis and used it in the background section.
+
+
+
+      <article class="wrap post">
+        <header class="post-header">
+          <hgroup>
+            <h1>The Ubiquitous RL Agent Interaction Diagram in Tikz</h1>
+            <p class="date">Sep 09, 2013</p>
+            <p class="intro"></p>
+          </hgroup>
+        </header>
+
+        <p>It is present in almost all of the presentation about Reinforcement Learning.
+I’m talking here about the Agent-Environment interaction diagram originally found in Sutton and Barto’s <a href="http://www.amazon.ca/Reinforcement-Learning-Introduction-Richard-Sutton/dp/0262193981/">Reinforcement Learning: an Introduction</a> on page 52 in the third chapter entitled <em>The Reinforcement Learning Problem</em>.</p>
+
+<p>I perpetuated the tradition for my Master’s thesis and used it in the background section.
 I adapted the figure for Latex using Tikz and made the code snippet available as a Gist on Github.
 <script src="https://gist.github.com/pierrelux/6501790.js"></script></p>
 
-<p>It&#8217;s only while writing these lines that I realized that the original post-script files could be obtained from <a href="http://webdocs.cs.ualberta.ca/~sutton/book/figures/figures.html">Sutton&#8217;s website</a>.</p>
+<p>It’s only while writing these lines that I realized that the original post-script files could be obtained from <a href="http://webdocs.cs.ualberta.ca/~sutton/book/figures/figures.html">Sutton’s website</a>.</p>
 
 <p>There is always room for improvement and you might find better ways of illustrate the RL approach: feel free to hack !</p>
 
 <p>Online version of <em>Reinforcement Learning: an introduction</em>: <a href="http://webdocs.cs.ualberta.ca/~sutton/book/3/node2.html#SECTION00110000000000000000">chapter 3</a></p>
 
-    <hr>
 
-    <div class="pagination">
-      <ul>
+      <a class="share" href="https://twitter.com/intent/tweet?text=&quot;The Ubiquitous RL Agent Interaction Diagram in Tikz&quot;%20/2013/09/09/Tikz-RL-Agent-Interaction-Diag%20via%20&#64;pierrelux" data-dnt="true">Share</a>
+      <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+
       
-        <li class="prev"><a href="/2013/08/18/pinball-domain-reinforcement-learning" title="Konidaris' Pinball Domain now Available in Python">&larr; Previous</a></li>
-      
-        <li><a href="/archive.html">Archive</a></li>
-      
-        <li class="next"><a href="/2013/09/20/2013-mixture-of-options" title="A Fresh Perspective on HRL with Mixture of Options">Next &rarr;</a></li>
-      
-      </ul>
+
+      </article>
+    </section>
+</div>
+
+<div class="push"></div>
+  <footer>
+    <aside class="wrap">
+      <ol class="prev-posts">
+        <p class="list-title">Recent Posts</p>
+         <!-- for1 -->
+            <li>
+              <span class="recent-title"><a href="/2014/01/01/ai-ml-quebec" title="Upcoming Conferences on AI and Machine Learning">Upcoming Conferences on AI ... </a></span>
+              <span class="date">Jan 01, 2014</span>
+            </li>
+         <!-- for1 -->
+            <li>
+              <span class="recent-title"><a href="/2013/12/26/machine-learning-pycon" title="Machine Learning and Data Crunching at Pycon">Machine Learning and Data C... </a></span>
+              <span class="date">Dec 26, 2013</span>
+            </li>
+         <!-- for1 -->
+            <li>
+              <span class="recent-title"><a href="/2013/09/28/birds-motor-skills" title="Temporal and Spatial Components of Motor Skills Learning in Birdsong">Temporal and Spatial Compon... </a></span>
+              <span class="date">Sep 28, 2013</span>
+            </li>
+        
+      </ol>
+
+      <div class="social">
+        <ul>
+            <li><a id="mail" href="mailto:pierrelucbacon@gmail.com"><span class="foot-link">Contact Me</span></a></li>
+
+            
+            <li><a id="twit" href="http://twitter.com/pierrelux" target="_blank"><span class="foot-link">@pierrelux</span></a></li>
+            
+
+
+            
+        </ul>
     </div>
-    <hr>
-    
-  </div>
- </div>
+    </aside>
+    <small>&copy; 2014 Pierre-Luc Bacon. Powered by <a href="http://jekyllrb.com">Jekyll</a> using the <a href="http://jekyll.gtat.me/about">Balzac</a> theme.</small>
+  </footer>
+
+  <!-- If they're out, get some from the cellar -->
+  <script>window.jQuery || document.write('<script src="/assets/js/vendor/jquery-1.9.1.min.js"><\/script>')</script>
+  <script src="/assets/js/retina.min.js"></script>
+
+  <!-- Custom JS -->
+  <script src="/assets/js/scripts.js"></script>
 
 
-
-      </div>
-    </div> <!-- /container -->
-
-    
   </body>
 </html>
 
