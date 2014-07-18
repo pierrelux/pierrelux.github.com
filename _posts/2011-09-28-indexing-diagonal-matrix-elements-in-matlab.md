@@ -1,10 +1,9 @@
 ---
-layout: post
+layout: post-no-feature
 category : tip 
 tags : [matlab, matrix]
 tagline :
 ---
-{% include JB/setup %}
 
 I have came across this problem very often, but always ended up solving it in a different way each time. Here is what looks to me to be the most concise way of doing it.
 

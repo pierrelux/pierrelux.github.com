@@ -1,10 +1,9 @@
 ---
-layout: post
+layout: post-no-feature
 category : thesis
 tags : [reinforcement learning, options, motor skills]
 title : Temporal and Spatial Components of Motor Skills Learning in Birdsong
 ---
-{% include JB/setup %}
 
 They say that *if all you have is a hammer, everything looks like a nail*.
 I have to admit: my *hammer* for Hierachical Reinforcement Learning is the options framework of {% cite Sutton1999 --style apa-intext %}.

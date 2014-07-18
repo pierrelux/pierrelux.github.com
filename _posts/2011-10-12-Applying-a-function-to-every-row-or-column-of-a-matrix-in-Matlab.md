@@ -1,10 +1,9 @@
 ---
-layout: post
+layout: post-no-feature
 category : tip 
 tags : [matlab, matrix]
 tagline :
 ---
-{% include JB/setup %}
 Sure we have arrayfun, but it applies a function every element of a matrix. What if we want to compute the sum over each row or column for example ?
 
 The trick that I'm presenting here lies in the use of the `num2cell` function.

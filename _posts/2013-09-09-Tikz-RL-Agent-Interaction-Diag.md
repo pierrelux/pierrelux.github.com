@@ -1,10 +1,9 @@
 ---
-layout: post
+layout: post-no-feature
 category : thesis
 tags : [reinforcement learning, latex]
 title : The Ubiquitous RL Agent Interaction Diagram in Tikz
 ---
-{% include JB/setup %}
 It is present in almost all of the presentation about Reinforcement Learning.
 I'm talking here about the Agent-Environment interaction diagram originally found in Sutton and Barto's [Reinforcement Learning: an Introduction](http://www.amazon.ca/Reinforcement-Learning-Introduction-Richard-Sutton/dp/0262193981/) on page 52 in the third chapter entitled *The Reinforcement Learning Problem*.
 

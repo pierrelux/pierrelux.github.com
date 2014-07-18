@@ -1,10 +1,9 @@
 ---
-layout: post
+layout: post-no-feature
 category : tip 
 tags : [virtualbox, netcat]
 tagline :
 ---
-{% include JB/setup %}
 
 ## On the target machine
 

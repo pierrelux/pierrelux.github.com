@@ -1,10 +1,9 @@
 ---
-layout: post
+layout: post-no-feature
 category : thesis
 tags : [reinforcement learning, options, motor skills]
 title : A Fresh Perspective on HRL with Mixture of Options
 ---
-{% include JB/setup %}
 
 Recent work by {% cite Daniel2012 --style apa-intext %} as well as
 similar independent research by {% cite Thomas2012 --style apa-intext %} has started to make me think that

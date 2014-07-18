@@ -1,10 +1,9 @@
 ---
-layout: post
+layout: post-no-feature
 category :
 tags : [artificial intelligence, machine learning]
 title : Upcoming Conferences on AI and Machine Learning
 ---
-{% include JB/setup %}
 
 Quebec city will be the host of an astonishing number of key conferences in AI and ML this year.
 I have compiled them here in a short list, ordered by date.

@@ -1,10 +1,9 @@
 ---
-layout: post
+layout: post-no-feature
 category :
 tags : [machine learning, python]
 title : Machine Learning and Data Crunching at Pycon
 ---
-{% include JB/setup %}
 
 Pycon is taking place in Montreal next year from April 9 to 17. Here are a few talks related to machine learning and data mining:
 

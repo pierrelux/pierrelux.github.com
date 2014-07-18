@@ -1,10 +1,9 @@
 ---
-layout: post
+layout: post-no-feature
 category : tip
 tags : [c, epoll, select, timerfd]
 tagline : or "how awesome timerfd and epoll really are"
 ---
-{% include JB/setup %}
 In some recent TCP experiment that I carried in the user space, I faced the problem of generating relatively precise timer events in an asynchronous way. Furthermore, multiple timers had to be maintained simultaneously.
 
 The `timerfd` mechanism in Linux (`man timerfd_create(2)`) allows one to create different types of timers that communicate expiry events through a file descriptor. The standard `read()`, `select()`, `poll()` functions can then be used to detect and process the expiration notifications. As for the clock granularity, with `CLOCK_REALTIME` and with High Resolution Timer (HRT) support, I get very respectable 1.000000e-09 seconds on my system. To see this, you can compile (using the `-lrt` flag) and run the following :
