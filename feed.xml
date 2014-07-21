@@ -5,13 +5,99 @@
 <generator uri="https://github.com/mojombo/jekyll">Jekyll</generator>
 <link rel="self" type="application/atom+xml" href="/feed.xml" />
 <link rel="alternate" type="text/html" href="" />
-<updated>2014-07-18T17:15:17-04:00</updated>
+<updated>2014-07-21T17:14:47-04:00</updated>
 <id>/</id>
 <author>
   <name>Pierre-Luc Bacon</name>
   <uri>/</uri>
   <email>pierrelucbacon@gmail.com</email>
 </author>
+
+
+<entry>
+  <title type="html"><![CDATA[Do skillful behaviors only exist in the eye of the observer ?]]></title>
+  <link rel="alternate" type="text/html" href="/2014/07/18/phenomenology-skills" />
+  <id>/2014/07/18/phenomenology-skills</id>
+  <published>2014-07-18T00:00:00-04:00</published>
+  <updated>2014-07-18T00:00:00-04:00</updated>
+  <author>
+    <name>Pierre-Luc Bacon</name>
+    <uri></uri>
+    <email>pierrelucbacon@gmail.com</email>
+  </author>
+  <content type="html">&lt;p&gt;I am sometimes calling into question the idea of &lt;strong&gt;skill acquisition&lt;/strong&gt; in its
+dominant representationalist view. In AI the idea of skills has been
+instantiated under many forms: from the macro-actions in STRIPS-like
+frameworks, to the &lt;strong&gt;behaviors&lt;/strong&gt; of the subsumption achitecture, or any of the
+various formalisms of hierachical reinforcement learning proposed during the
+90s.&lt;/p&gt;
+
+&lt;p&gt;For example, in the options framework a skill is a triple of the
+form &lt;script type=&quot;math/tex&quot;&gt;\langle \mathcal{I}, \pi, \mathcal{B} \rangle&lt;/script&gt;: an initiation set
+(precondition), policy and termination function (postcondition). From a
+practical point of view, this is a convenient way of explaining what it means
+to reason over temporally extended actions.&lt;/p&gt;
+
+&lt;p&gt;But does it even makes sense to treat skills as representable atomic objects of
+the agent-environement interaction ? Should the rational behavior of an agent
+be decomposable into elementary skills to truly qualify as a skillfull behavior
+?&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;#Calvin2000&quot;&gt;Calvin (2000)&lt;/a&gt; asks (p.112):&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;So where in all this does my memory of a lighthouse reside ?
+Or my plan to go there ? Or my one-foot-in-front-of-the-other subprogram ?&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Hinting at an answer, he quotes the mathematician Stanislaw Ulam:&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;[What] you are describing is not an object but a function, a role that is
+inextricably tied to some context. Take away the context and the meaning also
+disappears…&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Ulam goes on arguing that what we perceive is a function but not an object
+per se. &lt;a href=&quot;#Araujo2011&quot;&gt;Araujo &amp;#38; Davids (2011)&lt;/a&gt; adopt a similar view.
+They claim that cognitive and experimental psychology are going through the same
+phases as that of other sciences which evolved from the study of the substance
+to that of the inherent process. In physics for example, the substance of caloric
+heat has eventually been replaced by the process of random kinectic motion.
+They argue that such a position necessarily leads to an explanatory regress,
+presupposing the existence of a behavior by some pre-existing structures.&lt;/p&gt;
+
+&lt;p&gt;The fundamental problem remains to explain why such apparent structures might
+appear: “a quest for understanding of causation” &lt;a href=&quot;#Calvin2000&quot;&gt;(Calvin, 2000)&lt;/a&gt; (p. 124).&lt;/p&gt;
+
+&lt;p&gt;The class of symbolic models of cognition such as ACT-R &lt;a href=&quot;#Newell1990&quot;&gt;Newell (1990)&lt;/a&gt;
+is well summarized in &lt;a href=&quot;#Araujo2011&quot;&gt;Araujo &amp;#38; Davids (2011)&lt;/a&gt;:&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;The dominant tendency in deterministic system theorizing is to equate
+knowledge with the acquisition and storage of discrete mental concepts and to
+study the form of these entities along with the inferential processes
+(required for symbol manipulation) that operate upon them.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;The tendency towards explaining behavior in terms of personal features rather
+than the agent-environment relation is typical of the
+representationalist models: a problem of “organismic asymmetry”.&lt;/p&gt;
+
+&lt;p&gt;The ecological view of skill acquisition attributes the emergence of behavior
+both in terms of personal and environmental constraints. For &lt;a href=&quot;#Araujo2011&quot;&gt;Araujo &amp;#38; Davids (2011)&lt;/a&gt;, the process of skill acquisition should rather be
+described as “skill attenuement” achived by attending to the key properties (affordances) of the
+“performance environment” according to the the agent’s body and action set.&lt;/p&gt;
+
+&lt;h2 id=&quot;references&quot;&gt;References&lt;/h2&gt;
+
+&lt;ol class=&quot;bibliography&quot;&gt;&lt;li&gt;&lt;span id=&quot;Calvin2000&quot;&gt;Calvin, W. H. (2000). &lt;i&gt;The Cerebral Symphony: Seashore Reflections on the Structure of Consciousness&lt;/i&gt;. IUniverse.com.Incorporated. Retrieved from http://books.google.ca/books?id=iZoHAAAACAAJ&lt;/span&gt;&lt;/li&gt;
+&lt;li&gt;&lt;span id=&quot;Araujo2011&quot;&gt;Araujo, D., &amp;#38; Davids, K. (2011). What exactly is acquired during skill acquisition?. &lt;i&gt;Journal of Consciousness Studies&lt;/i&gt;, &lt;i&gt;18&lt;/i&gt;(3-4), 7–23. Retrieved from http://shura.shu.ac.uk/7300/&lt;/span&gt;&lt;/li&gt;
+&lt;li&gt;&lt;span id=&quot;Newell1990&quot;&gt;Newell, A. (1990). &lt;i&gt;Unified Theories of Cognition&lt;/i&gt;. Cambridge, MA, USA: Harvard University Press.&lt;/span&gt;&lt;/li&gt;&lt;/ol&gt;
+
+
+  &lt;p&gt;&lt;a href=&quot;/2014/07/18/phenomenology-skills&quot;&gt;Do skillful behaviors only exist in the eye of the observer ?&lt;/a&gt; was originally published by Pierre-Luc Bacon at &lt;a href=&quot;&quot;&gt;Commonplaces&lt;/a&gt; on July 18, 2014.&lt;/p&gt;</content>
+</entry>
 
 
 <entry>
