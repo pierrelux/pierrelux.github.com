@@ -1,8 +1,10 @@
 ---
-layout: post-no-feature
+layout: post
 category : math
 tags : [phenomenology, skill acquisition, ]
 title : Do skillful behaviors only exist in the eye of the observer ?
+image:
+    feature: russiandolls.jpg
 ---
 
 I am sometimes calling into question the idea of __skill acquisition__ in its
