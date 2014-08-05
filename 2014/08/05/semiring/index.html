@@ -1,15 +1,15 @@
 
 
 <meta charset="utf-8">
-<title>Konidaris' Pinball Domain now Available in Python &#8211; Commonplaces</title>
+<title>Semiring &#8211; Commonplaces</title>
 <meta name="description" content="">
-<meta name="keywords" content="fft, time series, autocorrelation">
+<meta name="keywords" content="mathematics">
 
 
 <meta property="og:locale" content="en_US">
-<meta property="og:title" content="Konidaris' Pinball Domain now Available in Python &#8211; Commonplaces">
-<meta property="og:description" content="As part of my Master's thesis, I implemented [George Konidaris'](http://www-all.cs.umass.edu/~gdk/pinball/) Pinball d...">
-<meta property="og:url" content="http://pierrelucbacon.com/2013/08/18/pinball-domain-reinforcement-learning">
+<meta property="og:title" content="Semiring &#8211; Commonplaces">
+<meta property="og:description" content="A semiring is a structure $$( K, \oplus, \odot, \mathbf{0}, \mathbf{1})$$ which satisfiesthe following conditions1. $...">
+<meta property="og:url" content="http://pierrelucbacon.com/2014/08/05/semiring">
 <meta property="og:site_name" content="Commonplaces">
 
 
@@ -82,23 +82,38 @@
       <article class="wrap post">
         <header class="post-header">
           <hgroup>
-            <h1>Konidaris' Pinball Domain now Available in Python</h1>
-            <p class="date">Aug 18, 2013</p>
+            <h1>Semiring</h1>
+            <p class="date">Aug 05, 2014</p>
             <p class="intro"></p>
           </hgroup>
         </header>
 
-        <p>As part of my Master’s thesis, I implemented <a href="http://www-all.cs.umass.edu/~gdk/pinball/">George Konidaris’</a> Pinball domain for reinforcement Learning.
-Konidaris had already made available his original implementation in Java. The environment could also be reached through an <a href="http://glue.rl-community.org/wiki/RL-Glue_Core">RL-Glue</a> socket interface.</p>
+        <p>A semiring is a structure <script type="math/tex">( K, \oplus, \odot, \mathbf{0}, \mathbf{1})</script> which satisfies
+the following conditions</p>
 
-<p>Porting it to Python however made the transition to Will Dabney’s <a href="https://github.com/amarack/python-rl">Python-Rl</a> much easier while avoiding the performance bottleneck due socket communication.</p>
+<ol>
+  <li><script type="math/tex">(K, \oplus, \mathbf{0})</script> is a commutative monoid in which <script type="math/tex">\oplus</script> is an
+associative and commutative binary operation for which <script type="math/tex">0</script> acts as the
+neutral element.</li>
+  <li><script type="math/tex">(K, \odot, \mathbf{1})</script> is a monoid. That is, <script type="math/tex">\odot</script> is an associative binary
+operation for which <script type="math/tex">1</script> is the neutral element.</li>
+  <li><script type="math/tex">\odot</script> is distributive both on the left and on the right over <script type="math/tex">\oplus</script>. This means that
+<script type="math/tex">x \odot (y \oplus z) = x \odot y \oplus x \odot z</script> and <script type="math/tex">(y \oplus z)\odot x = y \odot x \oplus z \odot x</script></li>
+  <li><script type="math/tex">\mathbf{0}</script> is absorbing for <script type="math/tex">\odot</script>. An absorbing element is such that <script type="math/tex">\mathbf{0} \odot x = x \odot \mathbf{0} = \mathbf{0}</script></li>
+</ol>
 
-<p>And I love working with Python</p>
+<p>Some common examples of semirings:</p>
 
-<p>On Github: <a href="https://github.com/pierrelux/pypinball">pypinball</a></p>
+<ul>
+  <li><script type="math/tex">(\mathbb{N}, +, \dot, 0, 1)</script> : the set of natural numbers with the usual addition and mulplication</li>
+  <li><script type="math/tex">(\mathbb{R}, +, \dot, 0, 1)</script> : the set of real numbers with the usual addition and multiplication</li>
+  <li><script type="math/tex">(\{0, 1\}, \land, \lor, 0, 1)</script> : the boolean semiring with <script type="math/tex">\lor</script> acting as addition and <script type="math/tex">\land</script> as multiplicaiton</li>
+</ul>
+
+<p>Semirings are particularly important when it comes to the study of Weighted Finite state Automata (WFA).</p>
 
 
-      <a class="share" href="https://twitter.com/intent/tweet?text=&quot;Konidaris' Pinball Domain now Available in Python&quot;%20http://pierrelucbacon.com/2013/08/18/pinball-domain-reinforcement-learning%20via%20&#64;pierrelux" data-dnt="true">Share</a>
+      <a class="share" href="https://twitter.com/intent/tweet?text=&quot;Semiring&quot;%20http://pierrelucbacon.com/2014/08/05/semiring%20via%20&#64;pierrelux" data-dnt="true">Share</a>
       <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
 
       

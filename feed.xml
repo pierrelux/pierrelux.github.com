@@ -5,13 +5,52 @@
 <generator uri="https://github.com/mojombo/jekyll">Jekyll</generator>
 <link rel="self" type="application/atom+xml" href="http://pierrelucbacon.com/feed.xml" />
 <link rel="alternate" type="text/html" href="http://pierrelucbacon.com" />
-<updated>2014-07-21T23:38:40-04:00</updated>
+<updated>2014-08-05T18:47:38-04:00</updated>
 <id>http://pierrelucbacon.com/</id>
 <author>
   <name>Pierre-Luc Bacon</name>
   <uri>http://pierrelucbacon.com/</uri>
   <email>pierrelucbacon@gmail.com</email>
 </author>
+
+
+<entry>
+  <title type="html"><![CDATA[Semiring]]></title>
+  <link rel="alternate" type="text/html" href="http://pierrelucbacon.com/2014/08/05/semiring" />
+  <id>http://pierrelucbacon.com/2014/08/05/semiring</id>
+  <published>2014-08-05T00:00:00-04:00</published>
+  <updated>2014-08-05T00:00:00-04:00</updated>
+  <author>
+    <name>Pierre-Luc Bacon</name>
+    <uri>http://pierrelucbacon.com</uri>
+    <email>pierrelucbacon@gmail.com</email>
+  </author>
+  <content type="html">&lt;p&gt;A semiring is a structure &lt;script type=&quot;math/tex&quot;&gt;( K, \oplus, \odot, \mathbf{0}, \mathbf{1})&lt;/script&gt; which satisfies
+the following conditions&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;&lt;script type=&quot;math/tex&quot;&gt;(K, \oplus, \mathbf{0})&lt;/script&gt; is a commutative monoid in which &lt;script type=&quot;math/tex&quot;&gt;\oplus&lt;/script&gt; is an
+associative and commutative binary operation for which &lt;script type=&quot;math/tex&quot;&gt;0&lt;/script&gt; acts as the
+neutral element.&lt;/li&gt;
+  &lt;li&gt;&lt;script type=&quot;math/tex&quot;&gt;(K, \odot, \mathbf{1})&lt;/script&gt; is a monoid. That is, &lt;script type=&quot;math/tex&quot;&gt;\odot&lt;/script&gt; is an associative binary
+operation for which &lt;script type=&quot;math/tex&quot;&gt;1&lt;/script&gt; is the neutral element.&lt;/li&gt;
+  &lt;li&gt;&lt;script type=&quot;math/tex&quot;&gt;\odot&lt;/script&gt; is distributive both on the left and on the right over &lt;script type=&quot;math/tex&quot;&gt;\oplus&lt;/script&gt;. This means that
+&lt;script type=&quot;math/tex&quot;&gt;x \odot (y \oplus z) = x \odot y \oplus x \odot z&lt;/script&gt; and &lt;script type=&quot;math/tex&quot;&gt;(y \oplus z)\odot x = y \odot x \oplus z \odot x&lt;/script&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;script type=&quot;math/tex&quot;&gt;\mathbf{0}&lt;/script&gt; is absorbing for &lt;script type=&quot;math/tex&quot;&gt;\odot&lt;/script&gt;. An absorbing element is such that &lt;script type=&quot;math/tex&quot;&gt;\mathbf{0} \odot x = x \odot \mathbf{0} = \mathbf{0}&lt;/script&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Some common examples of semirings:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;script type=&quot;math/tex&quot;&gt;(\mathbb{N}, +, \dot, 0, 1)&lt;/script&gt; : the set of natural numbers with the usual addition and mulplication&lt;/li&gt;
+  &lt;li&gt;&lt;script type=&quot;math/tex&quot;&gt;(\mathbb{R}, +, \dot, 0, 1)&lt;/script&gt; : the set of real numbers with the usual addition and multiplication&lt;/li&gt;
+  &lt;li&gt;&lt;script type=&quot;math/tex&quot;&gt;(\{0, 1\}, \land, \lor, 0, 1)&lt;/script&gt; : the boolean semiring with &lt;script type=&quot;math/tex&quot;&gt;\lor&lt;/script&gt; acting as addition and &lt;script type=&quot;math/tex&quot;&gt;\land&lt;/script&gt; as multiplicaiton&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Semirings are particularly important when it comes to the study of Weighted Finite state Automata (WFA).&lt;/p&gt;
+
+  &lt;p&gt;&lt;a href=&quot;http://pierrelucbacon.com/2014/08/05/semiring&quot;&gt;Semiring&lt;/a&gt; was originally published by Pierre-Luc Bacon at &lt;a href=&quot;http://pierrelucbacon.com&quot;&gt;Commonplaces&lt;/a&gt; on August 05, 2014.&lt;/p&gt;</content>
+</entry>
 
 
 <entry>
@@ -95,6 +134,7 @@ described as “skill attenuement” achived by attending to the key properties 
 &lt;li&gt;&lt;span id=&quot;Araujo2011&quot;&gt;Araujo, D., &amp;#38; Davids, K. (2011). What exactly is acquired during skill acquisition?. &lt;i&gt;Journal of Consciousness Studies&lt;/i&gt;, &lt;i&gt;18&lt;/i&gt;(3-4), 7–23. Retrieved from http://shura.shu.ac.uk/7300/&lt;/span&gt;&lt;/li&gt;
 &lt;li&gt;&lt;span id=&quot;Newell1990&quot;&gt;Newell, A. (1990). &lt;i&gt;Unified Theories of Cognition&lt;/i&gt;. Cambridge, MA, USA: Harvard University Press.&lt;/span&gt;&lt;/li&gt;&lt;/ol&gt;
 
+&lt;p&gt;Image by &lt;a href=&quot;https://www.flickr.com/photos/beppezizzi/145493363/in/photolist-dRG7g-62v7Qp-iQQ85g-4tcym2-5wL2Ts-5GfT4b-aPL1UF-dBe4V8-9dgYrE-h4zZmp-7AtF2Y-9AmaKk-4zSecz-hiCq5q-4oYKpa-iQRZyQ-bJmVJ6-9Ap7pw-7iVJtu-aAmW8R-4wQHdE-b3LikM-9Eza6g-bE61tY-bmcWHo-dqhJGB-eQFyfS-fez16M-9qW39L-8WoAi-dTYqu8-dqhR9m-eCYMKW-dpxSN5-dwT8cg-bzAvD1-9EA4p6-fj7faA-9ddS5Z-dpwniP-bxvioZ-bW3GPw-dTYTuZ-bzrTWf-4ZxNsC-dqhJtv-byWuiP-7oCEhg-9Ap7nE-5f43CNu&quot;&gt;&lt;em&gt;Zeta&lt;/em&gt;&lt;/a&gt; under CC license.&lt;/p&gt;
 
   &lt;p&gt;&lt;a href=&quot;http://pierrelucbacon.com/2014/07/18/phenomenology-skills&quot;&gt;Do skillful behaviors only exist in the eye of the observer ?&lt;/a&gt; was originally published by Pierre-Luc Bacon at &lt;a href=&quot;http://pierrelucbacon.com&quot;&gt;Commonplaces&lt;/a&gt; on July 18, 2014.&lt;/p&gt;</content>
 </entry>
