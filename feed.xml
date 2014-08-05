@@ -5,7 +5,7 @@
 <generator uri="https://github.com/mojombo/jekyll">Jekyll</generator>
 <link rel="self" type="application/atom+xml" href="http://pierrelucbacon.com/feed.xml" />
 <link rel="alternate" type="text/html" href="http://pierrelucbacon.com" />
-<updated>2014-08-05T18:47:38-04:00</updated>
+<updated>2014-08-05T18:53:57-04:00</updated>
 <id>http://pierrelucbacon.com/</id>
 <author>
   <name>Pierre-Luc Bacon</name>
@@ -42,9 +42,9 @@ operation for which &lt;script type=&quot;math/tex&quot;&gt;1&lt;/script&gt; is 
 &lt;p&gt;Some common examples of semirings:&lt;/p&gt;
 
 &lt;ul&gt;
-  &lt;li&gt;&lt;script type=&quot;math/tex&quot;&gt;(\mathbb{N}, +, \dot, 0, 1)&lt;/script&gt; : the set of natural numbers with the usual addition and mulplication&lt;/li&gt;
-  &lt;li&gt;&lt;script type=&quot;math/tex&quot;&gt;(\mathbb{R}, +, \dot, 0, 1)&lt;/script&gt; : the set of real numbers with the usual addition and multiplication&lt;/li&gt;
-  &lt;li&gt;&lt;script type=&quot;math/tex&quot;&gt;(\{0, 1\}, \land, \lor, 0, 1)&lt;/script&gt; : the boolean semiring with &lt;script type=&quot;math/tex&quot;&gt;\lor&lt;/script&gt; acting as addition and &lt;script type=&quot;math/tex&quot;&gt;\land&lt;/script&gt; as multiplicaiton&lt;/li&gt;
+  &lt;li&gt;&lt;script type=&quot;math/tex&quot;&gt;(\mathbb{N}, +, \cdot, 0, 1)&lt;/script&gt; : the set of natural numbers with the usual addition and mulplication&lt;/li&gt;
+  &lt;li&gt;&lt;script type=&quot;math/tex&quot;&gt;(\mathbb{R}, +, \cdot, 0, 1)&lt;/script&gt; : the set of real numbers with the usual addition and multiplication&lt;/li&gt;
+  &lt;li&gt;&lt;script type=&quot;math/tex&quot;&gt;(\{0, 1\}, \lor, \land, 0, 1)&lt;/script&gt; : the boolean semiring with &lt;script type=&quot;math/tex&quot;&gt;\lor&lt;/script&gt; acting as addition and &lt;script type=&quot;math/tex&quot;&gt;\land&lt;/script&gt; as multiplicaiton&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;p&gt;Semirings are particularly important when it comes to the study of Weighted Finite state Automata (WFA).&lt;/p&gt;
