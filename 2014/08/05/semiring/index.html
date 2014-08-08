@@ -1,13 +1,13 @@
 
 
 <meta charset="utf-8">
-<title>Semiring &#8211; Commonplaces</title>
+<title>Semirings and weighted automata &#8211; Commonplaces</title>
 <meta name="description" content="">
 <meta name="keywords" content="mathematics">
 
 
 <meta property="og:locale" content="en_US">
-<meta property="og:title" content="Semiring &#8211; Commonplaces">
+<meta property="og:title" content="Semirings and weighted automata &#8211; Commonplaces">
 <meta property="og:description" content="A semiring is a structure $$( K, \oplus, \odot, \mathbf{0}, \mathbf{1})$$ which satisfiesthe following conditions1. $...">
 <meta property="og:url" content="http://pierrelucbacon.com/2014/08/05/semiring">
 <meta property="og:site_name" content="Commonplaces">
@@ -82,7 +82,7 @@
       <article class="wrap post">
         <header class="post-header">
           <hgroup>
-            <h1>Semiring</h1>
+            <h1>Semirings and weighted automata</h1>
             <p class="date">Aug 05, 2014</p>
             <p class="intro"></p>
           </hgroup>
@@ -110,10 +110,148 @@ operation for which <script type="math/tex">1</script> is the neutral element.</
   <li><script type="math/tex">(\{0, 1\}, \lor, \land, 0, 1)</script> : the boolean semiring with <script type="math/tex">\lor</script> acting as addition and <script type="math/tex">\land</script> as multiplicaiton</li>
 </ul>
 
-<p>Semirings are particularly important when it comes to the study of Weighted Finite state Automata (WFA).</p>
+<h1 id="weighted-automata">Weighted automata</h1>
+
+<p>Semirings are particularly important when it comes to the study of Weighted
+Finite state Automata (WFA). A WFA <script type="math/tex">\mathcal{A} = (Q, I, E, T)</script> is defined by
+a set of states <script type="math/tex">Q</script>, and three maps into <script type="math/tex">K</script>:</p>
+
+<script type="math/tex; mode=display">
+\begin{align*}
+I: Q \to K \\
+E: Q \times \sigma \times Q \to K\\
+T: Q \to K
+\end{align*}
+</script>
+
+<p>The maps <script type="math/tex">I</script> and <script type="math/tex">T</script> are non-zero only for the initial and terminal states
+respectively.</p>
+
+<p>We call <script type="math/tex">E(p,a,q)</script> the weight associated to an edge from state <script type="math/tex">p</script> to <script type="math/tex">q</script>
+with label <script type="math/tex">a \in \sigma</script>. A path in a WFA a sequence</p>
+
+<p>\begin{equation}
+c = (q_0, a_1, q_1)(q_1, a_2, q_2)…(q_{n-1}, a_n, q_n)
+\end{equation}</p>
+
+<p>The weight of path <script type="math/tex">c</script> is computed with respect to <script type="math/tex">\odot</script> as the product
+of all the weights encounted along a path.</p>
+
+<p>\begin{equation}
+E(c) = E(q_0, a_1, q_1)E(q_1, a_2, q_2)…E(q_{n-1}, a_n, q_n)
+\end{equation}</p>
+
+<p>The label of path is the word obtained by the concatenation of the label
+associated with each edge.</p>
+
+<h1 id="recognizable-functions">Recognizable functions</h1>
+
+<p>A formal series is a function <script type="math/tex">\Sigma^* \to K</script> with the image, also called the <em>coefficient</em>, of a string
+<script type="math/tex">w</script> denoted by <script type="math/tex">(S, w)</script>.  The WFA is then said to recognize a series <script type="math/tex">S</script>
+for</p>
+
+<script type="math/tex; mode=display">
+\begin{equation}
+(S, w) = \sum_{a_1...a_n = w} I(q_0)E(q_0,a_1,q_1)...E(q_{n-1}, a_n, q_n)T(q_n)
+\end{equation}
+</script>
+
+<p>The above sum is taken over all paths with label <script type="math/tex">w</script> and with respect to
+<script type="math/tex">\oplus</script> in the semiring. An important results (with very practical
+implications for machine learning) is that a WFA defined in this way has a
+so-called linear counterpart of the form <script type="math/tex">(\alpha_0, A, \alpha_\infty)</script> with
+<script type="math/tex">\alpha_0 \in K^{1 \times n}</script>, <script type="math/tex">A: \Sigma^* \to K^{n\times n}</script> and
+<script type="math/tex">\alpha_\infty \in K^{n\times 1}</script>.</p>
+
+<p>We define the Hankel matrix of a formal series <script type="math/tex">S</script> as</p>
+
+<script type="math/tex; mode=display">
+\begin{equation}
+H(x, y) = (S, xy)
+\end{equation}
+</script>
+
+<p>The Hankel matrix is therefore a bi-infinite matrix with rows indexed by
+prefixes and columns by suffixes. An entry in <script type="math/tex">H</script> is the coefficient of the
+concatenated string <script type="math/tex">xy</script>. Carlyle and Paz (1971) showed that the rank the
+Hankel matrix associated with a formal series <script type="math/tex">S</script> is finite if and only the
+series is <em>rational</em>. Furthermore, the rank of <script type="math/tex">H</script> represents the minimum
+dimension of the linear representation. Viewed through the lens of the WFA
+representation, the rank thus corresponds to the minimal number of states.</p>
+
+<h1 id="spectral-learning">Spectral learning</h1>
+
+<p>A new field of machine learning as recently developed under the name of
+“spectral learning”. The idea consists in applying a rank factorization to the
+the Hankel matrix in order to obtain a minimal WFA for some function.</p>
+
+<p>An important property of linear representations is their invariance under
+changes of basis. Let <script type="math/tex">B = (\alpha_0^\top M, M^{-1} \alpha_\infty,  M^{-1} A M)</script> for
+some invertible matrix <script type="math/tex">M</script>, then for any word <script type="math/tex">w</script> evaluated on <script type="math/tex">B</script>
+results in</p>
+
+<script type="math/tex; mode=display">% <![CDATA[
+
+\begin{align*}
+(B, w) &= \alpha_0^\top M M^{-1} A(a_1) M ... M^{-1} A(a_k) M M^{-1} \alpha_\infty \\
+&= \alpha_0^\top A(a_1) ... A(a_k) \alpha_\infty = (A, w)
+\end{align*}
+ %]]></script>
+
+<p>This property is instrumental in showing that a minimal representation can be
+obtained from a rank factorization <script type="math/tex">H = PS</script>. We can show that a linear
+representation of a minimal automata can be recovered as follow</p>
+
+<script type="math/tex; mode=display">
+\begin{align*}
+\alpha_0^\top = h_{\lambda,S}^\top S^+ \\
+\alpha_\infty = P^+ h_{P, \lambda} \\
+A(\sigma) = P^+ H_\sigma S^+
+\end{align*}
+</script>
+
+<p>To see this, assume that we have
+some minimal WFA <script type="math/tex">A^\prime = (\alpha_0^{\prime\top}, A^\prime, \alpha_\infty^\prime)</script> which induces a factorization <script type="math/tex">H = P^\prime S^\prime</script>. We
+know that <script type="math/tex">A^\prime</script> must be invariant under changes of basis. It would
+therefore be possible to recover <script type="math/tex">A</script> through some appropriate choice of
+invertible matrix <script type="math/tex">M</script>. Let <script type="math/tex">M = S^\prime S^+</script>, since <script type="math/tex">H = PS</script>, then
+<script type="math/tex">P^+P^\prime S^\prime S^+ = P^+ H S^+ = I</script> which demonstrates that <script type="math/tex">M</script> has
+indeed an inverse which is <script type="math/tex">M^{-1} = P^+P^\prime</script>.</p>
+
+<p>With the inverse of <script type="math/tex">M</script>, we can apply a change of basis to <script type="math/tex">A^\prime</script> and
+see that we can recover <script type="math/tex">A</script>. Indeed, we have</p>
+
+<script type="math/tex; mode=display">
+M^{-1} A(\sigma)^\prime M = P^+ P^\prime A^\prime(\sigma) S^\prime S^+ = P^+ H_\sigma S^+ = A_\sigma
+</script>
+
+<p>Also, note that</p>
+
+<script type="math/tex; mode=display">
+\begin{align}
+\alpha_0^{\prime\top}M = \alpha_0^{\prime\top} S^\prime S^+ = h_{\lambda,s}^\top S^\prime S^+ = h_{\lambda,s}^\top S^+ = \alpha_0^\top \\
+M^{-1}\alpha_\infty^\prime = P^+ P^\prime \alpha^\prime_\infty = P^+ h_{P,\lambda} = \alpha_\infty
+\end{align}
+</script>
+
+<p>Any rank factorization method would thus be sufficient to recover an equivalent
+WFA that computes a given (rational) function. This could be the QR
+factorization or the SVD for example. The compact SVD of a rank <script type="math/tex">r</script> matrix is
+<script type="math/tex">U\Lambda V^T</script> where
+<script type="math/tex">U\in \mathbb{R}^{n\times r}, \Lambda \in \mathbb{R}^{r \times r}, V \in \mathbb{R}^{s \times r}</script>. Since <script type="math/tex">U</script> and <script type="math/tex">V</script> are
+orthogonal, it means that <script type="math/tex">V^\top V = I</script> therefore <script type="math/tex">V^+ = V^\top</script>.</p>
+
+<script type="math/tex; mode=display">% <![CDATA[
+
+\begin{align*}
+\alpha_0^\top &= h_{\lambda,S}^\top V\\
+\alpha_\infty &= (H V)^+ h_{P,\lambda} \\
+A_\sigma &= (H V)^+H_\sigma V
+\end{align*}
+ %]]></script>
 
 
-      <a class="share" href="https://twitter.com/intent/tweet?text=&quot;Semiring&quot;%20http://pierrelucbacon.com/2014/08/05/semiring%20via%20&#64;pierrelux" data-dnt="true">Share</a>
+      <a class="share" href="https://twitter.com/intent/tweet?text=&quot;Semirings and weighted automata&quot;%20http://pierrelucbacon.com/2014/08/05/semiring%20via%20&#64;pierrelux" data-dnt="true">Share</a>
       <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
 
       
@@ -129,7 +267,7 @@ operation for which <script type="math/tex">1</script> is the neutral element.</
         <p class="list-title">Recent Posts</p>
          <!-- for1 -->
             <li>
-              <span class="recent-title"><a href="http://pierrelucbacon.com/2014/08/05/semiring" title="Semiring">Semiring </a></span>
+              <span class="recent-title"><a href="http://pierrelucbacon.com/2014/08/05/semiring" title="Semirings and weighted automata">Semirings and weighted auto... </a></span>
               <span class="date">Aug 05, 2014</span>
             </li>
          <!-- for1 -->
