@@ -8,7 +8,7 @@ description:      Mental housekeeping
 owner:
   name:           Pierre-Luc Bacon
   avatar:         avatar.png
-  bio:            "Aesthete & Athlete"
+  bio:            "PhD student in McGill's RLLAB"
   email:          pierrelucbacon@gmail.com
   twitter:        pierrelux
   github:         pierrelux
@@ -51,7 +51,8 @@ kramdown:
     coderay_css: class
 
 # https://github.com/mojombo/jekyll/wiki/Permalinks
-permalink:   /:categories/:title
+#permalink:   /:categories/:title
+permalink: /:year/:month/:day/:title
 
 include: [".htaccess"]
 exclude: ["lib", "config.rb", "Capfile", "config", "log", "Rakefile", "Rakefile.rb", "tmp"]
