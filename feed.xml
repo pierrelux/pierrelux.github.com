@@ -3,26 +3,26 @@
 <title type="text">Commonplaces</title>
 <subtitle type="text"></subtitle>
 <generator uri="https://github.com/mojombo/jekyll">Jekyll</generator>
-<link rel="self" type="application/atom+xml" href="http://pierrelucbacon.com/feed.xml" />
-<link rel="alternate" type="text/html" href="http://pierrelucbacon.com" />
-<updated>2014-08-08T11:29:46-04:00</updated>
-<id>http://pierrelucbacon.com/</id>
+<link rel="self" type="application/atom+xml" href="/feed.xml" />
+<link rel="alternate" type="text/html" href="" />
+<updated>2014-09-18T00:48:00-04:00</updated>
+<id>/</id>
 <author>
   <name>Pierre-Luc Bacon</name>
-  <uri>http://pierrelucbacon.com/</uri>
+  <uri>/</uri>
   <email>pierrelucbacon@gmail.com</email>
 </author>
 
 
 <entry>
   <title type="html"><![CDATA[Semirings and weighted automata]]></title>
-  <link rel="alternate" type="text/html" href="http://pierrelucbacon.com/2014/08/05/semiring" />
-  <id>http://pierrelucbacon.com/2014/08/05/semiring</id>
+  <link rel="alternate" type="text/html" href="/2014/08/05/semiring" />
+  <id>/2014/08/05/semiring</id>
   <published>2014-08-05T00:00:00-04:00</published>
   <updated>2014-08-05T00:00:00-04:00</updated>
   <author>
     <name>Pierre-Luc Bacon</name>
-    <uri>http://pierrelucbacon.com</uri>
+    <uri></uri>
     <email>pierrelucbacon@gmail.com</email>
   </author>
   <content type="html">&lt;p&gt;A semiring is a structure &lt;script type=&quot;math/tex&quot;&gt;( K, \oplus, \odot, \mathbf{0}, \mathbf{1})&lt;/script&gt; which satisfies
@@ -187,19 +187,19 @@ A_\sigma &amp;= (H V)^+H_\sigma V
 \end{align*}
  %]]&gt;&lt;/script&gt;
 
-  &lt;p&gt;&lt;a href=&quot;http://pierrelucbacon.com/2014/08/05/semiring&quot;&gt;Semirings and weighted automata&lt;/a&gt; was originally published by Pierre-Luc Bacon at &lt;a href=&quot;http://pierrelucbacon.com&quot;&gt;Commonplaces&lt;/a&gt; on August 05, 2014.&lt;/p&gt;</content>
+  &lt;p&gt;&lt;a href=&quot;/2014/08/05/semiring&quot;&gt;Semirings and weighted automata&lt;/a&gt; was originally published by Pierre-Luc Bacon at &lt;a href=&quot;&quot;&gt;Commonplaces&lt;/a&gt; on August 05, 2014.&lt;/p&gt;</content>
 </entry>
 
 
 <entry>
   <title type="html"><![CDATA[Do skillful behaviors only exist in the eye of the observer ?]]></title>
-  <link rel="alternate" type="text/html" href="http://pierrelucbacon.com/2014/07/18/phenomenology-skills" />
-  <id>http://pierrelucbacon.com/2014/07/18/phenomenology-skills</id>
+  <link rel="alternate" type="text/html" href="/2014/07/18/phenomenology-skills" />
+  <id>/2014/07/18/phenomenology-skills</id>
   <published>2014-07-18T00:00:00-04:00</published>
   <updated>2014-07-18T00:00:00-04:00</updated>
   <author>
     <name>Pierre-Luc Bacon</name>
-    <uri>http://pierrelucbacon.com</uri>
+    <uri></uri>
     <email>pierrelucbacon@gmail.com</email>
   </author>
   <content type="html">&lt;p&gt;I am sometimes calling into question the idea of &lt;strong&gt;skill acquisition&lt;/strong&gt; in its
@@ -272,21 +272,20 @@ described as “skill attenuement” achived by attending to the key properties 
 &lt;li&gt;&lt;span id=&quot;Araujo2011&quot;&gt;Araujo, D., &amp;#38; Davids, K. (2011). What exactly is acquired during skill acquisition?. &lt;i&gt;Journal of Consciousness Studies&lt;/i&gt;, &lt;i&gt;18&lt;/i&gt;(3-4), 7–23. Retrieved from http://shura.shu.ac.uk/7300/&lt;/span&gt;&lt;/li&gt;
 &lt;li&gt;&lt;span id=&quot;Newell1990&quot;&gt;Newell, A. (1990). &lt;i&gt;Unified Theories of Cognition&lt;/i&gt;. Cambridge, MA, USA: Harvard University Press.&lt;/span&gt;&lt;/li&gt;&lt;/ol&gt;
 
-&lt;p&gt;Image by &lt;a href=&quot;https://www.flickr.com/photos/beppezizzi/145493363/in/photolist-dRG7g-62v7Qp-iQQ85g-4tcym2-5wL2Ts-5GfT4b-aPL1UF-dBe4V8-9dgYrE-h4zZmp-7AtF2Y-9AmaKk-4zSecz-hiCq5q-4oYKpa-iQRZyQ-bJmVJ6-9Ap7pw-7iVJtu-aAmW8R-4wQHdE-b3LikM-9Eza6g-bE61tY-bmcWHo-dqhJGB-eQFyfS-fez16M-9qW39L-8WoAi-dTYqu8-dqhR9m-eCYMKW-dpxSN5-dwT8cg-bzAvD1-9EA4p6-fj7faA-9ddS5Z-dpwniP-bxvioZ-bW3GPw-dTYTuZ-bzrTWf-4ZxNsC-dqhJtv-byWuiP-7oCEhg-9Ap7nE-5f43CNu&quot;&gt;&lt;em&gt;Zeta&lt;/em&gt;&lt;/a&gt; under CC license.&lt;/p&gt;
 
-  &lt;p&gt;&lt;a href=&quot;http://pierrelucbacon.com/2014/07/18/phenomenology-skills&quot;&gt;Do skillful behaviors only exist in the eye of the observer ?&lt;/a&gt; was originally published by Pierre-Luc Bacon at &lt;a href=&quot;http://pierrelucbacon.com&quot;&gt;Commonplaces&lt;/a&gt; on July 18, 2014.&lt;/p&gt;</content>
+  &lt;p&gt;&lt;a href=&quot;/2014/07/18/phenomenology-skills&quot;&gt;Do skillful behaviors only exist in the eye of the observer ?&lt;/a&gt; was originally published by Pierre-Luc Bacon at &lt;a href=&quot;&quot;&gt;Commonplaces&lt;/a&gt; on July 18, 2014.&lt;/p&gt;</content>
 </entry>
 
 
 <entry>
   <title type="html"><![CDATA[Upcoming Conferences on AI and Machine Learning]]></title>
-  <link rel="alternate" type="text/html" href="http://pierrelucbacon.com/2014/01/01/ai-ml-quebec" />
-  <id>http://pierrelucbacon.com/2014/01/01/ai-ml-quebec</id>
+  <link rel="alternate" type="text/html" href="/2014/01/01/ai-ml-quebec" />
+  <id>/2014/01/01/ai-ml-quebec</id>
   <published>2014-01-01T00:00:00-05:00</published>
   <updated>2014-01-01T00:00:00-05:00</updated>
   <author>
     <name>Pierre-Luc Bacon</name>
-    <uri>http://pierrelucbacon.com</uri>
+    <uri></uri>
     <email>pierrelucbacon@gmail.com</email>
   </author>
   <content type="html">&lt;p&gt;Quebec city will be the host of an astonishing number of key conferences in AI and ML this year.
@@ -471,19 +470,19 @@ I have compiled them here in a short list, ordered by date.&lt;/p&gt;
 &lt;/table&gt;
 
 
-  &lt;p&gt;&lt;a href=&quot;http://pierrelucbacon.com/2014/01/01/ai-ml-quebec&quot;&gt;Upcoming Conferences on AI and Machine Learning&lt;/a&gt; was originally published by Pierre-Luc Bacon at &lt;a href=&quot;http://pierrelucbacon.com&quot;&gt;Commonplaces&lt;/a&gt; on January 01, 2014.&lt;/p&gt;</content>
+  &lt;p&gt;&lt;a href=&quot;/2014/01/01/ai-ml-quebec&quot;&gt;Upcoming Conferences on AI and Machine Learning&lt;/a&gt; was originally published by Pierre-Luc Bacon at &lt;a href=&quot;&quot;&gt;Commonplaces&lt;/a&gt; on January 01, 2014.&lt;/p&gt;</content>
 </entry>
 
 
 <entry>
   <title type="html"><![CDATA[Machine Learning and Data Crunching at Pycon]]></title>
-  <link rel="alternate" type="text/html" href="http://pierrelucbacon.com/2013/12/26/machine-learning-pycon" />
-  <id>http://pierrelucbacon.com/2013/12/26/machine-learning-pycon</id>
+  <link rel="alternate" type="text/html" href="/2013/12/26/machine-learning-pycon" />
+  <id>/2013/12/26/machine-learning-pycon</id>
   <published>2013-12-26T00:00:00-05:00</published>
   <updated>2013-12-26T00:00:00-05:00</updated>
   <author>
     <name>Pierre-Luc Bacon</name>
-    <uri>http://pierrelucbacon.com</uri>
+    <uri></uri>
     <email>pierrelucbacon@gmail.com</email>
   </author>
   <content type="html">&lt;p&gt;Pycon is taking place in Montreal next year from April 9 to 17. Here are a few talks related to machine learning and data mining:&lt;/p&gt;
@@ -516,19 +515,19 @@ I have compiled them here in a short list, ordered by date.&lt;/p&gt;
 
 &lt;p&gt;Financial aid is offered for the main conference or on a per-tutorial basis: &lt;a href=&quot;https://us.pycon.org/2014/assistance/&quot;&gt;https://us.pycon.org/2014/assistance/&lt;/a&gt;&lt;/p&gt;
 
-  &lt;p&gt;&lt;a href=&quot;http://pierrelucbacon.com/2013/12/26/machine-learning-pycon&quot;&gt;Machine Learning and Data Crunching at Pycon&lt;/a&gt; was originally published by Pierre-Luc Bacon at &lt;a href=&quot;http://pierrelucbacon.com&quot;&gt;Commonplaces&lt;/a&gt; on December 26, 2013.&lt;/p&gt;</content>
+  &lt;p&gt;&lt;a href=&quot;/2013/12/26/machine-learning-pycon&quot;&gt;Machine Learning and Data Crunching at Pycon&lt;/a&gt; was originally published by Pierre-Luc Bacon at &lt;a href=&quot;&quot;&gt;Commonplaces&lt;/a&gt; on December 26, 2013.&lt;/p&gt;</content>
 </entry>
 
 
 <entry>
   <title type="html"><![CDATA[Temporal and Spatial Components of Motor Skills Learning in Birdsong]]></title>
-  <link rel="alternate" type="text/html" href="http://pierrelucbacon.com/2013/09/28/birds-motor-skills" />
-  <id>http://pierrelucbacon.com/2013/09/28/birds-motor-skills</id>
+  <link rel="alternate" type="text/html" href="/2013/09/28/birds-motor-skills" />
+  <id>/2013/09/28/birds-motor-skills</id>
   <published>2013-09-28T00:00:00-04:00</published>
   <updated>2013-09-28T00:00:00-04:00</updated>
   <author>
     <name>Pierre-Luc Bacon</name>
-    <uri>http://pierrelucbacon.com</uri>
+    <uri></uri>
     <email>pierrelucbacon@gmail.com</email>
   </author>
   <content type="html">&lt;p&gt;They say that &lt;em&gt;if all you have is a hammer, everything looks like a nail&lt;/em&gt;.
@@ -573,19 +572,19 @@ followed another policy gradient approach in &lt;a href=&quot;#Levy2012&quot;&gt
 
 &lt;p&gt;Harvard Gazette: &lt;a href=&quot;http://news.harvard.edu/gazette/story/2013/09/deconstructing-motor-skills/&quot;&gt;Deconstructing Motor Skills&lt;/a&gt;&lt;/p&gt;
 
-  &lt;p&gt;&lt;a href=&quot;http://pierrelucbacon.com/2013/09/28/birds-motor-skills&quot;&gt;Temporal and Spatial Components of Motor Skills Learning in Birdsong&lt;/a&gt; was originally published by Pierre-Luc Bacon at &lt;a href=&quot;http://pierrelucbacon.com&quot;&gt;Commonplaces&lt;/a&gt; on September 28, 2013.&lt;/p&gt;</content>
+  &lt;p&gt;&lt;a href=&quot;/2013/09/28/birds-motor-skills&quot;&gt;Temporal and Spatial Components of Motor Skills Learning in Birdsong&lt;/a&gt; was originally published by Pierre-Luc Bacon at &lt;a href=&quot;&quot;&gt;Commonplaces&lt;/a&gt; on September 28, 2013.&lt;/p&gt;</content>
 </entry>
 
 
 <entry>
   <title type="html"><![CDATA[A Fresh Perspective on HRL with Mixture of Options]]></title>
-  <link rel="alternate" type="text/html" href="http://pierrelucbacon.com/2013/09/20/2013-mixture-of-options" />
-  <id>http://pierrelucbacon.com/2013/09/20/2013-mixture-of-options</id>
+  <link rel="alternate" type="text/html" href="/2013/09/20/2013-mixture-of-options" />
+  <id>/2013/09/20/2013-mixture-of-options</id>
   <published>2013-09-20T00:00:00-04:00</published>
   <updated>2013-09-20T00:00:00-04:00</updated>
   <author>
     <name>Pierre-Luc Bacon</name>
-    <uri>http://pierrelucbacon.com</uri>
+    <uri></uri>
     <email>pierrelucbacon@gmail.com</email>
   </author>
   <content type="html">&lt;p&gt;Recent work by &lt;a href=&quot;#Daniel2012&quot;&gt;Daniel, Neumann &amp;#38; Peters (2012)&lt;/a&gt; as well as
@@ -637,19 +636,19 @@ skills ?&lt;/p&gt;
 &lt;li&gt;&lt;span id=&quot;MussaIvaldi2000&quot;&gt;Mussa-Ivaldi, F. A., &amp;#38; Bizzi, E. (2000). Motor learning through the combination of primitives. &lt;i&gt;Philosophical transactions of the Royal Society of London. Series B, Biological sciences&lt;/i&gt;, &lt;i&gt;355&lt;/i&gt;(1404), 1755–69. doi:10.1098/rstb.2000.0733&lt;/span&gt;&lt;/li&gt;
 &lt;li&gt;&lt;span id=&quot;Thomas2011&quot;&gt;Thomas, P. S. (2011). Policy Gradient Coagent Networks. In &lt;i&gt;NIPS&lt;/i&gt; (1944-1952).&lt;/span&gt;&lt;/li&gt;&lt;/ol&gt;
 
-  &lt;p&gt;&lt;a href=&quot;http://pierrelucbacon.com/2013/09/20/2013-mixture-of-options&quot;&gt;A Fresh Perspective on HRL with Mixture of Options&lt;/a&gt; was originally published by Pierre-Luc Bacon at &lt;a href=&quot;http://pierrelucbacon.com&quot;&gt;Commonplaces&lt;/a&gt; on September 20, 2013.&lt;/p&gt;</content>
+  &lt;p&gt;&lt;a href=&quot;/2013/09/20/2013-mixture-of-options&quot;&gt;A Fresh Perspective on HRL with Mixture of Options&lt;/a&gt; was originally published by Pierre-Luc Bacon at &lt;a href=&quot;&quot;&gt;Commonplaces&lt;/a&gt; on September 20, 2013.&lt;/p&gt;</content>
 </entry>
 
 
 <entry>
   <title type="html"><![CDATA[The Ubiquitous RL Agent Interaction Diagram in Tikz]]></title>
-  <link rel="alternate" type="text/html" href="http://pierrelucbacon.com/2013/09/09/Tikz-RL-Agent-Interaction-Diag" />
-  <id>http://pierrelucbacon.com/2013/09/09/Tikz-RL-Agent-Interaction-Diag</id>
+  <link rel="alternate" type="text/html" href="/2013/09/09/Tikz-RL-Agent-Interaction-Diag" />
+  <id>/2013/09/09/Tikz-RL-Agent-Interaction-Diag</id>
   <published>2013-09-09T00:00:00-04:00</published>
   <updated>2013-09-09T00:00:00-04:00</updated>
   <author>
     <name>Pierre-Luc Bacon</name>
-    <uri>http://pierrelucbacon.com</uri>
+    <uri></uri>
     <email>pierrelucbacon@gmail.com</email>
   </author>
   <content type="html">&lt;p&gt;It is present in almost all of the presentation about Reinforcement Learning.
@@ -665,19 +664,19 @@ I adapted the figure for Latex using Tikz and made the code snippet available as
 
 &lt;p&gt;Online version of &lt;em&gt;Reinforcement Learning: an introduction&lt;/em&gt;: &lt;a href=&quot;http://webdocs.cs.ualberta.ca/~sutton/book/3/node2.html#SECTION00110000000000000000&quot;&gt;chapter 3&lt;/a&gt;&lt;/p&gt;
 
-  &lt;p&gt;&lt;a href=&quot;http://pierrelucbacon.com/2013/09/09/Tikz-RL-Agent-Interaction-Diag&quot;&gt;The Ubiquitous RL Agent Interaction Diagram in Tikz&lt;/a&gt; was originally published by Pierre-Luc Bacon at &lt;a href=&quot;http://pierrelucbacon.com&quot;&gt;Commonplaces&lt;/a&gt; on September 09, 2013.&lt;/p&gt;</content>
+  &lt;p&gt;&lt;a href=&quot;/2013/09/09/Tikz-RL-Agent-Interaction-Diag&quot;&gt;The Ubiquitous RL Agent Interaction Diagram in Tikz&lt;/a&gt; was originally published by Pierre-Luc Bacon at &lt;a href=&quot;&quot;&gt;Commonplaces&lt;/a&gt; on September 09, 2013.&lt;/p&gt;</content>
 </entry>
 
 
 <entry>
   <title type="html"><![CDATA[Konidaris' Pinball Domain now Available in Python]]></title>
-  <link rel="alternate" type="text/html" href="http://pierrelucbacon.com/2013/08/18/pinball-domain-reinforcement-learning" />
-  <id>http://pierrelucbacon.com/2013/08/18/pinball-domain-reinforcement-learning</id>
+  <link rel="alternate" type="text/html" href="/2013/08/18/pinball-domain-reinforcement-learning" />
+  <id>/2013/08/18/pinball-domain-reinforcement-learning</id>
   <published>2013-08-18T00:00:00-04:00</published>
   <updated>2013-08-18T00:00:00-04:00</updated>
   <author>
     <name>Pierre-Luc Bacon</name>
-    <uri>http://pierrelucbacon.com</uri>
+    <uri></uri>
     <email>pierrelucbacon@gmail.com</email>
   </author>
   <content type="html">&lt;p&gt;As part of my Master’s thesis, I implemented &lt;a href=&quot;http://www-all.cs.umass.edu/~gdk/pinball/&quot;&gt;George Konidaris’&lt;/a&gt; Pinball domain for reinforcement Learning.
@@ -689,19 +688,19 @@ Konidaris had already made available his original implementation in Java. The en
 
 &lt;p&gt;On Github: &lt;a href=&quot;https://github.com/pierrelux/pypinball&quot;&gt;pypinball&lt;/a&gt;&lt;/p&gt;
 
-  &lt;p&gt;&lt;a href=&quot;http://pierrelucbacon.com/2013/08/18/pinball-domain-reinforcement-learning&quot;&gt;Konidaris' Pinball Domain now Available in Python&lt;/a&gt; was originally published by Pierre-Luc Bacon at &lt;a href=&quot;http://pierrelucbacon.com&quot;&gt;Commonplaces&lt;/a&gt; on August 18, 2013.&lt;/p&gt;</content>
+  &lt;p&gt;&lt;a href=&quot;/2013/08/18/pinball-domain-reinforcement-learning&quot;&gt;Konidaris' Pinball Domain now Available in Python&lt;/a&gt; was originally published by Pierre-Luc Bacon at &lt;a href=&quot;&quot;&gt;Commonplaces&lt;/a&gt; on August 18, 2013.&lt;/p&gt;</content>
 </entry>
 
 
 <entry>
   <title type="html"><![CDATA[Bringing A Virtual Box Machine To The Physical World Over The Network]]></title>
-  <link rel="alternate" type="text/html" href="http://pierrelucbacon.com/2012/11/25/bringing-a-virtual-box-machine-to-the-physical-world-over-the-network" />
-  <id>http://pierrelucbacon.com/2012/11/25/bringing-a-virtual-box-machine-to-the-physical-world-over-the-network</id>
+  <link rel="alternate" type="text/html" href="/2012/11/25/bringing-a-virtual-box-machine-to-the-physical-world-over-the-network" />
+  <id>/2012/11/25/bringing-a-virtual-box-machine-to-the-physical-world-over-the-network</id>
   <published>2012-11-25T00:00:00-05:00</published>
   <updated>2012-11-25T00:00:00-05:00</updated>
   <author>
     <name>Pierre-Luc Bacon</name>
-    <uri>http://pierrelucbacon.com</uri>
+    <uri></uri>
     <email>pierrelucbacon@gmail.com</email>
   </author>
   <content type="html">&lt;h2 id=&quot;on-the-target-machine&quot;&gt;On the target machine&lt;/h2&gt;
@@ -724,19 +723,19 @@ $ dd if=ubuntu1204.raw | nc 192.168.3.135 9901
 
 &lt;p&gt;Here &lt;code&gt;192.168.3.135&lt;/code&gt; is the IP of the target system running the &lt;code&gt;nc&lt;/code&gt; command.&lt;/p&gt;
 
-  &lt;p&gt;&lt;a href=&quot;http://pierrelucbacon.com/2012/11/25/bringing-a-virtual-box-machine-to-the-physical-world-over-the-network&quot;&gt;Bringing A Virtual Box Machine To The Physical World Over The Network&lt;/a&gt; was originally published by Pierre-Luc Bacon at &lt;a href=&quot;http://pierrelucbacon.com&quot;&gt;Commonplaces&lt;/a&gt; on November 25, 2012.&lt;/p&gt;</content>
+  &lt;p&gt;&lt;a href=&quot;/2012/11/25/bringing-a-virtual-box-machine-to-the-physical-world-over-the-network&quot;&gt;Bringing A Virtual Box Machine To The Physical World Over The Network&lt;/a&gt; was originally published by Pierre-Luc Bacon at &lt;a href=&quot;&quot;&gt;Commonplaces&lt;/a&gt; on November 25, 2012.&lt;/p&gt;</content>
 </entry>
 
 
 <entry>
   <title type="html"><![CDATA[Asynchronous Timer Expiry Notification]]></title>
-  <link rel="alternate" type="text/html" href="http://pierrelucbacon.com/2011/11/19/asynchronous-timer-expiry-notification" />
-  <id>http://pierrelucbacon.com/2011/11/19/asynchronous-timer-expiry-notification</id>
+  <link rel="alternate" type="text/html" href="/2011/11/19/asynchronous-timer-expiry-notification" />
+  <id>/2011/11/19/asynchronous-timer-expiry-notification</id>
   <published>2011-11-19T00:00:00-05:00</published>
   <updated>2011-11-19T00:00:00-05:00</updated>
   <author>
     <name>Pierre-Luc Bacon</name>
-    <uri>http://pierrelucbacon.com</uri>
+    <uri></uri>
     <email>pierrelucbacon@gmail.com</email>
   </author>
   <content type="html">&lt;p&gt;In some recent TCP experiment that I carried in the user space, I faced the problem of generating relatively precise timer events in an asynchronous way. Furthermore, multiple timers had to be maintained simultaneously.&lt;/p&gt;
@@ -821,19 +820,19 @@ struct epoll_event {
 
 &lt;p&gt;You can checkout a sketch of the approach explained above at &lt;a href=&quot;https://github.com/pierrelux/timedaction&quot;&gt;https://github.com/pierrelux/timedaction&lt;/a&gt;&lt;/p&gt;
 
-  &lt;p&gt;&lt;a href=&quot;http://pierrelucbacon.com/2011/11/19/asynchronous-timer-expiry-notification&quot;&gt;Asynchronous Timer Expiry Notification&lt;/a&gt; was originally published by Pierre-Luc Bacon at &lt;a href=&quot;http://pierrelucbacon.com&quot;&gt;Commonplaces&lt;/a&gt; on November 19, 2011.&lt;/p&gt;</content>
+  &lt;p&gt;&lt;a href=&quot;/2011/11/19/asynchronous-timer-expiry-notification&quot;&gt;Asynchronous Timer Expiry Notification&lt;/a&gt; was originally published by Pierre-Luc Bacon at &lt;a href=&quot;&quot;&gt;Commonplaces&lt;/a&gt; on November 19, 2011.&lt;/p&gt;</content>
 </entry>
 
 
 <entry>
   <title type="html"><![CDATA[Applying A Function To Every Row Or Column Of A Matrix In Matlab]]></title>
-  <link rel="alternate" type="text/html" href="http://pierrelucbacon.com/2011/10/12/Applying-a-function-to-every-row-or-column-of-a-matrix-in-Matlab" />
-  <id>http://pierrelucbacon.com/2011/10/12/Applying-a-function-to-every-row-or-column-of-a-matrix-in-Matlab</id>
+  <link rel="alternate" type="text/html" href="/2011/10/12/Applying-a-function-to-every-row-or-column-of-a-matrix-in-Matlab" />
+  <id>/2011/10/12/Applying-a-function-to-every-row-or-column-of-a-matrix-in-Matlab</id>
   <published>2011-10-12T00:00:00-04:00</published>
   <updated>2011-10-12T00:00:00-04:00</updated>
   <author>
     <name>Pierre-Luc Bacon</name>
-    <uri>http://pierrelucbacon.com</uri>
+    <uri></uri>
     <email>pierrelucbacon@gmail.com</email>
   </author>
   <content type="html">&lt;p&gt;Sure we have arrayfun, but it applies a function every element of a matrix. What if we want to compute the sum over each row or column for example ?&lt;/p&gt;
@@ -872,19 +871,19 @@ ans =
 &lt;p&gt;If we wanted to do a similar operation but this time over the columns, we would write &lt;code&gt;num2cell(A, 1)&lt;/code&gt; : “1” instead of “2”. &lt;/p&gt;
 
 
-  &lt;p&gt;&lt;a href=&quot;http://pierrelucbacon.com/2011/10/12/Applying-a-function-to-every-row-or-column-of-a-matrix-in-Matlab&quot;&gt;Applying A Function To Every Row Or Column Of A Matrix In Matlab&lt;/a&gt; was originally published by Pierre-Luc Bacon at &lt;a href=&quot;http://pierrelucbacon.com&quot;&gt;Commonplaces&lt;/a&gt; on October 12, 2011.&lt;/p&gt;</content>
+  &lt;p&gt;&lt;a href=&quot;/2011/10/12/Applying-a-function-to-every-row-or-column-of-a-matrix-in-Matlab&quot;&gt;Applying A Function To Every Row Or Column Of A Matrix In Matlab&lt;/a&gt; was originally published by Pierre-Luc Bacon at &lt;a href=&quot;&quot;&gt;Commonplaces&lt;/a&gt; on October 12, 2011.&lt;/p&gt;</content>
 </entry>
 
 
 <entry>
   <title type="html"><![CDATA[Indexing Diagonal Matrix Elements In Matlab]]></title>
-  <link rel="alternate" type="text/html" href="http://pierrelucbacon.com/2011/09/28/indexing-diagonal-matrix-elements-in-matlab" />
-  <id>http://pierrelucbacon.com/2011/09/28/indexing-diagonal-matrix-elements-in-matlab</id>
+  <link rel="alternate" type="text/html" href="/2011/09/28/indexing-diagonal-matrix-elements-in-matlab" />
+  <id>/2011/09/28/indexing-diagonal-matrix-elements-in-matlab</id>
   <published>2011-09-28T00:00:00-04:00</published>
   <updated>2011-09-28T00:00:00-04:00</updated>
   <author>
     <name>Pierre-Luc Bacon</name>
-    <uri>http://pierrelucbacon.com</uri>
+    <uri></uri>
     <email>pierrelucbacon@gmail.com</email>
   </author>
   <content type="html">&lt;p&gt;I have came across this problem very often, but always ended up solving it in a different way each time. Here is what looks to me to be the most concise way of doing it.&lt;/p&gt;
@@ -928,7 +927,7 @@ A =
 &amp;gt;&amp;gt;
 &lt;/code&gt;&lt;/pre&gt;
 
-  &lt;p&gt;&lt;a href=&quot;http://pierrelucbacon.com/2011/09/28/indexing-diagonal-matrix-elements-in-matlab&quot;&gt;Indexing Diagonal Matrix Elements In Matlab&lt;/a&gt; was originally published by Pierre-Luc Bacon at &lt;a href=&quot;http://pierrelucbacon.com&quot;&gt;Commonplaces&lt;/a&gt; on September 28, 2011.&lt;/p&gt;</content>
+  &lt;p&gt;&lt;a href=&quot;/2011/09/28/indexing-diagonal-matrix-elements-in-matlab&quot;&gt;Indexing Diagonal Matrix Elements In Matlab&lt;/a&gt; was originally published by Pierre-Luc Bacon at &lt;a href=&quot;&quot;&gt;Commonplaces&lt;/a&gt; on September 28, 2011.&lt;/p&gt;</content>
 </entry>
 
 </feed>
