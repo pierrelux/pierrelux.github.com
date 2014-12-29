@@ -5,7 +5,7 @@
 <generator uri="https://github.com/mojombo/jekyll">Jekyll</generator>
 <link rel="self" type="application/atom+xml" href="/feed.xml" />
 <link rel="alternate" type="text/html" href="" />
-<updated>2014-09-23T23:32:22-04:00</updated>
+<updated>2014-12-28T21:45:53-05:00</updated>
 <id>/</id>
 <author>
   <name>Pierre-Luc Bacon</name>
@@ -262,7 +262,7 @@ disappears…&lt;/p&gt;
 &lt;/blockquote&gt;
 
 &lt;p&gt;Ulam goes on arguing that what we perceive is a function but not an object
-per se. &lt;a href=&quot;#Araujo2011&quot;&gt;Araujo &amp;#38; Davids (2011)&lt;/a&gt; adopt a similar view.
+per se. &lt;a href=&quot;#Araujo2011&quot;&gt;Araujo &amp;amp; Davids (2011)&lt;/a&gt; adopt a similar view.
 They claim that cognitive and experimental psychology are going through the same
 phases as that of other sciences which evolved from the study of the substance
 to that of the inherent process. In physics for example, the substance of caloric
@@ -274,7 +274,7 @@ presupposing the existence of a behavior by some pre-existing structures.&lt;/p&
 appear: “a quest for understanding of causation” &lt;a href=&quot;#Calvin2000&quot;&gt;(Calvin, 2000)&lt;/a&gt; (p. 124).&lt;/p&gt;
 
 &lt;p&gt;The class of symbolic models of cognition such as ACT-R &lt;a href=&quot;#Newell1990&quot;&gt;Newell (1990)&lt;/a&gt;
-is well summarized in &lt;a href=&quot;#Araujo2011&quot;&gt;Araujo &amp;#38; Davids (2011)&lt;/a&gt;:&lt;/p&gt;
+is well summarized in &lt;a href=&quot;#Araujo2011&quot;&gt;Araujo &amp;amp; Davids (2011)&lt;/a&gt;:&lt;/p&gt;
 
 &lt;blockquote&gt;
   &lt;p&gt;The dominant tendency in deterministic system theorizing is to equate
@@ -288,14 +288,14 @@ than the agent-environment relation is typical of the
 representationalist models: a problem of “organismic asymmetry”.&lt;/p&gt;
 
 &lt;p&gt;The ecological view of skill acquisition attributes the emergence of behavior
-both in terms of personal and environmental constraints. For &lt;a href=&quot;#Araujo2011&quot;&gt;Araujo &amp;#38; Davids (2011)&lt;/a&gt;, the process of skill acquisition should rather be
+both in terms of personal and environmental constraints. For &lt;a href=&quot;#Araujo2011&quot;&gt;Araujo &amp;amp; Davids (2011)&lt;/a&gt;, the process of skill acquisition should rather be
 described as “skill attenuement” achived by attending to the key properties (affordances) of the
 “performance environment” according to the the agent’s body and action set.&lt;/p&gt;
 
 &lt;h2 id=&quot;references&quot;&gt;References&lt;/h2&gt;
 
 &lt;ol class=&quot;bibliography&quot;&gt;&lt;li&gt;&lt;span id=&quot;Calvin2000&quot;&gt;Calvin, W. H. (2000). &lt;i&gt;The Cerebral Symphony: Seashore Reflections on the Structure of Consciousness&lt;/i&gt;. IUniverse.com.Incorporated. Retrieved from http://books.google.ca/books?id=iZoHAAAACAAJ&lt;/span&gt;&lt;/li&gt;
-&lt;li&gt;&lt;span id=&quot;Araujo2011&quot;&gt;Araujo, D., &amp;#38; Davids, K. (2011). What exactly is acquired during skill acquisition?. &lt;i&gt;Journal of Consciousness Studies&lt;/i&gt;, &lt;i&gt;18&lt;/i&gt;(3-4), 7–23. Retrieved from http://shura.shu.ac.uk/7300/&lt;/span&gt;&lt;/li&gt;
+&lt;li&gt;&lt;span id=&quot;Araujo2011&quot;&gt;Araujo, D., &amp;amp; Davids, K. (2011). What exactly is acquired during skill acquisition? &lt;i&gt;Journal of Consciousness Studies&lt;/i&gt;, &lt;i&gt;18&lt;/i&gt;(3-4), 7–23. Retrieved from http://shura.shu.ac.uk/7300/&lt;/span&gt;&lt;/li&gt;
 &lt;li&gt;&lt;span id=&quot;Newell1990&quot;&gt;Newell, A. (1990). &lt;i&gt;Unified Theories of Cognition&lt;/i&gt;. Cambridge, MA, USA: Harvard University Press.&lt;/span&gt;&lt;/li&gt;&lt;/ol&gt;
 
 
@@ -557,9 +557,9 @@ I have compiled them here in a short list, ordered by date.&lt;/p&gt;
     <email>pierrelucbacon@gmail.com</email>
   </author>
   <content type="html">&lt;p&gt;They say that &lt;em&gt;if all you have is a hammer, everything looks like a nail&lt;/em&gt;.
-I have to admit: my &lt;em&gt;hammer&lt;/em&gt; for Hierachical Reinforcement Learning is the options framework of &lt;a href=&quot;#Sutton1999&quot;&gt;Sutton, Precup &amp;#38; Singh (1999)&lt;/a&gt;.&lt;/p&gt;
+I have to admit: my &lt;em&gt;hammer&lt;/em&gt; for Hierachical Reinforcement Learning is the options framework of &lt;a href=&quot;#Sutton1999&quot;&gt;Sutton, Precup, &amp;amp; Singh (1999)&lt;/a&gt;.&lt;/p&gt;
 
-&lt;p&gt;While reading &lt;a href=&quot;#Ali2013&quot;&gt;Ali, Othchy, Pehlevan, Fantana, Burak &amp;#38; Ölveczky (2013)&lt;/a&gt; about motor skills learning of birdsong, I couldn’t keep myself from contemplating the
+&lt;p&gt;While reading &lt;a href=&quot;#Ali2013&quot;&gt;Ali et al. (2013)&lt;/a&gt; about motor skills learning of birdsong, I couldn’t keep myself from contemplating the
 ressemblance to the options model. The results presented in this month edition of Neuron showed the existence of a dual mechanism for motor skills
 learning in birdsong. A dissociation seems to exists in the learning process of the &lt;em&gt;spectral&lt;/em&gt; characteristics of birdsong and that of aquiring its temporal structure.
 The authors suggests that the &lt;a href=&quot;http://www.scholarpedia.org/article/Basal_ganglia&quot;&gt;basal ganglia&lt;/a&gt; would be responsible for learning the &lt;em&gt;spectral&lt;/em&gt; aspect of
@@ -570,29 +570,29 @@ while gradually refining the correctness of the temporal sequence later.&lt;/p&g
 &lt;h2 id=&quot;optimal-policy-switching&quot;&gt;Optimal Policy Switching&lt;/h2&gt;
 
 &lt;p&gt;It seems to me that such a duality can already be accounted for in the options model. Furthermore,
-the optimal policy switching work of &lt;a href=&quot;#Comanici2010&quot;&gt;Comanici &amp;#38; Precup (2010)&lt;/a&gt; provides algorithmic grounds
+the optimal policy switching work of &lt;a href=&quot;#Comanici2010&quot;&gt;Comanici &amp;amp; Precup (2010)&lt;/a&gt; provides algorithmic grounds
 for realizing this type of learning. An option is defined as the tuple &lt;script type=&quot;math/tex&quot;&gt;\langle \mathcal{I}, \pi, \beta \rangle&lt;/script&gt;
 where &lt;script type=&quot;math/tex&quot;&gt;\mathcal{I}&lt;/script&gt; is the set of states under which the option can be initiated, &lt;script type=&quot;math/tex&quot;&gt;\pi&lt;/script&gt; is a policy for
 the option, and &lt;script type=&quot;math/tex&quot;&gt;\beta&lt;/script&gt; is a termination function.&lt;/p&gt;
 
 &lt;p&gt;I see the &lt;em&gt;spectral features&lt;/em&gt; of the birdsong as the option policy and the &lt;em&gt;temporal structure&lt;/em&gt; being encoded through &lt;script type=&quot;math/tex&quot;&gt;\beta&lt;/script&gt;.
-Through a proper parametrization, &lt;a href=&quot;#Comanici2010&quot;&gt;Comanici &amp;#38; Precup (2010)&lt;/a&gt; showed how to use policy gradient methods to derive an optimal termination
+Through a proper parametrization, &lt;a href=&quot;#Comanici2010&quot;&gt;Comanici &amp;amp; Precup (2010)&lt;/a&gt; showed how to use policy gradient methods to derive an optimal termination
 function for the options. As postulated for the birdsong, this proposed approach also allows for dissociated learning stages:
 the options policy (having most likely ill-defined termination functions) are first learned but are later refined through the policy gradient algorithm.&lt;/p&gt;
 
-&lt;p&gt;The concept of &lt;em&gt;interrupting options&lt;/em&gt; had already been suggested in the seminal work of &lt;a href=&quot;#Sutton1999&quot;&gt;Sutton, Precup &amp;#38; Singh (1999)&lt;/a&gt;.
+&lt;p&gt;The concept of &lt;em&gt;interrupting options&lt;/em&gt; had already been suggested in the seminal work of &lt;a href=&quot;#Sutton1999&quot;&gt;Sutton, Precup, &amp;amp; Singh (1999)&lt;/a&gt;.
 The intuition was that if it could be established that an option is not worthwhile following anymore, then it would be preferable to interrupt it
-and switch to a better strategy, a better &lt;em&gt;option&lt;/em&gt;. &lt;a href=&quot;#Comanici2010&quot;&gt;Comanici &amp;#38; Precup (2010)&lt;/a&gt; was the first to show how this idea could be accomplished. It was then
-followed another policy gradient approach in &lt;a href=&quot;#Levy2012&quot;&gt;(Levy &amp;#38; Shimkin, 2012)&lt;/a&gt; that rather tried to solve the two learning problems jointly.&lt;/p&gt;
+and switch to a better strategy, a better &lt;em&gt;option&lt;/em&gt;. &lt;a href=&quot;#Comanici2010&quot;&gt;Comanici &amp;amp; Precup (2010)&lt;/a&gt; was the first to show how this idea could be accomplished. It was then
+followed another policy gradient approach in &lt;a href=&quot;#Levy2012&quot;&gt;(Levy &amp;amp; Shimkin, 2012)&lt;/a&gt; that rather tried to solve the two learning problems jointly.&lt;/p&gt;
 
-&lt;p&gt;Under the light of these new neurological evidences, it could only be grist to the mill for the approach of &lt;a href=&quot;#Comanici2010&quot;&gt;Comanici &amp;#38; Precup (2010)&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Under the light of these new neurological evidences, it could only be grist to the mill for the approach of &lt;a href=&quot;#Comanici2010&quot;&gt;Comanici &amp;amp; Precup (2010)&lt;/a&gt;.&lt;/p&gt;
 
 &lt;h2 id=&quot;references&quot;&gt;References&lt;/h2&gt;
 
-&lt;ol class=&quot;bibliography&quot;&gt;&lt;li&gt;&lt;span id=&quot;Sutton1999&quot;&gt;Sutton, R. S., Precup, D., &amp;#38; Singh, S. (1999). Between MDPs and semi-MDPs: A framework for temporal abstraction in reinforcement learning. &lt;i&gt;Artificial Intelligence&lt;/i&gt;, &lt;i&gt;112&lt;/i&gt;(1-2), 181–211.&lt;/span&gt;&lt;/li&gt;
-&lt;li&gt;&lt;span id=&quot;Ali2013&quot;&gt;Ali, F., Othchy, T. M., Pehlevan, C., Fantana, A. L., Burak, Y., &amp;#38; Ölveczky, B. P. (2013). The Basal Ganglia Is Necessary for Learning Spectral, but Not Temporal, Features of Birdsong. &lt;i&gt;Neuron&lt;/i&gt;. Retrieved from http://linkinghub.elsevier.com/retrieve/pii/S089662731300706X&lt;/span&gt;&lt;/li&gt;
-&lt;li&gt;&lt;span id=&quot;Comanici2010&quot;&gt;Comanici, G., &amp;#38; Precup, D. (2010). Optimal policy switching algorithms for reinforcement learning. In &lt;i&gt;Proceedings of the 9th International Conference on Autonomous Agents and Multiagent Systems: volume 1 - Volume 1&lt;/i&gt;, AAMAS ’10 (709–714). Richland, SC: International Foundation for Autonomous Agents and Multiagent Systems. Retrieved from http://dl.acm.org/citation.cfm?id=1838206.1838300&lt;/span&gt;&lt;/li&gt;
-&lt;li&gt;&lt;span id=&quot;Levy2012&quot;&gt;Levy, Ky., &amp;#38; Shimkin, N. (2012). Unified Inter and Intra Options Learning Using Policy Gradient Methods. In S. Sanner &amp;#38; M. Hutter (Eds.), &lt;i&gt;Recent Advances in Reinforcement Learning&lt;/i&gt;, Lecture Notes in Computer Science (Vol. 7188, 153-164). Springer Berlin Heidelberg. doi:10.1007/978-3-642-29946-9_17&lt;/span&gt;&lt;/li&gt;&lt;/ol&gt;
+&lt;ol class=&quot;bibliography&quot;&gt;&lt;li&gt;&lt;span id=&quot;Sutton1999&quot;&gt;Sutton, R. S., Precup, D., &amp;amp; Singh, S. (1999). Between MDPs and semi-MDPs: A framework for temporal abstraction in reinforcement learning. &lt;i&gt;Artificial Intelligence&lt;/i&gt;, &lt;i&gt;112&lt;/i&gt;(1-2), 181–211.&lt;/span&gt;&lt;/li&gt;
+&lt;li&gt;&lt;span id=&quot;Ali2013&quot;&gt;Ali, F., Othchy, T. M., Pehlevan, C., Fantana, A. L., Burak, Y., &amp;amp; Ölveczky, B. P. (2013). The Basal Ganglia Is Necessary for Learning Spectral, but Not Temporal, Features of Birdsong. &lt;i&gt;Neuron&lt;/i&gt;. Retrieved from http://linkinghub.elsevier.com/retrieve/pii/S089662731300706X&lt;/span&gt;&lt;/li&gt;
+&lt;li&gt;&lt;span id=&quot;Comanici2010&quot;&gt;Comanici, G., &amp;amp; Precup, D. (2010). Optimal policy switching algorithms for reinforcement learning. In &lt;i&gt;Proceedings of the 9th International Conference on Autonomous Agents and Multiagent Systems: volume 1 - Volume 1&lt;/i&gt; (pp. 709–714). Richland, SC: International Foundation for Autonomous Agents and Multiagent Systems. Retrieved from http://dl.acm.org/citation.cfm?id=1838206.1838300&lt;/span&gt;&lt;/li&gt;
+&lt;li&gt;&lt;span id=&quot;Levy2012&quot;&gt;Levy, K. Y., &amp;amp; Shimkin, N. (2012). Unified Inter and Intra Options Learning Using Policy Gradient Methods. In S. Sanner &amp;amp; M. Hutter (Eds.), &lt;i&gt;Recent Advances in Reinforcement Learning&lt;/i&gt; (Vol. 7188, pp. 153–164). Springer Berlin Heidelberg. doi:10.1007/978-3-642-29946-9_17&lt;/span&gt;&lt;/li&gt;&lt;/ol&gt;
 
 &lt;h2 id=&quot;see-also&quot;&gt;See also&lt;/h2&gt;
 
@@ -613,12 +613,12 @@ followed another policy gradient approach in &lt;a href=&quot;#Levy2012&quot;&gt
     <uri></uri>
     <email>pierrelucbacon@gmail.com</email>
   </author>
-  <content type="html">&lt;p&gt;Recent work by &lt;a href=&quot;#Daniel2012&quot;&gt;Daniel, Neumann &amp;#38; Peters (2012)&lt;/a&gt; as well as
-similar independent research by &lt;a href=&quot;#Thomas2012&quot;&gt;Thomas &amp;#38; Barto (2012)&lt;/a&gt; has started to make me think that
+  <content type="html">&lt;p&gt;Recent work by &lt;a href=&quot;#Daniel2012&quot;&gt;Daniel, Neumann, &amp;amp; Peters (2012)&lt;/a&gt; as well as
+similar independent research by &lt;a href=&quot;#Thomas2012&quot;&gt;Thomas &amp;amp; Barto (2012)&lt;/a&gt; has started to make me think that
 we might benefit from revisiting the classical HRL model. Under the perpective taken
 by these authors, hiearchical polices are obtained by &lt;em&gt;mixing&lt;/em&gt; lower level policies
 in a similar way to &lt;em&gt;product of experts&lt;/em&gt; &lt;a href=&quot;#Hinton2002&quot;&gt;(Hinton, 2002)&lt;/a&gt; or ensemble methods in supervised learning.
-Using the terminology and notation of &lt;a href=&quot;#Sutton1999&quot;&gt;Sutton, Precup &amp;#38; Singh (1999)&lt;/a&gt;, the Hi-REPS algorithm of &lt;a href=&quot;#Daniel2012&quot;&gt;Daniel, Neumann &amp;#38; Peters (2012)&lt;/a&gt; takes the summation
+Using the terminology and notation of &lt;a href=&quot;#Sutton1999&quot;&gt;Sutton, Precup, &amp;amp; Singh (1999)&lt;/a&gt;, the Hi-REPS algorithm of &lt;a href=&quot;#Daniel2012&quot;&gt;Daniel, Neumann, &amp;amp; Peters (2012)&lt;/a&gt; takes the summation
 over all of the available options as follow:&lt;/p&gt;
 
 &lt;script type=&quot;math/tex; mode=display&quot;&gt;
@@ -628,14 +628,14 @@ over all of the available options as follow:&lt;/p&gt;
 &lt;p&gt;In this model, the initiation component &lt;script type=&quot;math/tex&quot;&gt;\mathcal{I}&lt;/script&gt; is ignored, making options
 available under every state. Furthermore, the termination function &lt;script type=&quot;math/tex&quot;&gt;\beta&lt;/script&gt; is defined
 in such a way that options can only last one step. These assumptions, together with a well-defined parametrization,
-seem to be sufficient to make the discovery problem tractable. Hi-REPS combines the Relative Entropy Policy Search (REPS) method of &lt;a href=&quot;#Peter2010&quot;&gt;Peters, Mülling &amp;#38; Altun (2010)&lt;/a&gt;
+seem to be sufficient to make the discovery problem tractable. Hi-REPS combines the Relative Entropy Policy Search (REPS) method of &lt;a href=&quot;#Peter2010&quot;&gt;Peters, Mülling, &amp;amp; Altun (2010)&lt;/a&gt;
 with an expectation-maximization formulation for finding an optimal hierarchy. The resulting algorithm
 is shown to be usable for the simulated robot domain of Tetherball and
 outperforms the flat REPS baseline algorithm.&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&quot;#Thomas2012&quot;&gt;Thomas &amp;#38; Barto (2012)&lt;/a&gt; proposes a similar model but
+&lt;p&gt;&lt;a href=&quot;#Thomas2012&quot;&gt;Thomas &amp;amp; Barto (2012)&lt;/a&gt; proposes a similar model but
 also establishes some interesting parallels to a biological model for the frog
-by &lt;a href=&quot;#MussaIvaldi2000&quot;&gt;Mussa-Ivaldi &amp;#38; Bizzi (2000)&lt;/a&gt; which explains the emergence of higher level
+by &lt;a href=&quot;#MussaIvaldi2000&quot;&gt;Mussa-Ivaldi &amp;amp; Bizzi (2000)&lt;/a&gt; which explains the emergence of higher level
 motor skills as the linear combination of other lower level primitives. Here again, a parametrization is assumed
 for the motor skills and the behavior policy modulates their relative contribution given the current state &lt;script type=&quot;math/tex&quot;&gt;x&lt;/script&gt;.
 The gradient of the policy over the skills depends recursively on the
@@ -654,13 +654,13 @@ of single-step experts allow for a greater exibility in representing hierarchies
 skills ?&lt;/p&gt;
 
 &lt;h2 id=&quot;references&quot;&gt;References&lt;/h2&gt;
-&lt;ol class=&quot;bibliography&quot;&gt;&lt;li&gt;&lt;span id=&quot;Daniel2012&quot;&gt;Daniel, C., Neumann, G., &amp;#38; Peters, J. (2012). Hierarchical Relative Entropy Policy Search. &lt;i&gt;Journal of Machine Learning Research - Proceedings Track&lt;/i&gt;, &lt;i&gt;22&lt;/i&gt;, 273-281.&lt;/span&gt;&lt;/li&gt;
-&lt;li&gt;&lt;span id=&quot;Thomas2012&quot;&gt;Thomas, P. S., &amp;#38; Barto, A. G. (2012). Motor primitive discovery. In &lt;i&gt;Development and Learning and Epigenetic Robotics (ICDL), 2012 IEEE International Conference on&lt;/i&gt; (1-8). doi:10.1109/DevLrn.2012.6400845&lt;/span&gt;&lt;/li&gt;
-&lt;li&gt;&lt;span id=&quot;Hinton2002&quot;&gt;Hinton, G. E. (2002). Training Products of Experts by Minimizing Contrastive Divergence. &lt;i&gt;Neural Computation&lt;/i&gt;, &lt;i&gt;14&lt;/i&gt;(8), 1771-1800.&lt;/span&gt;&lt;/li&gt;
-&lt;li&gt;&lt;span id=&quot;Sutton1999&quot;&gt;Sutton, R. S., Precup, D., &amp;#38; Singh, S. (1999). Between MDPs and semi-MDPs: A framework for temporal abstraction in reinforcement learning. &lt;i&gt;Artificial Intelligence&lt;/i&gt;, &lt;i&gt;112&lt;/i&gt;(1-2), 181–211.&lt;/span&gt;&lt;/li&gt;
-&lt;li&gt;&lt;span id=&quot;Peter2010&quot;&gt;Peters, J., Mülling, K., &amp;#38; Altun, Y. (2010). Relative Entropy Policy Search. In &lt;i&gt;AAAI&lt;/i&gt;.&lt;/span&gt;&lt;/li&gt;
-&lt;li&gt;&lt;span id=&quot;MussaIvaldi2000&quot;&gt;Mussa-Ivaldi, F. A., &amp;#38; Bizzi, E. (2000). Motor learning through the combination of primitives. &lt;i&gt;Philosophical transactions of the Royal Society of London. Series B, Biological sciences&lt;/i&gt;, &lt;i&gt;355&lt;/i&gt;(1404), 1755–69. doi:10.1098/rstb.2000.0733&lt;/span&gt;&lt;/li&gt;
-&lt;li&gt;&lt;span id=&quot;Thomas2011&quot;&gt;Thomas, P. S. (2011). Policy Gradient Coagent Networks. In &lt;i&gt;NIPS&lt;/i&gt; (1944-1952).&lt;/span&gt;&lt;/li&gt;&lt;/ol&gt;
+&lt;ol class=&quot;bibliography&quot;&gt;&lt;li&gt;&lt;span id=&quot;Daniel2012&quot;&gt;Daniel, C., Neumann, G., &amp;amp; Peters, J. (2012). Hierarchical Relative Entropy Policy Search. &lt;i&gt;Journal of Machine Learning Research - Proceedings Track&lt;/i&gt;, &lt;i&gt;22&lt;/i&gt;, 273–281.&lt;/span&gt;&lt;/li&gt;
+&lt;li&gt;&lt;span id=&quot;Thomas2012&quot;&gt;Thomas, P. S., &amp;amp; Barto, A. G. (2012). Motor primitive discovery. In &lt;i&gt;Development and Learning and Epigenetic Robotics (ICDL), 2012 IEEE International Conference on&lt;/i&gt; (pp. 1–8). doi:10.1109/DevLrn.2012.6400845&lt;/span&gt;&lt;/li&gt;
+&lt;li&gt;&lt;span id=&quot;Hinton2002&quot;&gt;Hinton, G. E. (2002). Training Products of Experts by Minimizing Contrastive Divergence. &lt;i&gt;Neural Computation&lt;/i&gt;, &lt;i&gt;14&lt;/i&gt;(8), 1771–1800.&lt;/span&gt;&lt;/li&gt;
+&lt;li&gt;&lt;span id=&quot;Sutton1999&quot;&gt;Sutton, R. S., Precup, D., &amp;amp; Singh, S. (1999). Between MDPs and semi-MDPs: A framework for temporal abstraction in reinforcement learning. &lt;i&gt;Artificial Intelligence&lt;/i&gt;, &lt;i&gt;112&lt;/i&gt;(1-2), 181–211.&lt;/span&gt;&lt;/li&gt;
+&lt;li&gt;&lt;span id=&quot;Peter2010&quot;&gt;Peters, J., Mülling, K., &amp;amp; Altun, Y. (2010). Relative Entropy Policy Search. In &lt;i&gt;AAAI&lt;/i&gt;.&lt;/span&gt;&lt;/li&gt;
+&lt;li&gt;&lt;span id=&quot;MussaIvaldi2000&quot;&gt;Mussa-Ivaldi, F. A., &amp;amp; Bizzi, E. (2000). Motor learning through the combination of primitives. &lt;i&gt;Philosophical Transactions of the Royal Society of London. Series B, Biological Sciences&lt;/i&gt;, &lt;i&gt;355&lt;/i&gt;(1404), 1755–69. doi:10.1098/rstb.2000.0733&lt;/span&gt;&lt;/li&gt;
+&lt;li&gt;&lt;span id=&quot;Thomas2011&quot;&gt;Thomas, P. S. (2011). Policy Gradient Coagent Networks. In &lt;i&gt;NIPS&lt;/i&gt; (pp. 1944–1952).&lt;/span&gt;&lt;/li&gt;&lt;/ol&gt;
 
   &lt;p&gt;&lt;a href=&quot;/2013/09/20/2013-mixture-of-options&quot;&gt;A Fresh Perspective on HRL with Mixture of Options&lt;/a&gt; was originally published by Pierre-Luc Bacon at &lt;a href=&quot;&quot;&gt;Commonplaces&lt;/a&gt; on September 20, 2013.&lt;/p&gt;</content>
 </entry>

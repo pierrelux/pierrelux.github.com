@@ -88,12 +88,12 @@
           </hgroup>
         </header>
 
-        <p>Recent work by <a href="#Daniel2012">Daniel, Neumann &#38; Peters (2012)</a> as well as
-similar independent research by <a href="#Thomas2012">Thomas &#38; Barto (2012)</a> has started to make me think that
+        <p>Recent work by <a href="#Daniel2012">Daniel, Neumann, &amp; Peters (2012)</a> as well as
+similar independent research by <a href="#Thomas2012">Thomas &amp; Barto (2012)</a> has started to make me think that
 we might benefit from revisiting the classical HRL model. Under the perpective taken
 by these authors, hiearchical polices are obtained by <em>mixing</em> lower level policies
 in a similar way to <em>product of experts</em> <a href="#Hinton2002">(Hinton, 2002)</a> or ensemble methods in supervised learning.
-Using the terminology and notation of <a href="#Sutton1999">Sutton, Precup &#38; Singh (1999)</a>, the Hi-REPS algorithm of <a href="#Daniel2012">Daniel, Neumann &#38; Peters (2012)</a> takes the summation
+Using the terminology and notation of <a href="#Sutton1999">Sutton, Precup, &amp; Singh (1999)</a>, the Hi-REPS algorithm of <a href="#Daniel2012">Daniel, Neumann, &amp; Peters (2012)</a> takes the summation
 over all of the available options as follow:</p>
 
 <script type="math/tex; mode=display">
@@ -103,14 +103,14 @@ over all of the available options as follow:</p>
 <p>In this model, the initiation component <script type="math/tex">\mathcal{I}</script> is ignored, making options
 available under every state. Furthermore, the termination function <script type="math/tex">\beta</script> is defined
 in such a way that options can only last one step. These assumptions, together with a well-defined parametrization,
-seem to be sufficient to make the discovery problem tractable. Hi-REPS combines the Relative Entropy Policy Search (REPS) method of <a href="#Peter2010">Peters, Mülling &#38; Altun (2010)</a>
+seem to be sufficient to make the discovery problem tractable. Hi-REPS combines the Relative Entropy Policy Search (REPS) method of <a href="#Peter2010">Peters, Mülling, &amp; Altun (2010)</a>
 with an expectation-maximization formulation for finding an optimal hierarchy. The resulting algorithm
 is shown to be usable for the simulated robot domain of Tetherball and
 outperforms the flat REPS baseline algorithm.</p>
 
-<p><a href="#Thomas2012">Thomas &#38; Barto (2012)</a> proposes a similar model but
+<p><a href="#Thomas2012">Thomas &amp; Barto (2012)</a> proposes a similar model but
 also establishes some interesting parallels to a biological model for the frog
-by <a href="#MussaIvaldi2000">Mussa-Ivaldi &#38; Bizzi (2000)</a> which explains the emergence of higher level
+by <a href="#MussaIvaldi2000">Mussa-Ivaldi &amp; Bizzi (2000)</a> which explains the emergence of higher level
 motor skills as the linear combination of other lower level primitives. Here again, a parametrization is assumed
 for the motor skills and the behavior policy modulates their relative contribution given the current state <script type="math/tex">x</script>.
 The gradient of the policy over the skills depends recursively on the
@@ -129,13 +129,13 @@ of single-step experts allow for a greater exibility in representing hierarchies
 skills ?</p>
 
 <h2 id="references">References</h2>
-<ol class="bibliography"><li><span id="Daniel2012">Daniel, C., Neumann, G., &#38; Peters, J. (2012). Hierarchical Relative Entropy Policy Search. <i>Journal of Machine Learning Research - Proceedings Track</i>, <i>22</i>, 273-281.</span></li>
-<li><span id="Thomas2012">Thomas, P. S., &#38; Barto, A. G. (2012). Motor primitive discovery. In <i>Development and Learning and Epigenetic Robotics (ICDL), 2012 IEEE International Conference on</i> (1-8). doi:10.1109/DevLrn.2012.6400845</span></li>
-<li><span id="Hinton2002">Hinton, G. E. (2002). Training Products of Experts by Minimizing Contrastive Divergence. <i>Neural Computation</i>, <i>14</i>(8), 1771-1800.</span></li>
-<li><span id="Sutton1999">Sutton, R. S., Precup, D., &#38; Singh, S. (1999). Between MDPs and semi-MDPs: A framework for temporal abstraction in reinforcement learning. <i>Artificial Intelligence</i>, <i>112</i>(1-2), 181–211.</span></li>
-<li><span id="Peter2010">Peters, J., Mülling, K., &#38; Altun, Y. (2010). Relative Entropy Policy Search. In <i>AAAI</i>.</span></li>
-<li><span id="MussaIvaldi2000">Mussa-Ivaldi, F. A., &#38; Bizzi, E. (2000). Motor learning through the combination of primitives. <i>Philosophical transactions of the Royal Society of London. Series B, Biological sciences</i>, <i>355</i>(1404), 1755–69. doi:10.1098/rstb.2000.0733</span></li>
-<li><span id="Thomas2011">Thomas, P. S. (2011). Policy Gradient Coagent Networks. In <i>NIPS</i> (1944-1952).</span></li></ol>
+<ol class="bibliography"><li><span id="Daniel2012">Daniel, C., Neumann, G., &amp; Peters, J. (2012). Hierarchical Relative Entropy Policy Search. <i>Journal of Machine Learning Research - Proceedings Track</i>, <i>22</i>, 273–281.</span></li>
+<li><span id="Thomas2012">Thomas, P. S., &amp; Barto, A. G. (2012). Motor primitive discovery. In <i>Development and Learning and Epigenetic Robotics (ICDL), 2012 IEEE International Conference on</i> (pp. 1–8). doi:10.1109/DevLrn.2012.6400845</span></li>
+<li><span id="Hinton2002">Hinton, G. E. (2002). Training Products of Experts by Minimizing Contrastive Divergence. <i>Neural Computation</i>, <i>14</i>(8), 1771–1800.</span></li>
+<li><span id="Sutton1999">Sutton, R. S., Precup, D., &amp; Singh, S. (1999). Between MDPs and semi-MDPs: A framework for temporal abstraction in reinforcement learning. <i>Artificial Intelligence</i>, <i>112</i>(1-2), 181–211.</span></li>
+<li><span id="Peter2010">Peters, J., Mülling, K., &amp; Altun, Y. (2010). Relative Entropy Policy Search. In <i>AAAI</i>.</span></li>
+<li><span id="MussaIvaldi2000">Mussa-Ivaldi, F. A., &amp; Bizzi, E. (2000). Motor learning through the combination of primitives. <i>Philosophical Transactions of the Royal Society of London. Series B, Biological Sciences</i>, <i>355</i>(1404), 1755–69. doi:10.1098/rstb.2000.0733</span></li>
+<li><span id="Thomas2011">Thomas, P. S. (2011). Policy Gradient Coagent Networks. In <i>NIPS</i> (pp. 1944–1952).</span></li></ol>
 
 
       <a class="share" href="https://twitter.com/intent/tweet?text=&quot;A Fresh Perspective on HRL with Mixture of Options&quot;%20/2013/09/20/2013-mixture-of-options%20via%20&#64;pierrelux" data-dnt="true">Share</a>
