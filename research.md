@@ -3,7 +3,6 @@ layout: page
 title: "Research"
 description: ""
 ---
-{% include JB/setup %}
 
 <p>I have recently submitted my master's thesis under the supervision of Professor
 <a href="http://www.cs.mcgill.ca/~dprecup/">Doina Precup</a></p>
