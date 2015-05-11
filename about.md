@@ -25,9 +25,13 @@ You can find me on Twitter as [@pierrelux](http://twitter.com/pierrelux)
 
 ## Academic writings
 
+- Joelle Pineau, Pierre-Luc Bacon. "Analyzing Open Data from the City of Montreal". Mining Urban Data (MUD) workshop at ICML2015
+
+- Pierre-Luc Bacon, Doina Precup. "Learning Recognizers". 9th Barbados Workshop on Reinforcement Learning. ([slides](/barbados2015.pdf))
+
 - Pierre-Luc Bacon, Emmanuel Bengio, Doina Precup, Joelle Pineau. "[Conditional computation in neural networks using a decision-theoretic approach](/bacon-2015-condnet.pdf)". 2nd Multidisciplinary Conference on Reinforcement Learning and Decision Making (RLDM 2015)
 
-- Pierre-Luc Bacon, Borja Balle and Doina Precup. "Learning and Planning with Timing Information in Markov Decision Processes". 2nd Multidisciplinary Conference on Reinforcement Learning and Decision Making (RLDM 2015)
+- Pierre-Luc Bacon, Borja Balle and Doina Precup. "[Learning and Planning with Timing Information in Markov Decision Processes](/bacon-2015-odm-rldm2015.pdf)". 2nd Multidisciplinary Conference on Reinforcement Learning and Decision Making (RLDM 2015)
 
 - Pierre-Luc Bacon, Borja Balle and Doina Precup. "[Predictive Timing Models](/bacon-2014-predictive_timing_models.pdf)". 2014 NIPS Workshop "[From Bad Models to Good Policies](https://sites.google.com/site/badmodelssdmuworkshop2014/)". ([poster](/bacon-2014-predictive_timing_models-poster.pdf), [slides](/bacon-2014-predictive_timing_models-slides.pdf), [video](https://www.youtube.com/watch?v=CHYoFjfIyMc))
 
