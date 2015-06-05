@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+        <title>Semirings and weighted automata</title>
+        <link href="http://fonts.googleapis.com/css?family=Crimson+Text:400,400italic,700,700italic" rel='stylesheet' type='text/css' />
+    <link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700" rel='stylesheet' type='text/css'>
+
+    <link href="http://getbootstrap.com/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/css/custom.css" rel="stylesheet">
+
+        <script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
+      </head>
+
+  <body>
+    <nav class="navbar navbar-default navbar-custom">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="page-scroll navbar-brand" href="/">Commonplaces</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a class="page-scroll" href="/">Notes</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="/code">Code</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="/about">About</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+    <div class="container container-article">
+    <div class="page-header">
+                <h1>Semirings and weighted automata</h1>
+                <p class="date">August 5 2014, Pierre-Luc Bacon</p>
+    </div>
+    <p>A semiring is a structure <span class="math">\(( K, \oplus, \odot, \mathbf{0}, \mathbf{1})\)</span> which satisfies the following conditions</p>
+    <ol style="list-style-type: decimal">
+    <li><span class="math">\((K, \oplus, \mathbf{0})\)</span> is a commutative monoid in which <span class="math">\(\oplus\)</span> is an associative and commutative binary operation for which <span class="math">\(0\)</span> acts as the neutral element.</li>
+    <li><span class="math">\((K, \odot, \mathbf{1})\)</span> is a monoid. That is, <span class="math">\(\odot\)</span> is an associative binary operation for which <span class="math">\(1\)</span> is the neutral element.</li>
+    <li><span class="math">\(\odot\)</span> is distributive both on the left and on the right over <span class="math">\(\oplus\)</span>. This means that <span class="math">\(x \odot (y \oplus z) = x \odot y \oplus x \odot z\)</span> and <span class="math">\((y \oplus z)\odot x = y \odot x \oplus z \odot x\)</span></li>
+    <li><span class="math">\(\mathbf{0}\)</span> is absorbing for <span class="math">\(\odot\)</span>. An absorbing element is such that <span class="math">\(\mathbf{0} \odot x = x \odot \mathbf{0} = \mathbf{0}\)</span></li>
+    </ol>
+    <p>Some common examples of semirings:</p>
+    <ul>
+    <li><span class="math">\((\mathbb{N}, +, \cdot, 0, 1)\)</span> : the set of natural numbers with the usual addition and mulplication</li>
+    <li><span class="math">\((\mathbb{R}, +, \cdot, 0, 1)\)</span> : the set of real numbers with the usual addition and multiplication</li>
+    <li><span class="math">\((\{0, 1\}, \lor, \land, 0, 1)\)</span> : the boolean semiring with <span class="math">\(\lor\)</span> acting as addition and <span class="math">\(\land\)</span> as multiplicaiton</li>
+    </ul>
+    <h1 id="weighted-automata">Weighted automata</h1>
+    <p>Semirings are particularly important when it comes to the study of Weighted Finite state Automata (WFA). A WFA <span class="math">\(\mathcal{A} = (Q, I, E, T)\)</span> is defined by a set of states <span class="math">\(Q\)</span>, and three maps into <span class="math">\(K\)</span>:</p>
+    <p><span class="math">\[
+    \begin{align*}
+    I: Q \to K \\
+    E: Q \times \sigma \times Q \to K\\
+    T: Q \to K
+    \end{align*}
+    \]</span></p>
+    <p>The maps <span class="math">\(I\)</span> and <span class="math">\(T\)</span> are non-zero only for the initial and terminal states respectively.</p>
+    <p>We call <span class="math">\(E(p,a,q)\)</span> the weight associated to an edge from state <span class="math">\(p\)</span> to <span class="math">\(q\)</span> with label <span class="math">\(a \in \sigma\)</span>. A path in a WFA a sequence</p>
+    <p><span class="math">\[
+    \begin{equation}
+    c = (q_0, a_1, q_1)(q_1, a_2, q_2)...(q_{n-1}, a_n, q_n)
+    \end{equation}
+    \]</span></p>
+    <p>The weight of path <span class="math">\(c\)</span> is computed with respect to <span class="math">\(\odot\)</span> as the product of all the weights encounted along a path.</p>
+    <p><span class="math">\[
+    \begin{equation}
+    E(c) = E(q_0, a_1, q_1)E(q_1, a_2, q_2)...E(q_{n-1}, a_n, q_n)
+    \end{equation}
+    \]</span></p>
+    <p>The label of path is the word obtained by the concatenation of the label associated with each edge.</p>
+    <h1 id="recognizable-functions">Recognizable functions</h1>
+    <p>A formal series is a function <span class="math">\(\Sigma^* \to K\)</span> with the image, also called the <em>coefficient</em>, of a string <span class="math">\(w\)</span> denoted by <span class="math">\((S, w)\)</span>. The WFA is then said to recognize a series <span class="math">\(S\)</span> for</p>
+    <p><span class="math">\[
+    \begin{equation}
+    (S, w) = \sum_{a_1...a_n = w} I(q_0)E(q_0,a_1,q_1)...E(q_{n-1}, a_n, q_n)T(q_n)
+    \end{equation}
+    \]</span></p>
+    <p>The above sum is taken over all paths with label <span class="math">\(w\)</span> and with respect to <span class="math">\(\oplus\)</span> in the semiring. An important results (with very practical implications for machine learning) is that a WFA defined in this way has a so-called linear counterpart of the form <span class="math">\((\alpha_0, A, \alpha_\infty)\)</span> with <span class="math">\(\alpha_0 \in K^{1 \times n}\)</span>, <span class="math">\(A: \Sigma^* \to K^{n\times n}\)</span> and <span class="math">\(\alpha_\infty \in K^{n\times 1}\)</span>.</p>
+    <p>We define the Hankel matrix of a formal series <span class="math">\(S\)</span> as</p>
+    <p><span class="math">\[
+    \begin{equation}
+    H(x, y) = (S, xy)
+    \end{equation}
+    \]</span></p>
+    <p>The Hankel matrix is therefore a bi-infinite matrix with rows indexed by prefixes and columns by suffixes. An entry in <span class="math">\(H\)</span> is the coefficient of the concatenated string <span class="math">\(xy\)</span>. Carlyle and Paz (1971) showed that the rank the Hankel matrix associated with a formal series <span class="math">\(S\)</span> is finite if and only the series is <em>rational</em>. Furthermore, the rank of <span class="math">\(H\)</span> represents the minimum dimension of the linear representation. Viewed through the lens of the WFA representation, the rank thus corresponds to the minimal number of states.</p>
+    <h1 id="spectral-learning">Spectral learning</h1>
+    <p>A new field of machine learning as recently developed under the name of &quot;spectral learning&quot;. The idea consists in applying a rank factorization to the the Hankel matrix in order to obtain a minimal WFA for some function.</p>
+    <p>An important property of linear representations is their invariance under changes of basis. Let <span class="math">\(B = (\alpha_0^\top M, M^{-1} \alpha_\infty,  M^{-1} A M)\)</span> for some invertible matrix <span class="math">\(M\)</span>, then for any word <span class="math">\(w\)</span> evaluated on <span class="math">\(B\)</span> results in</p>
+    <p><span class="math">\[
+    \begin{align*}
+    (B, w) &amp;= \alpha_0^\top M M^{-1} A(a_1) M ... M^{-1} A(a_k) M M^{-1} \alpha_\infty \\
+    &amp;= \alpha_0^\top A(a_1) ... A(a_k) \alpha_\infty = (A, w)
+    \end{align*}
+    \]</span></p>
+    <p>This property is instrumental in showing that a minimal representation can be obtained from a rank factorization <span class="math">\(H = PS\)</span>. We can show that a linear representation of a minimal automata can be recovered as follow</p>
+    <p><span class="math">\[
+    \begin{align*}
+    \alpha_0^\top = h_{\lambda,S}^\top S^+ \\
+    \alpha_\infty = P^+ h_{P, \lambda} \\
+    A(\sigma) = P^+ H_\sigma S^+
+    \end{align*}
+    \]</span></p>
+    <p>To see this, assume that we have some minimal WFA <span class="math">\(A^\prime = (\alpha_0^{\prime\top}, A^\prime, \alpha_\infty^\prime)\)</span> which induces a factorization <span class="math">\(H = P^\prime S^\prime\)</span>. We know that <span class="math">\(A^\prime\)</span> must be invariant under changes of basis. It would therefore be possible to recover <span class="math">\(A\)</span> through some appropriate choice of invertible matrix <span class="math">\(M\)</span>. Let <span class="math">\(M = S^\prime S^+\)</span>, since <span class="math">\(H = PS\)</span>, then <span class="math">\(P^+P^\prime S^\prime S^+ = P^+ H S^+ = I\)</span> which demonstrates that <span class="math">\(M\)</span> has indeed an inverse which is <span class="math">\(M^{-1} = P^+P^\prime\)</span>.</p>
+    <p>With the inverse of <span class="math">\(M\)</span>, we can apply a change of basis to <span class="math">\(A^\prime\)</span> and see that we can recover <span class="math">\(A\)</span>. Indeed, we have</p>
+    <p><span class="math">\[
+    M^{-1} A(\sigma)^\prime M = P^+ P^\prime A^\prime(\sigma) S^\prime S^+ = P^+ H_\sigma S^+ = A_\sigma
+    \]</span></p>
+    <p>Also, note that</p>
+    <p><span class="math">\[
+    \begin{equation}
+    \alpha_0^{\prime\top}M = \alpha_0^{\prime\top} S^\prime S^+ = h_{\lambda,s}^\top S^\prime S^+ = h_{\lambda,s}^\top S^+ = \alpha_0^\top \\
+    M^{-1}\alpha_\infty^\prime = P^+ P^\prime \alpha^\prime_\infty = P^+ h_{P,\lambda} = \alpha_\infty
+    \end{equation}
+    \]</span></p>
+    <p>Any rank factorization method would thus be sufficient to recover an equivalent WFA that computes a given (rational) function. This could be the QR factorization or the SVD for example. The compact SVD of a rank <span class="math">\(r\)</span> matrix is <span class="math">\(U\Lambda V^T\)</span> where <span class="math">\(U\in \mathbb{R}^{n\times r}, \Lambda \in \mathbb{R}^{r \times r}, V \in \mathbb{R}^{s \times r}\)</span>. Since <span class="math">\(U\)</span> and <span class="math">\(V\)</span> are orthogonal, it means that <span class="math">\(V^\top V = I\)</span> therefore <span class="math">\(V^+ = V^\top\)</span>.</p>
+    <p><span class="math">\[
+    \begin{align*}
+    \alpha_0^\top &amp;= h_{\lambda,S}^\top V\\
+    \alpha_\infty &amp;= (H V)^+ h_{P,\lambda} \\
+    A_\sigma &amp;= (H V)^+H_\sigma V
+    \end{align*}
+    \]</span></p>
+    <h1 id="further-reading">Further reading</h1>
+    <p>The SVD-based &quot;Hankel trick&quot; is explained with great clarity in chapter 5 of:</p>
+    <ul>
+    <li><p>Borja Balle. &quot;<a href="http://www.cs.upc.edu/~bballe/other/phdthesis.pdf">Learning Finite-State Machines: Algorithmic and Statistical Aspects</a>&quot;. PhD Thesis, 2013</p></li>
+    <li><p>Jean Berstel and Christophe Reutenauer (2011). Noncommutative rational series with applications. Encyclopedia of Mathematics and Its Applications 137. Cambridge: Cambridge University Press.</p></li>
+    </ul>
+    <div class="references">
+    
+    </div>
+    </div>
+  </body>
+</html>

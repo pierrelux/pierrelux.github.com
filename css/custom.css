@@ -1,0 +1,118 @@
+body {
+    font-size: 18px;
+    font-family: 'Merriweather', serif;
+    background: #f9f9f9;
+}
+.navbar-custom {
+    padding: 0 5% 5% 5%;
+    margin-bottom: 0px;
+    border-bottom: none;
+    background: rgba(0, 0, 0, 0);
+
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    text-transform: uppercase;
+
+}
+
+.navbar-default .navbar-brand { color: #3b3b3b !important;}
+ul.nav a { color: #3b3b3b !important; }
+
+
+.navbar-header {
+    letter-spacing: 2px;
+}
+
+.page-header {
+    border-bottom: none;
+}
+
+.page-header h1 {
+    font-family: 'Crimson Text', serif;
+    font-weight: 400;
+    font-style: italic;
+    font-size: 64px;
+    text-align: center;
+}
+
+.date {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+  color: #d9d9d9;
+  text-transform: uppercase;
+  margin-top: 22px;
+  text-align: center;
+}
+
+.featured-image {
+  vertical-align: middle;
+  min-height: 360px;
+  height: 50vh;
+  width: 100%;
+  max-height: 800px;
+  background-position: center center;
+  background-size: cover;
+  vertical-align: middle;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  position: relative;
+  top: 0;
+  z-index: -1;
+}
+
+.overlay {
+  vertical-align: middle;
+  min-height: 360px;
+  height: 50vh;
+  width: 100%;
+  max-height: 800px;
+  position: absolute;
+  z-index: 2;
+  background: rgba(0, 0, 0, 0.55);
+}
+
+.container-article {
+    width: 40%;
+}
+
+.frontpage {
+}
+
+.frontpage a {
+    color:#8ab9d1;
+}
+.frontpage a:hover {
+    text-decoration: none;
+}
+.frontpage ul {
+    list-style-type: none;
+}
+
+.frontpage li h1 {
+    font-family: 'Crimson Text', serif;
+    font-size:32px;
+    font-style:italic;
+    padding-bottom:0;
+}
+.frontpage li h2 {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+  color: #d9d9d9;
+  text-transform: uppercase;
+  margin-top: 5px;
+}
+.frontpage h1 {
+    font-family: 'Crimson Text', serif;
+    font-weight: 400;
+    font-size: 64px;
+    text-align: left;
+    padding-bottom: 0.5em;
+}
+.figure {
+    text-align: center;
+    margin-bottom: 2em;
+}
