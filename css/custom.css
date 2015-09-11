@@ -1,6 +1,6 @@
 body {
     font-size: 18px;
-    font-family: 'Merriweather', serif;
+    font-family: 'Noto Serif', serif;
     background: #f9f9f9;
 }
 .navbar-custom {
@@ -75,7 +75,6 @@ ul.nav a { color: #3b3b3b !important; }
 }
 
 .container-article {
-    width: 40%;
 }
 
 .frontpage {
