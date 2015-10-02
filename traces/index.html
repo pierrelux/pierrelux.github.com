@@ -119,8 +119,8 @@
     \]</span></p>
     <p>Now, this is not the end of the story. We have two problems:</p>
     <ol style="list-style-type: decimal">
-    <li>We don't know the true target <span class="math">\(V_\pi\)</span>.</li>
-    <li>We don't know the MDP.</li>
+    <li>We don't know the true target <span class="math">\(V_\pi\)</span></li>
+    <li>We don't know the MDP</li>
     </ol>
     <p>As opposed to the supervised learning setting, we don't have training targets in the form of true values for <span class="math">\(\mathbf{v}_\pi\)</span>. A straightforward solution in episodic problems might consist in performing rollouts from every state and averaging the returns in a <a href="https://en.wikipedia.org/wiki/Monte_Carlo_method">Monte Carlo (MC)</a> fashion. However, since the number of possible paths quickly explodes as a function of the length of the trajectories, the variance of such estimates would most likely be pretty high.</p>
     <p>The TD way of solving this problem is by taking the following approximation: <span class="math">\[
@@ -129,7 +129,7 @@
     \end{equation}
     \]</span></p>
     <p>This approximation is essentially the one-step application of the Bellman operator on the estimate <span class="math">\(V_\theta\)</span>. This idea is called <strong>bootstrapping</strong> and is a cornerstone of temporal difference learning.</p>
-    <p>The second problem has to do with the fundamental RL assumption that the transition and reward functions are either unknown or intractable to work with. We therefore have to find a way to compute the expectation. If we have access to a simulator (an <em>environment</em>), we can draw samples of this expectation rather than explicitely integrating in expectation over the MDP. In the spirit of <em>stochastic approximation</em>, we won't however have to take more than one sample and rather rely on the stationary distribution to do the averaging.</p>
+    <p>The second problem has to do with the fundamental RL assumption that the transition and reward functions are either unknown or intractable to work with. We therefore have to find a way to compute the expectation. If we have access to a simulator (an <em>environment</em>), we can draw samples of this expectation rather than explicitely integrating it over the MDP. In the spirit of <em>stochastic approximation</em>, we won't however have to take more than one sample and rather rely on the stationary distribution to do the averaging.</p>
     <p>Combining these two ideas, bootstrapping and stochastic approximation, we get the TD algorithm: <span class="math">\[
     \begin{align*}
     \frac{\partial}{\partial\theta} \text{MSE}(\theta) &amp;\approx \left(r(s,a) + \gamma V_\theta(s&#39;) - V_\theta(s)\right)\frac{\partial}{\partial\theta} V_\theta(s) \\
