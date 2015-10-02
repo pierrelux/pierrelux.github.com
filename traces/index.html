@@ -164,7 +164,7 @@
     \]</span></p>
     <p>where <span class="math">\((1 - \lambda)\)</span> is for the weights to sum up to one.</p>
     <h2 id="forward-and-backward-view">Forward and backward view</h2>
-    <p>TD(<span class="math">\(\lambda\)</span>) methods will solve the fixed point for <span class="math">\(T_\lambda\)</span> operator. The interpretation of the lambda return is the <em>forward view</em> of eligibility traces. Since it is a statement about a quantity in the future, we will have to find a way to implement it in the present without having recourse to magical time traveling machine to observe the future values in the future. The mechanism to implement the forward view (without assuming a time traveling machine) will take place with the <em>eligibility traces</em> in the <em>backward view</em>.</p>
+    <p>TD(<span class="math">\(\lambda\)</span>) methods will solve for the fixed point of the <span class="math">\(T_\lambda\)</span> operator. The interpretation of the lambda return is the <em>forward view</em> of eligibility traces. Since it is a statement about a quantity in the future, we will have to find a way to implement it in the present without having recourse to a magical time traveling machine to observe the future values. The mechanism to implement the forward view will take place with the <em>eligibility traces</em> in the <em>backward view</em>.</p>
     <p>More on this in the upcoming weeks.</p>
     <div class="references">
     
