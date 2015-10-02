@@ -86,12 +86,12 @@
     T \mathbf{v} = \mathbf{r}_\pi + \gamma \mathbf{P}_\pi \mathbf{v}
     \end{equation}
     \]</span></p>
-    <p>where <span class="math">\(T\)</span> is the Bellman operator, and <span class="math">\(\mathbf{v}\)</span> is seen as being a fixed point of <span class="math">\(T\)</span>: <span class="math">\[
+    <p>where <span class="math">\(T\)</span> is the Bellman operator, and <span class="math">\(\mathbf{v}\)</span> is seen as a fixed point of <span class="math">\(T\)</span>: <span class="math">\[
     \begin{equation}
     T\mathbf{v} = \mathbf{v}
     \end{equation}
     \]</span></p>
-    <p>Note that in finite spaces, we write <span class="math">\(\mathbf{r}\)</span> and <span class="math">\(\mathbf{P}\)</span> in matrix form where <span class="math">\(\mathbf{v} \in \mathbb{R}^{|\mathcal{S}| \times 1}\)</span>, <span class="math">\(\mathbf{r}_\pi \in \mathbb{R}^{|\mathcal{S}| \times 1}\)</span>, <span class="math">\(\mathbf{P}_\pi \in \mathbb{R}^{|\mathcal{S}| \times |\mathcal{S}|}\)</span>. In the stochastic case, we compute <span class="math">\(\mathbf{r}_\pi\)</span> and <span class="math">\(\mathbf{P}_\pi\)</span> as follow:</p>
+    <p>Note that in finite spaces, we write <span class="math">\(\mathbf{r}\)</span> and <span class="math">\(\mathbf{P}\)</span> in matrix form where <span class="math">\(\mathbf{v} \in \mathbb{R}^{|\mathcal{S}| \times 1}\)</span>, <span class="math">\(\mathbf{r}_\pi \in \mathbb{R}^{|\mathcal{S}| \times 1}\)</span>, <span class="math">\(\mathbf{P}_\pi \in \mathbb{R}^{|\mathcal{S}| \times |\mathcal{S}|}\)</span>. In the stochastic case, we compute <span class="math">\(\mathbf{r}_\pi\)</span> and <span class="math">\(\mathbf{P}_\pi\)</span> as follows:</p>
     <p><span class="math">\[
     \begin{align*}
     \mathbf{r}_\pi(s) &amp;= \sum_a \pi(a \,|\, s) r(s,a) \\
@@ -137,7 +137,7 @@
     \theta_{t+1} &amp;= \theta_t + \alpha \frac{\partial}{\partial\theta} \text{MSE}(\theta)
     \end{align*}
     \]</span></p>
-    <p>The symbol <span class="math">\(\delta\)</span> is often use to denote the so-called <em>TD error</em>. Note that when using function approximation, if the function space is not rich enough, it might be impossible to represent function after one step of the Bellman operator. This discussion would lead us to consider the <em>projected</em> version of the Mean-Square Bellman Error criterion.</p>
+    <p>The symbol <span class="math">\(\delta\)</span> is often use to denote the so-called <em>TD error</em>. Note that when using function approximation, if the function space is not rich enough, it might be impossible to represent the value function after one step of the Bellman operator. This discussion would lead us to consider the <em>projected</em> version of the Mean-Square Bellman Error criterion.</p>
     <h2 id="mean-square-bellman-error">Mean-Square Bellman Error</h2>
     <p>We saw how TD(0) gets around the problem of setting up learning target with Bootstrapping. Although the derivation of TD(0) starts from the MSE criterion, it would be more natural to consider an objective which directly incorporates boostrapping.</p>
     <p>We define the Mean Square Bellman Error (MSBE) as:</p>
@@ -149,7 +149,7 @@
     \end{align*}
     \]</span></p>
     <h2 id="the-n-steps-bellman-operator">The n-steps Bellman operator</h2>
-    <p>As pointed out earlier, an issue with MC methods is their high variance. Bootstrapping mitigates this problem by only considering one-step extensions into the future at the cost of a higher bias. It would then be natural to attempt to balance this tradeoff by considering longer backups (also called <em>n-steps lookaheads</em>). We define the n-steps Bellman operator as follow:</p>
+    <p>As pointed out earlier, an issue with MC methods is their high variance. Bootstrapping mitigates this problem by only considering one-step extensions into the future at the cost of a higher bias. It would then be natural to attempt to balance this tradeoff by considering longer backups (also called <em>n-steps lookaheads</em>). We define the n-steps Bellman operator as follows:</p>
     <p><span class="math">\[
     \begin{equation}
     \underbrace{TTT ... T}_{\text{$n$ times}} V_\theta \equiv T^n V_\theta
