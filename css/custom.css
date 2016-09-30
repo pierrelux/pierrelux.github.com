@@ -1,6 +1,6 @@
 body {
-    font-size: 18px;
-    font-family: 'Noto Serif', serif;
+    font-size: 22px;
+    font-family: 'Source Sans Pro', sans-serif;
     background: #f9f9f9;
 }
 .navbar-custom {
@@ -81,7 +81,7 @@ ul.nav a { color: #3b3b3b !important; }
 }
 
 .frontpage a {
-    color:#8ab9d1;
+    color:#5398bb;
 }
 .frontpage a:hover {
     text-decoration: none;
