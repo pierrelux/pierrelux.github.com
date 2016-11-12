@@ -13,7 +13,7 @@
     <link href="http://getbootstrap.com/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="/css/custom.css" rel="stylesheet">
 
-        <script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
+        <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
       </head>
 
   <body>
@@ -50,17 +50,17 @@
     <p>Eligibility traces in reinforcement: I don't understand them. Sure, the implementation of the <a href="https://webdocs.cs.ualberta.ca/~sutton/book/ebook/node75.html">backward view</a> (the <em>memory meachnism</em>) does appeal to my intuition but its relation to the <a href="https://webdocs.cs.ualberta.ca/~sutton/book/ebook/node74.html">forward view</a> needs a more careful treatment.</p>
     <p>Here are some notes in preparation for our <a href="http://rl.cs.mcgill.ca/tracesgroup/">reading group on eligibility traces in RL</a>.</p>
     <h2 id="notation">Notation</h2>
-    <p>Reinforcement learning laid its foundations upon the framework of Markov Decision Processes (MDP). An MDP is a tuple <span class="math">\(\langle \mathcal{S}, \mathcal{A}, P(\cdot \,|\, s, a), \rangle\)</span> consisting of set of states <span class="math">\(\mathcal{S}\)</span>, a set of actions <span class="math">\(\mathcal{A}\)</span>, a transition matrix (or kernel) <span class="math">\(P(\cdot \,|\, s, a)\)</span> and a reward function <span class="math">\(r : \mathcal{S} \times \mathcal{A} \to \mathbb{R}\)</span>.</p>
+    <p>Reinforcement learning laid its foundations upon the framework of Markov Decision Processes (MDP). An MDP is a tuple <span class="math inline">\(\langle \mathcal{S}, \mathcal{A}, P(\cdot \,|\, s, a), \rangle\)</span> consisting of set of states <span class="math inline">\(\mathcal{S}\)</span>, a set of actions <span class="math inline">\(\mathcal{A}\)</span>, a transition matrix (or kernel) <span class="math inline">\(P(\cdot \,|\, s, a)\)</span> and a reward function <span class="math inline">\(r : \mathcal{S} \times \mathcal{A} \to \mathbb{R}\)</span>.</p>
     <p>For simplicity, we will restrict our attention to the infinite discounted return, defined as:</p>
-    <p><span class="math">\[
+    <p><span class="math display">\[
     \begin{equation}
     \mathbb{E}\left\{ \sum_{t=1}^\infty \gamma^{t-1} r_t \,|\, s_0=s, \pi \right\}
     \end{equation}
     \]</span></p>
-    <p>where <span class="math">\(0 \geq \gamma &lt; 1\)</span> is a <em>discount factor</em> and <span class="math">\(\pi\)</span> is a <em>policy</em> (stochastic or deterministic).</p>
+    <p>where <span class="math inline">\(0 \geq \gamma &lt; 1\)</span> is a <em>discount factor</em> and <span class="math inline">\(\pi\)</span> is a <em>policy</em> (stochastic or deterministic).</p>
     <h2 id="policy-evaluation">Policy Evaluation</h2>
     <p>The Bellman equations are defined as:</p>
-    <p><span class="math">\[
+    <p><span class="math display">\[
     \begin{equation}
     V_\pi(s) = \sum_{a} \pi(a \,|\, s) \left( r(s,a) + \gamma \sum_{s&#39;} P(s&#39; \,|\, s, a) V(s&#39;) \right)
     \end{equation}
@@ -68,7 +68,7 @@
     <p>The problem of solving the Bellman equations is often called the <em>policy evaluation problem</em>. Gaussian elimination or value iteration are possible solutions when the MDP is known. In reinforcement learning, this problem is often called the <em>prediction problem</em> and is often solved using <em>temporal difference learning</em>.</p>
     <h2 id="optimal-control">Optimal control</h2>
     <p>The optimal control problem is associated with Bellman's famous <em>principle of optimality</em> and can be expressed via the the so-called <em>Bellman optimality equations</em>:</p>
-    <p><span class="math">\[
+    <p><span class="math display">\[
      \begin{align*}
      V^*(s) &amp;= \max_a r(s,a) + \gamma \sum_{s&#39;}P(s&#39; \,|\, s, a) V^*(s&#39;)
      \end{align*}
@@ -76,36 +76,36 @@
     <p>A policy is optimal (denoted by a star) if it's underlying value function is optimal. If the MDP is known, value iteration and policy iteration can be used to compute an optimal stationary policy. Note that the stationarity of the policy is due to the infinite discounted return criterion ; this wouldn't be the case for finite horizons.</p>
     <h2 id="bellman-operator">Bellman operator</h2>
     <p>It is sometimes useful to adopt the operator point of view of the set of of Bellman equations and write:</p>
-    <p><span class="math">\[
+    <p><span class="math display">\[
     \begin{equation}
     T \mathbf{v} = \mathbf{r}_\pi + \gamma \mathbf{P}_\pi \mathbf{v}
     \end{equation}
     \]</span></p>
-    <p>where <span class="math">\(T\)</span> is the Bellman operator, and <span class="math">\(\mathbf{v}\)</span> is seen as a fixed point of <span class="math">\(T\)</span>: <span class="math">\[
+    <p>where <span class="math inline">\(T\)</span> is the Bellman operator, and <span class="math inline">\(\mathbf{v}\)</span> is seen as a fixed point of <span class="math inline">\(T\)</span>: <span class="math display">\[
     \begin{equation}
     T\mathbf{v} = \mathbf{v}
     \end{equation}
     \]</span></p>
-    <p>Note that in finite spaces, we write <span class="math">\(\mathbf{r}\)</span> and <span class="math">\(\mathbf{P}\)</span> in matrix form where <span class="math">\(\mathbf{v} \in \mathbb{R}^{|\mathcal{S}| \times 1}\)</span>, <span class="math">\(\mathbf{r}_\pi \in \mathbb{R}^{|\mathcal{S}| \times 1}\)</span>, <span class="math">\(\mathbf{P}_\pi \in \mathbb{R}^{|\mathcal{S}| \times |\mathcal{S}|}\)</span>. In the stochastic case, we compute <span class="math">\(\mathbf{r}_\pi\)</span> and <span class="math">\(\mathbf{P}_\pi\)</span> as follows:</p>
-    <p><span class="math">\[
+    <p>Note that in finite spaces, we write <span class="math inline">\(\mathbf{r}\)</span> and <span class="math inline">\(\mathbf{P}\)</span> in matrix form where <span class="math inline">\(\mathbf{v} \in \mathbb{R}^{|\mathcal{S}| \times 1}\)</span>, <span class="math inline">\(\mathbf{r}_\pi \in \mathbb{R}^{|\mathcal{S}| \times 1}\)</span>, <span class="math inline">\(\mathbf{P}_\pi \in \mathbb{R}^{|\mathcal{S}| \times |\mathcal{S}|}\)</span>. In the stochastic case, we compute <span class="math inline">\(\mathbf{r}_\pi\)</span> and <span class="math inline">\(\mathbf{P}_\pi\)</span> as follows:</p>
+    <p><span class="math display">\[
     \begin{align*}
     \mathbf{r}_\pi(s) &amp;= \sum_a \pi(a \,|\, s) r(s,a) \\
     \mathbf{P}_\pi(s,s&#39;) &amp;= \sum_a \pi(a \,|\, s) P(s&#39; \,|\, s, a)
     \end{align*}
     \]</span></p>
-    <p>Equipped with this new view, we can prove the existence of a solution to the Bellman equations by piggybacking on <a href="https://en.wikipedia.org/wiki/Banach_fixed-point_theorem">Banach fixed-point theorem</a> and showing that <span class="math">\(T\)</span> is a <a href="https://en.wikipedia.org/wiki/Contraction_mapping">contraction mapping</a> with respect to the <a href="https://en.wikipedia.org/wiki/Uniform_norm">sup-norm</a>.</p>
+    <p>Equipped with this new view, we can prove the existence of a solution to the Bellman equations by piggybacking on <a href="https://en.wikipedia.org/wiki/Banach_fixed-point_theorem">Banach fixed-point theorem</a> and showing that <span class="math inline">\(T\)</span> is a <a href="https://en.wikipedia.org/wiki/Contraction_mapping">contraction mapping</a> with respect to the <a href="https://en.wikipedia.org/wiki/Uniform_norm">sup-norm</a>.</p>
     <h2 id="mean-square-error">Mean Square Error</h2>
     <p>When we take the <em>learning</em> perspective to policy evaluation and control, it is convenient to consider the optimization-friendly <a href="https://en.wikipedia.org/wiki/Norm_(mathematics)#p-norm">l2 norm</a>.</p>
-    <p>If we were to know the true value function <span class="math">\(\mathbf{v}_\pi\)</span> for policy <span class="math">\(\pi\)</span>, it would be natural to minimize the mean-square error of our function estimate <span class="math">\(\mathbf{v}_\theta\)</span>:</p>
-    <p><span class="math">\[
+    <p>If we were to know the true value function <span class="math inline">\(\mathbf{v}_\pi\)</span> for policy <span class="math inline">\(\pi\)</span>, it would be natural to minimize the mean-square error of our function estimate <span class="math inline">\(\mathbf{v}_\theta\)</span>:</p>
+    <p><span class="math display">\[
     \begin{align*}
     \text{MSE}(\theta) &amp;= \| \mathbf{v}_\theta - \mathbf{v}_\pi \|^2_\mathbf{\mu} \\
     &amp;= (\mathbf{v}_\theta - \mathbf{v}_\pi)^\top \mathbf{M} (\mathbf{v}_\theta - \mathbf{v}_\pi)
     \end{align*}
-    \]</span> where <span class="math">\(\mathbf{M}\)</span> is the diagonal matrix containing the stationary distribution <span class="math">\(\mu\)</span> induced by <span class="math">\(\pi\)</span> in the given MDP.</p>
+    \]</span> where <span class="math inline">\(\mathbf{M}\)</span> is the diagonal matrix containing the stationary distribution <span class="math inline">\(\mu\)</span> induced by <span class="math inline">\(\pi\)</span> in the given MDP.</p>
     <h2 id="td0">TD(0)</h2>
     <p>The RL way of optimizing this objective is through <a href="https://en.wikipedia.org/wiki/Stochastic_gradient_descent">stochastic gradient descent (SGD)</a> which in turns relies on the <a href="https://en.wikipedia.org/wiki/Stochastic_approximation">Robbins-Monro and Kiefer-Wolfowitz algorithms</a>. This algorithmic choice provides the <em>online</em> and <em>realtime</em> properties passionately sought for by RL algorithms designers.</p>
-    <p>Let's then take the gradient of the MSE objective: <span class="math">\[
+    <p>Let's then take the gradient of the MSE objective: <span class="math display">\[
     \begin{align}
     \frac{\partial}{\partial\theta} \text{MSE}(\theta) &amp;= \sum_s \mu_\pi(s)\left( V_\pi(s) - V_\theta(s) \right)^2 \notag \\
     &amp;= \sum_s \mu_\pi(s) \left( V_\pi(s) - V_\theta(s) \right) \frac{\partial}{\partial\theta} V_\theta(s) \notag \\
@@ -114,29 +114,29 @@
     \]</span></p>
     <p>Now, this is not the end of the story. We have two problems:</p>
     <ol style="list-style-type: decimal">
-    <li>We don't know the true target <span class="math">\(V_\pi\)</span></li>
+    <li>We don't know the true target <span class="math inline">\(V_\pi\)</span></li>
     <li>We don't know the MDP</li>
     </ol>
-    <p>As opposed to the supervised learning setting, we don't have training targets in the form of true values for <span class="math">\(\mathbf{v}_\pi\)</span>. A straightforward solution in episodic problems might consist in performing rollouts from every state and averaging the returns in a <a href="https://en.wikipedia.org/wiki/Monte_Carlo_method">Monte Carlo (MC)</a> fashion. However, since the number of possible paths quickly explodes as a function of the length of the trajectories, the variance of such estimates would most likely be pretty high.</p>
-    <p>The TD way of solving this problem is by taking the following approximation: <span class="math">\[
+    <p>As opposed to the supervised learning setting, we don't have training targets in the form of true values for <span class="math inline">\(\mathbf{v}_\pi\)</span>. A straightforward solution in episodic problems might consist in performing rollouts from every state and averaging the returns in a <a href="https://en.wikipedia.org/wiki/Monte_Carlo_method">Monte Carlo (MC)</a> fashion. However, since the number of possible paths quickly explodes as a function of the length of the trajectories, the variance of such estimates would most likely be pretty high.</p>
+    <p>The TD way of solving this problem is by taking the following approximation: <span class="math display">\[
     \begin{equation}
     V_\pi(s) \approx \mathbb{E}\left\{ r(s,a) + \gamma V_\theta(s&#39;) \,|\, s, \pi \right\}
     \end{equation}
     \]</span></p>
-    <p>This approximation is essentially the one-step application of the Bellman operator on the estimate <span class="math">\(V_\theta\)</span>. This idea is called <strong>bootstrapping</strong> and is a cornerstone of temporal difference learning.</p>
+    <p>This approximation is essentially the one-step application of the Bellman operator on the estimate <span class="math inline">\(V_\theta\)</span>. This idea is called <strong>bootstrapping</strong> and is a cornerstone of temporal difference learning.</p>
     <p>The second problem has to do with the fundamental RL assumption that the transition and reward functions are either unknown or intractable to work with. We therefore have to find a way to compute the expectation. If we have access to a simulator (an <em>environment</em>), we can draw samples of this expectation rather than explicitely integrating it over the MDP. In the spirit of <em>stochastic approximation</em>, we won't however have to take more than one sample and rather rely on the stationary distribution to do the averaging.</p>
-    <p>Combining these two ideas, bootstrapping and stochastic approximation, we get the TD algorithm: <span class="math">\[
+    <p>Combining these two ideas, bootstrapping and stochastic approximation, we get the TD algorithm: <span class="math display">\[
     \begin{align*}
     \frac{\partial}{\partial\theta} \text{MSE}(\theta) &amp;\approx \left(r(s,a) + \gamma V_\theta(s&#39;) - V_\theta(s)\right)\frac{\partial}{\partial\theta} V_\theta(s) \\
     &amp;:= \delta_\theta \frac{\partial}{\partial\theta} V_\theta(s) \\
     \theta_{t+1} &amp;= \theta_t + \alpha \frac{\partial}{\partial\theta} \text{MSE}(\theta)
     \end{align*}
     \]</span></p>
-    <p>The symbol <span class="math">\(\delta\)</span> is often use to denote the so-called <em>TD error</em>. Note that when using function approximation, if the function space is not rich enough, it might be impossible to represent the value function after one step of the Bellman operator. This discussion would lead us to consider the <em>projected</em> version of the Mean-Square Bellman Error criterion.</p>
+    <p>The symbol <span class="math inline">\(\delta\)</span> is often use to denote the so-called <em>TD error</em>. Note that when using function approximation, if the function space is not rich enough, it might be impossible to represent the value function after one step of the Bellman operator. This discussion would lead us to consider the <em>projected</em> version of the Mean-Square Bellman Error criterion.</p>
     <h2 id="mean-square-bellman-error">Mean-Square Bellman Error</h2>
     <p>We saw how TD(0) gets around the problem of setting up learning target with Bootstrapping. Although the derivation of TD(0) starts from the MSE criterion, it would be more natural to consider an objective which directly incorporates boostrapping.</p>
     <p>We define the Mean Square Bellman Error (MSBE) as:</p>
-    <p><span class="math">\[
+    <p><span class="math display">\[
     \begin{align*}
     \text{MSBE}(\theta) &amp;= \| \mathbf{v}_\theta - T\mathbf{v}_\theta \|^2_\mathbf{D} \\
     &amp;= \sum_s d_\pi(s)\left( V_\theta(s) - T V_\theta(s) \right) \\
@@ -145,23 +145,23 @@
     \]</span></p>
     <h2 id="the-n-steps-bellman-operator">The n-steps Bellman operator</h2>
     <p>As pointed out earlier, an issue with MC methods is their high variance. Bootstrapping mitigates this problem by only considering one-step extensions into the future at the cost of a higher bias. It would then be natural to attempt to balance this tradeoff by considering longer backups (also called <em>n-steps lookaheads</em>). We define the n-steps Bellman operator as follows:</p>
-    <p><span class="math">\[
+    <p><span class="math display">\[
     \begin{equation}
     \underbrace{TTT ... T}_{\text{$n$ times}} V_\theta \equiv T^n V_\theta
     \end{equation}
     \]</span></p>
-    <h2 id="the-lambda-bellman-operator">The <span class="math">\(\lambda\)</span>-Bellman operator</h2>
-    <p>The <span class="math">\(\lambda\)</span>-Bellman operator will allow us to explore the full spectrum from boostrapping on one end to Monte-Carlo on the other through a real parameter <span class="math">\(\lambda\)</span> ranging from 0 to 1. Rather than taking only one n-steps backup, we will also take a geometrically-weighted combination of multi-steps backups. We write the <span class="math">\(\lambda\)</span>-Bellman operator as:</p>
-    <p><span class="math">\[
+    <h2 id="the-lambda-bellman-operator">The <span class="math inline">\(\lambda\)</span>-Bellman operator</h2>
+    <p>The <span class="math inline">\(\lambda\)</span>-Bellman operator will allow us to explore the full spectrum from boostrapping on one end to Monte-Carlo on the other through a real parameter <span class="math inline">\(\lambda\)</span> ranging from 0 to 1. Rather than taking only one n-steps backup, we will also take a geometrically-weighted combination of multi-steps backups. We write the <span class="math inline">\(\lambda\)</span>-Bellman operator as:</p>
+    <p><span class="math display">\[
     \begin{equation}
     T_\lambda = (1 - \lambda)\sum_{k=1}^\infty \lambda^{k-1} T^k
     \end{equation}
     \]</span></p>
-    <p>where <span class="math">\((1 - \lambda)\)</span> is for the weights to sum up to one.</p>
+    <p>where <span class="math inline">\((1 - \lambda)\)</span> is for the weights to sum up to one.</p>
     <h2 id="forward-and-backward-view">Forward and backward view</h2>
-    <p>TD(<span class="math">\(\lambda\)</span>) methods will solve for the fixed point of the <span class="math">\(T_\lambda\)</span> operator. The interpretation of the lambda return is the <em>forward view</em> of eligibility traces. Since it is a statement about a quantity in the future, we will have to find a way to implement it in the present without having recourse to a magical time traveling machine to observe the future values. The mechanism to implement the forward view will take place with the <em>eligibility traces</em> in the <em>backward view</em>.</p>
+    <p>TD(<span class="math inline">\(\lambda\)</span>) methods will solve for the fixed point of the <span class="math inline">\(T_\lambda\)</span> operator. The interpretation of the lambda return is the <em>forward view</em> of eligibility traces. Since it is a statement about a quantity in the future, we will have to find a way to implement it in the present without having recourse to a magical time traveling machine to observe the future values. The mechanism to implement the forward view will take place with the <em>eligibility traces</em> in the <em>backward view</em>.</p>
     <p>More on this in the upcoming weeks.</p>
-    <div class="references">
+    <div id="refs" class="references">
     
     </div>
     </div>

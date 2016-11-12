@@ -13,7 +13,7 @@
     <link href="http://getbootstrap.com/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="/css/custom.css" rel="stylesheet">
 
-        <script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
+        <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
       </head>
 
   <body>
@@ -50,17 +50,25 @@
     <p>They say that <em>if all you have is a hammer, everything looks like a nail</em>. I have to admit: my <em>hammer</em> for Hierachical Reinforcement Learning is the options framework of <span class="citation">Sutton, Precup, and Singh (1999)</span>.</p>
     <p>While reading <span class="citation">Ali et al. (2013)</span> about motor skills learning of birdsong, I couldn't keep myself from contemplating the ressemblance to the options model. The results presented in this month edition of Neuron showed the existence of a dual mechanism for motor skills learning in birdsong. A dissociation seems to exists in the learning process of the <em>spectral</em> characteristics of birdsong and that of aquiring its temporal structure. The authors suggests that the <a href="http://www.scholarpedia.org/article/Basal_ganglia">basal ganglia</a> would be responsible for learning the <em>spectral</em> aspect of birdsong while a premotor cortex area would handle its temporal component. The independence of these learning mechanisms might also be benificial in human motor skills learning and might underlie the &quot;slow learning&quot; technique exploited by musicians. Under this paradigm, finger movements are first learned at a slower pace while gradually refining the correctness of the temporal sequence later.</p>
     <h2 id="optimal-policy-switching">Optimal Policy Switching</h2>
-    <p>It seems to me that such a duality can already be accounted for in the options model. Furthermore, the optimal policy switching work of <span class="citation">Comanici and Precup (2010)</span> provides algorithmic grounds for realizing this type of learning. An option is defined as the tuple <span class="math">\(\langle \mathcal{I}, \pi, \beta \rangle\)</span> where <span class="math">\(\mathcal{I}\)</span> is the set of states under which the option can be initiated, <span class="math">\(\pi\)</span> is a policy for the option, and <span class="math">\(\beta\)</span> is a termination function.</p>
-    <p>I see the <em>spectral features</em> of the birdsong as the option policy and the <em>temporal structure</em> being encoded through <span class="math">\(\beta\)</span>. Through a proper parametrization, <span class="citation">Comanici and Precup (2010)</span> showed how to use policy gradient methods to derive an optimal termination function for the options. As postulated for the birdsong, this proposed approach also allows for dissociated learning stages: the options policy (having most likely ill-defined termination functions) are first learned but are later refined through the policy gradient algorithm.</p>
+    <p>It seems to me that such a duality can already be accounted for in the options model. Furthermore, the optimal policy switching work of <span class="citation">Comanici and Precup (2010)</span> provides algorithmic grounds for realizing this type of learning. An option is defined as the tuple <span class="math inline">\(\langle \mathcal{I}, \pi, \beta \rangle\)</span> where <span class="math inline">\(\mathcal{I}\)</span> is the set of states under which the option can be initiated, <span class="math inline">\(\pi\)</span> is a policy for the option, and <span class="math inline">\(\beta\)</span> is a termination function.</p>
+    <p>I see the <em>spectral features</em> of the birdsong as the option policy and the <em>temporal structure</em> being encoded through <span class="math inline">\(\beta\)</span>. Through a proper parametrization, <span class="citation">Comanici and Precup (2010)</span> showed how to use policy gradient methods to derive an optimal termination function for the options. As postulated for the birdsong, this proposed approach also allows for dissociated learning stages: the options policy (having most likely ill-defined termination functions) are first learned but are later refined through the policy gradient algorithm.</p>
     <p>The concept of <em>interrupting options</em> had already been suggested in the seminal work of Sutton and colleagues. The intuition was that if it could be established that an option is not worthwhile following anymore, then it would be preferable to interrupt it and switch to a better strategy, a better <em>option</em>. <span class="citation">Comanici and Precup (2010)</span> showed how this idea could be realized. It was then followed another policy gradient approach by <span class="citation">Levy and Shimkin (2012)</span> that rather tried to solve the two learning problems jointly.</p>
     <p>Under the light of these new neurological evidences, it could only be grist to the mill for the approach of <span class="citation">Comanici and Precup (2010)</span>.</p>
     <p>Original story read on: Harvard Gazette: <a href="http://news.harvard.edu/gazette/story/2013/09/deconstructing-motor-skills/">Deconstructing Motor Skills</a></p>
-    <div class="references">
-    <h2>References</h2>
-    <p>Ali, Farhan, Timothy M. Othchy, Cengiz Pehlevan, Antoniu L. Fantana, Yoram Burak, and Bence P. Ölveczky. 2013. “The Basal Ganglia Is Necessary for Learning Spectral, but Not Temporal, Features of Birdsong.” <em>Neuron</em> (September). <a href="http://linkinghub.elsevier.com/retrieve/pii/S089662731300706X">http://linkinghub.elsevier.com/retrieve/pii/S089662731300706X</a>.</p>
-    <p>Comanici, Gheorghe, and Doina Precup. 2010. “Optimal Policy Switching Algorithms for Reinforcement Learning.” In <em>Proc of. 9th Int. Conf. on Autonomous Agents and Multiagent Systems (AAMAS 2010)</em>, 709–714.</p>
-    <p>Levy, KfirY., and Nahum Shimkin. 2012. “Unified Inter and Intra Options Learning Using Policy Gradient Methods.” In <em>Recent Advances in Reinforcement Learning</em>, edited by Scott Sanner and Marcus Hutter, 7188:153–164. Lecture Notes in Computer Science. Springer Berlin Heidelberg. doi:<a href="http://dx.doi.org/10.1007/978-3-642-29946-9_17">10.1007/978-3-642-29946-9_17</a>. <a href="http://dx.doi.org/10.1007/978-3-642-29946-9_17">http://dx.doi.org/10.1007/978-3-642-29946-9_17</a>.</p>
-    <p>Sutton, Richard S, Doina Precup, and Satinder Singh. 1999. “Between MDPs and Semi-MDPs: A Framework for Temporal Abstraction in Reinforcement Learning.” <em>Artificial Intelligence</em> 112 (1-2): 181–211.</p>
+    <h2 id="references" class="unnumbered">References</h2>
+    <div id="refs" class="references">
+    <div id="ref-Ali2013">
+    <p>Ali, Farhan, Timothy M. Othchy, Cengiz Pehlevan, Antoniu L. Fantana, Yoram Burak, and Bence P. Ölveczky. 2013. “The Basal Ganglia Is Necessary for Learning Spectral, but Not Temporal, Features of Birdsong,” September. Cell Press, <a href="http://linkinghub.elsevier.com/retrieve/pii/S089662731300706X" class="uri">http://linkinghub.elsevier.com/retrieve/pii/S089662731300706X</a>.</p>
+    </div>
+    <div id="ref-Comanici2010">
+    <p>Comanici, Gheorghe, and Doina Precup. 2010. “Optimal Policy Switching Algorithms for Reinforcement Learning.” In <em>Proc of. 9th Int. Conf. on Autonomous Agents and Multiagent Systems (AAMAS 2010)</em>, 709–14.</p>
+    </div>
+    <div id="ref-Levy2012">
+    <p>Levy, KfirY., and Nahum Shimkin. 2012. “Unified Inter and Intra Options Learning Using Policy Gradient Methods.” In <em>Recent Advances in Reinforcement Learning</em>, edited by Scott Sanner and Marcus Hutter, 7188:153–64. Lecture Notes in Computer Science. Springer Berlin Heidelberg. doi:<a href="https://doi.org/10.1007/978-3-642-29946-9_17">10.1007/978-3-642-29946-9_17</a>.</p>
+    </div>
+    <div id="ref-Sutton1999">
+    <p>Sutton, Richard S, Doina Precup, and Satinder Singh. 1999. “Between MDPs and semi-MDPs: A framework for temporal abstraction in reinforcement learning.” <em>Artificial Intelligence</em> 112 (1-2): 181–211.</p>
+    </div>
     </div>
     </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
