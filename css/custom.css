@@ -16,8 +16,8 @@ body {
 
 }
 
-.navbar-default .navbar-brand { color: #3b3b3b !important;}
-ul.nav a { color: #3b3b3b !important; }
+.navbar-default .navbar-brand { color: #231C15 !important;}
+ul.nav a { color: #231C15 !important; }
 
 
 .navbar-header {
@@ -81,7 +81,7 @@ ul.nav a { color: #3b3b3b !important; }
 }
 
 .frontpage a {
-    color:#5398bb;
+    color:#6C838E;
 }
 .frontpage a:hover {
     text-decoration: none;
