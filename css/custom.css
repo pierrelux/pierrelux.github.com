@@ -87,8 +87,9 @@ ul.nav a { color: #231C15 !important; }
     text-decoration: none;
 }
 .frontpage ul {
-    list-style-type: none;
+    list-style-type: circle;
 }
+
 
 .frontpage li h1 {
     font-family: 'Crimson Text', serif;
