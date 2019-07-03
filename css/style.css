@@ -22,7 +22,7 @@ h1 {
 }
 
 body {
-  color: #231C15;
+  color: #220000;
   font-size: 100%;
   line-height: 1.75;
   font-family: 'Merriweather', serif;
@@ -48,10 +48,6 @@ small, .small { font-size: 16px; }
   h2, .h2 { font-size: 32px; }
   p, .p   { font-size: 20px; }
 }
-
-a { color: #09c; text-decoration: none; }
-a:hover { color: #069; }
-h1 a { color: #333;}
 
 .menu {
   width: 90vw;
