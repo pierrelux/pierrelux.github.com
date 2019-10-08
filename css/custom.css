@@ -134,3 +134,7 @@ h1 a { color: #bb7788;}
     vertical-align: middle;
     float: none;
 }
+
+.navbar-default {
+    border-color: #220000;
+}
