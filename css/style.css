@@ -17,7 +17,7 @@ article, aside, details, figcaption, figure, footer, header, main, nav, section,
 
 h1 {
   font-size:64px;
-  font-family: "Crimson Text", "Hoefler Text", "Georgia", serif;
+  font-family: 'Libre Baskerville', serif;
   font-style: italic;
 }
 
@@ -25,7 +25,7 @@ body {
   color: #220000;
   font-size: 100%;
   line-height: 1.75;
-  font-family: 'Merriweather', serif;
+  font-family: 'Roboto', sans-serif;
 }
 
 h1, h2, h3, h4, h5, h6 { line-height: 1.25; }
