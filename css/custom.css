@@ -1,5 +1,5 @@
 body {
-    font-size: 22px;
+    font-size: 18px;
     font-family: 'Roboto', sans-serif;
     background: #EDDCD0;
     color: #220000;
@@ -115,7 +115,7 @@ h1 a { color: #bb7788;}
 .frontpage h1 {
     font-family: 'Libre Baskerville', serif;
     font-weight: 400;
-    font-size: 64px;
+    font-size: 48px;
     text-align: left;
     padding-bottom: 0.5em;
 }
@@ -151,4 +151,18 @@ h1 a { color: #bb7788;}
 .navbar-default .navbar-toggle {
     border-color: #EDDCD0;
     border-color: #220000;
+}
+
+.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
+    font-family: 'Libre Baskerville', serif;
+}
+
+.frontpage h3 {
+    font-size: 22px;
+    font-family: 'Roboto', sans-serif;
+}
+
+pre {
+    background-color: rgb(243, 218, 200);
+    border-color: rgb(219, 197, 180);
 }

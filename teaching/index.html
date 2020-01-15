@@ -62,85 +62,74 @@
     </ul>
     <h2 id="schedule">Schedule</h2>
     <p>The tentative week-by-week schedule (according to the <a href="https://fas.umontreal.ca/public/FAS/fas/Documents/Calendrier/Calendrier_2019-2020.pdf">UdeM calender</a>) is the following:</p>
-    <div class="schedule">
-    <table style="width:93%;">
-    <colgroup>
-    <col width="19%" />
-    <col width="73%" />
-    </colgroup>
-    <thead>
-    <tr class="header">
-    <th>Week</th>
-    <th>Topics</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>January 6</td>
-    <td>First class. Review of Markov Decision Processes and examples</td>
-    </tr>
-    <tr class="even">
-    <td>January 13</td>
-    <td>Criteria: finite horizon, infinite horizon, average reward</td>
-    </tr>
-    <tr class="odd">
-    <td>January 20</td>
-    <td>Methods: value iteration, policy iteration, LP formulation, generalized Bellman operator and matrix splitting methods</td>
-    </tr>
-    <tr class="even">
-    <td>January 27</td>
-    <td>LSTD(lambda), TD(lambda), oblique perspective, variational inequality perspective, stability</td>
-    </tr>
-    <tr class="odd">
-    <td>February 3</td>
-    <td>Off-policy learning: importance sampling and the conditional monte-carlo method</td>
-    </tr>
-    <tr class="even">
-    <td>February 10</td>
-    <td>Fitted value methods: FQI, NFQI, DQN, proximal methods and GTD/TDC</td>
-    </tr>
-    <tr class="odd">
-    <td>February 17</td>
-    <td>Policy gradients: occupation measures, discounted objective, implicit differentiation and derivation in the infinite horizon case</td>
-    </tr>
-    <tr class="even">
-    <td>February 24</td>
-    <td>Policy gradients: derivative estimation, likelihood ratio methods (REINFORCE), reparametrization (IPA), baselines (control variates), actor-critic systems</td>
-    </tr>
-    <tr class="odd">
-    <td>March 2</td>
-    <td>Spring break</td>
-    </tr>
-    <tr class="even">
-    <td>March 9</td>
-    <td>Policy gradients: application for learning temporal abstractions, the option-critic architecture, hierarchical and goal-conditioned RL</td>
-    </tr>
-    <tr class="odd">
-    <td>March 16</td>
-    <td>Policy gradients: Linear-Quadratic Regulator, Lagrangian formulation, MPC, Monte-Carlo Tree Search</td>
-    </tr>
-    <tr class="even">
-    <td>March 23</td>
-    <td>Automatic differentiation as discrete-time optimal control</td>
-    </tr>
-    <tr class="odd">
-    <td>March 30</td>
-    <td>Formulation of inverse RL and meta-RL as bilevel optimization.</td>
-    </tr>
-    <tr class="even">
-    <td>April 6</td>
-    <td>Methods (contd.): KKT &quot;trick&quot;, forward, reverse, implicit, competitive. Case studies</td>
-    </tr>
-    <tr class="odd">
-    <td>April 13</td>
-    <td>Challenge and opportunities</td>
-    </tr>
-    <tr class="even">
-    <td>April 20</td>
-    <td>Final project presentations</td>
-    </tr>
-    </tbody>
-    </table>
+    <h3 id="january-7">January 7</h3>
+    <p>First class. Markov Decision Processes, induced process</p>
+    <h3 id="january-10">January 10</h3>
+    <p>Examples of MDPs, constrained MLE as sequential allocation, criteria: finite horizon, infinite horizon, average reward, random horizon interpretation of infinite discounted setting. Bellman optimality</p>
+    <h3 id="january-14">January 14</h3>
+    <ul>
+    <li>Absorbing states and discounting.
+    <ul>
+    <li>Section 5.3, proposition 5.3.1 and page 127 in Puterman (1994)</li>
+    <li><a href="https://ieeexplore.ieee.org/document/917668">Death and discounting</a> by Adam Shwartz</li>
+    <li><pre><code>@article{Shwartz2001,
+    doi = {10.1109/9.917668},
+    url = {https://doi.org/10.1109/9.917668},
+    year = {2001},
+    month = apr,
+    publisher = {Institute of Electrical and Electronics Engineers ({IEEE})},
+    volume = {46},
+    number = {4},
+    pages = {644--647},
+    author = {A. Shwartz},
+    title = {Death and discounting},
+    journal = {{IEEE} Transactions on Automatic Control}
+    }</code></pre></li>
+    </ul></li>
+    <li><p>Vector notation: Section 5.6 in Puterman (1994)</p></li>
+    <li><p>Neumann series and policy evaluation: Theorem 6.1.1 and corrolary C.4 in Puterman (1994)</p></li>
+    <li><p>Matrix splitting methods:</p>
+    <ul>
+    <li><a href="http://www.sam.math.ethz.ch/~mhg/unt/SWNLA/itmethSWNLA08.pdf">Iterative Methods</a> by Martin H. Gutknecht</li>
+    <li><a href="https://atrium.umontreal.ca/primo-explore/search?query=any,contains,Matrix%20iterative%20analysis&amp;tab=default_tab&amp;search_scope=Tout_sauf_articles&amp;sortby=date&amp;vid=UM&amp;facet=frbrgroupid,include,340907508&amp;lang=fr_FR&amp;offset=0">Matrix iterative analysis</a> by Richard Varga</li>
+    <li><pre><code>@Book{varga1962,
+    title       = {Matrix iterative analysis},
+    author  = {Richard S. Varga},
+    lccn        = {62021277},
+    year        = {1962},
+    publisher   = {Prentice-Hall},
+    address = {Englewood Cliffs}
+    }</code></pre></li>
+    </ul></li>
+    </ul>
+    <h3 id="week-of-january-17">Week of January 17</h3>
+    <p>Stopping times and matrix splitting, nonlinear systems of equations, value iteration, policy iteration</p>
+    <h3 id="week-of-january-27">Week of January 27</h3>
+    <p>LSTD(lambda), TD(lambda), oblique perspective, variational inequality perspective, stability</p>
+    <h3 id="week-of-february-3">Week of February 3</h3>
+    <p>Off-policy learning: importance sampling and the conditional monte-carlo method</p>
+    <h3 id="week-of-february-10">Week of February 10</h3>
+    <p>Fitted value methods: FQI, NFQI, DQN, proximal methods and GTD/TDC</p>
+    <h3 id="week-of-february-17">Week of February 17</h3>
+    <p>Policy gradients: occupation measures, discounted objective, implicit differentiation and derivation in the infinite horizon case</p>
+    <h3 id="week-of-february-24">Week of February 24</h3>
+    <p>Policy gradients: derivative estimation, likelihood ratio methods (REINFORCE), reparametrization (IPA), baselines (control variates), actor-critic systems</p>
+    <h3 id="week-of-march-2">Week of March 2</h3>
+    <p>Spring break</p>
+    <h3 id="week-of-march-9">Week of March 9</h3>
+    <p>Policy gradients: application for learning temporal abstractions, the option-critic architecture, hierarchical and goal-conditioned RL</p>
+    <h3 id="week-of-march-16">Week of March 16</h3>
+    <p>Policy gradients: Linear-Quadratic Regulator, Lagrangian formulation, MPC, Monte-Carlo Tree Search</p>
+    <h3 id="week-of-march-23">Week of March 23</h3>
+    <p>Automatic differentiation as discrete-time optimal control</p>
+    <h3 id="week-of-march-30">Week of March 30</h3>
+    <p>Formulation of inverse RL and meta-RL as bilevel optimization.</p>
+    <h3 id="week-of-april-6">Week of April 6</h3>
+    <p>Methods (contd.): KKT &quot;trick&quot;, forward, reverse, implicit, competitive. Case studies</p>
+    <h3 id="week-of-april-13">Week of April 13</h3>
+    <p>Challenge and opportunities</p>
+    <h3 id="week-of-april-20">Week of April 20</h3>
+    <p>Final project presentations</p>
     </div>
     <h2 id="wellbeing">Wellbeing</h2>
     <p>Academic life can sometimes be overwhelming. Don't hesitate to find support:</p>
