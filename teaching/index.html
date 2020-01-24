@@ -64,11 +64,11 @@
     <li><a href="https://epubs.siam.org/doi/book/10.1137/1.9780898717761">Evaluating Derivatives: Principles and Techniques of Algorithmic Differentiation, Second Edition</a> by Andreas Griewank and Andrea Walther</li>
     </ul>
     <h2 id="schedule">Schedule</h2>
-    <h3 id="january-7">January 7</h3>
+    <h3 id="tuesday-january-7">Tuesday January 7</h3>
     <p>First class. Markov Decision Processes, induced process</p>
-    <h3 id="january-10">January 10</h3>
+    <h3 id="friday-january-10">Friday January 10</h3>
     <p>Examples of MDPs, constrained MLE as sequential allocation, criteria: finite horizon, infinite horizon, average reward, random horizon interpretation of infinite discounted setting. Bellman optimality</p>
-    <h3 id="january-14">January 14</h3>
+    <h3 id="tuesday-january-14">Tuesday January 14</h3>
     <ul>
     <li>Absorbing states and discounting.
     <ul>
@@ -104,7 +104,7 @@
     }</code></pre></li>
     </ul></li>
     </ul>
-    <h3 id="week-of-january-17">Week of January 17</h3>
+    <h3 id="friday-january-17">Friday January 17</h3>
     <ul>
     <li><p>Primal and Dual LP formulations: section 6.9.1 in Puterman (1994)</p>
     <ul>
@@ -138,6 +138,80 @@
     <li><p>Equality between taking the maximum over the set of deterministic Markovian decision rules instead of the randomized Markovian decision rules: proposition 6.2.1 in Puterman (1994)</p></li>
     <li><p>Contraction mappings: section 6.2.3 in Puterman (1994)</p></li>
     <li><p>Banach fixed-point theorem: theorem 6.2.3 in Puterman (1994)</p></li>
+    </ul>
+    <h3 id="tuesday-january-21">Tuesday January 21</h3>
+    <ul>
+    <li>Contraction mapping theorem: theorem 6.2.3 of Puterman (1994)</li>
+    <li>The Bellman optimality operator is a contraction: proposition 6.2.4</li>
+    <li>Conserving decision rules: section 6.2.4</li>
+    <li>Existence of stationary policies: theorem 6.2.7</li>
+    <li>Value iteration: section 6.3.2</li>
+    <li>Termination criterion: theorem 6.3.1 c) and d)</li>
+    </ul>
+    <h3 id="friday-january-24">Friday January 24</h3>
+    <ul>
+    <li><p>Policy Iteration: section 6.4</p>
+    <ul>
+    <li><p>Monotonicity of the value iterates: proposition 6.4.1</p></li>
+    <li><p>Convergence of policy iteration: theorem 6.4.2</p></li>
+    <li><p>PI as a constructive proof for the existence of a solution to the Bellman optimality equations</p></li>
+    </ul></li>
+    <li><p>Newton-Kantorovich Iterations: section 6.4.3</p>
+    <ul>
+    <li><p>Gateaux derivatives</p></li>
+    <li><p>Policy iteration as Newton-Kantorovich: proposition 6.4.4</p></li>
+    <li><p>See <a href="https://doi.org/10.1016/c2013-0-03044-7">Functional Analysis 2nd edition</a> by Kantorovich and Akilov (1982)</p></li>
+    <li><pre><code>  @book{KantorovichAkilov1982,
+      title={Functional Analysis},
+      author={Kantorovich, L.V. and Akilov, G.P.},
+      isbn={9780080230368},
+      lccn={80041734},
+      year={1982},
+      publisher={Pergamon Press}
+    }</code></pre></li>
+    <li><p>See <a href="https://www.jstor.org/stable/3689239">On the Convergence of Policy Iteration in Stationary Dynamic Programming</a> by Puterman and Brumelle (1979)</p></li>
+    <li><pre><code>@article{PutermanBrumelle1979,
+      author = {Martin L. Puterman and Shelby L. Brumelle},
+      title = {On the Convergence of Policy Iteration in Stationary Dynamic Programming},
+      journal = {Mathematics of Operations Research},
+      volume = {4},
+      number = {1},
+      pages = {60-69},
+      year = {1979}
+    }</code></pre></li>
+    <li><p>See <a href="https://doi.org/10.1016/s1574-0021(96)01016-7">Numerical dynamic programming in economics</a> by John Rust (1996)</p></li>
+    <li><pre><code>@incollection{Rust1996,
+      doi = {10.1016/s1574-0021(96)01016-7},
+      url = {https://doi.org/10.1016/s1574-0021(96)01016-7},
+      year = {1996},
+      publisher = {Elsevier},
+      pages = {619--729},
+      author = {John Rust},
+      title = {Chapter 14 Numerical dynamic programming in economics},
+      booktitle = {Handbook of Computational Economics}
+    }</code></pre></li>
+    </ul></li>
+    <li><p>Modified policy iteration: section 6.5</p>
+    <ul>
+    <li>Generalized Bellman optimality operator</li>
+    <li>See <a href="https://research.tue.nl/en/publications/stopping-times-and-markov-programming-2">Stopping times and Markov programming</a> by Van Nunen 1976</li>
+    <li><pre><code>@TechReport{vannunen1976,
+    author  = &quot;J.A.E.E. van Nunen and J. Wessels&quot;,
+    title       = &quot;Stopping times and Markov programming&quot;,
+    institution = &quot;Technische Hogeschool Eindhoven&quot;,
+    address = &quot;Eindhoven:&quot;,
+    number  = &quot;76-22&quot;,
+    year        = &quot;1976&quot;
+    }</code></pre></li>
+    <li>See <a href="https://research.tue.nl/en/publications/the-generation-of-successive-approximation-methods-for-markov-dec-2">The generation of successive approximation methods for Markov decision processes by using stopping times</a> by Van Nunen and Wessels (1976)</li>
+    <li><pre><code>@techreport{vannunentechreport1976,
+    author = {van Nunen, J. A. E. E. and Wessels, J.},
+    year = {1976},
+    title = {The generation of successive approximation methods for Markov decision processes by using stopping times},
+    institution = {Eindhoven: Technische Hogeschool Eindhoven.},
+    number = {Memorandum COSOR; Vol. 7622}
+    }</code></pre></li>
+    </ul></li>
     </ul>
     <h3 id="week-of-january-27">Week of January 27</h3>
     <p>LSTD(lambda), TD(lambda), oblique perspective, variational inequality perspective, stability</p>
