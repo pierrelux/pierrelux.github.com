@@ -12,6 +12,7 @@
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet">
     <link href="/css/custom.css" rel="stylesheet">
 
+        <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_CHTML-full" type="text/javascript"></script>
       </head>
 
   <body>
@@ -213,12 +214,66 @@
     }</code></pre></li>
     </ul></li>
     </ul>
-    <h3 id="week-of-january-27">Week of January 27</h3>
-    <p>LSTD(lambda), TD(lambda), oblique perspective, variational inequality perspective, stability</p>
-    <h3 id="week-of-february-3">Week of February 3</h3>
-    <p>Off-policy learning: importance sampling and the conditional monte-carlo method</p>
-    <h3 id="week-of-february-10">Week of February 10</h3>
-    <p>Fitted value methods: FQI, NFQI, DQN, proximal methods and GTD/TDC</p>
+    <h3 id="tuesday-january-28">Tuesday January 28</h3>
+    <ul>
+    <li>Derivation of the smooth Bellman optimality equations from the point of view of a noisy reward function where the noise process comes from a Gumbel distribution</li>
+    <li>Social surplus function</li>
+    <li>Williams-Daly-Zachary theorem</li>
+    <li>See McFadden's <a href="https://eml.berkeley.edu/~mcfadden/discrete/ch5.pdf">Econometric Models of Probabilistic Choice</a> (1981)</li>
+    <li>See Rust (1996) and:</li>
+    <li><pre><code>  @article{Rust1988,
+      doi = {10.1137/0326056},
+      url = {https://doi.org/10.1137/0326056},
+      year = {1988},
+      month = sep,
+      publisher = {Society for Industrial {\&amp;} Applied Mathematics ({SIAM})},
+      volume = {26},
+      number = {5},
+      pages = {1006--1024},
+      author = {Rust John},
+      title = {Maximum Likelihood Estimation of Discrete Control Processes},
+      journal = {{SIAM} Journal on Control and Optimization}
+    }</code></pre></li>
+    <li>Introduction to the projected bellman equations, Galerkin method, variational formulation</li>
+    </ul>
+    <h3 id="friday-january-31">Friday January 31</h3>
+    <ul>
+    <li>Lemma 6.3.1 on the property of the weighted Euclidean norm taken under a stationary distribution</li>
+    <li>Proposition 6.3.1 using Lemma 6.3.1 to show that the projected policy evaluation operator is a <span class="math inline">\(\gamma\)</span>-contraction and proof of the bound on the error between the fixed-point solution and the true value function</li>
+    <li>Use of the Pythagorean theorem (footnote on page 425, section 6.3.1)</li>
+    <li>Matrix form of the projected equations (section 6.3.2)</li>
+    </ul>
+    <h3 id="tuesday-february-4">Tuesday February 4</h3>
+    <ul>
+    <li>Projection by Monte Carlo simulation, section 6.1.4 of Bertsekas</li>
+    <li>Derivation of the closed-form solution of the projection under the weighted Euclidean norm</li>
+    <li>Monte Carlo estimates of the closed-form solution (see page 406 of Bertsekas)</li>
+    <li>Simulated-based version of the direct solution to the projected policy evaluation equations: LSTD(0)</li>
+    <li>Section 6.3.3 of Bertsekas</li>
+    <li>Section 6.3.4 of Bertsekas</li>
+    </ul>
+    <h3 id="friday-february-7">Friday February 7</h3>
+    <ul>
+    <li>Assignment 1 released</li>
+    <li>Perron-Frobenius theorem and numerical methods for computing the stationary distribution</li>
+    <li>Projected Value Iteration algorithm, see section 6.3.2 of Bertsekas</li>
+    <li>Simulated-based counterpart to PVI: LSPE(0) see section 6.3.4 of Bertsekas</li>
+    </ul>
+    <h3 id="tuesday-february-11">Tuesday February 11</h3>
+    <ul>
+    <li>Oblique Projections</li>
+    <li>Projected Bellman equations with matrix splitting methods</li>
+    <li>Simulated-based counterpart: LSTD(<span class="math inline">\(\lambda\)</span>)</li>
+    </ul>
+    <h3 id="friday-february-14">Friday February 14</h3>
+    <ul>
+    <li>Valentine's day</li>
+    <li>See (Wikipedia](https://en.wikipedia.org/wiki/Valentine%27s_Day)</li>
+    <li>ODE Method and Stochastic Approximation</li>
+    <li>Fitted value methods:</li>
+    <li>Non-linear case</li>
+    <li>Counterexample</li>
+    </ul>
     <h3 id="week-of-february-17">Week of February 17</h3>
     <p>Policy gradients: occupation measures, discounted objective, implicit differentiation and derivation in the infinite horizon case</p>
     <h3 id="week-of-february-24">Week of February 24</h3>
