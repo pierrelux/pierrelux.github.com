@@ -60,6 +60,7 @@
     <li><a href="https://onlinelibrary.wiley.com/doi/book/10.1002/9780470316887">Markov Decision Processes: Discrete Stochastic Dynamic Programming</a> by Martin Puterman</li>
     <li><a href="https://web.mit.edu/dimitrib/www/RLbook.html">Reinforcement Learning and Optimal Control</a> by Dimitri Bertsekas</li>
     <li><a href="http://incompleteideas.net/book/the-book.html">Reinforcement Learning: An Introduction</a> by Richard S. Sutton and Andrew G. Barto</li>
+    <li><a href="https://onlinelibrary.wiley.com/doi/book/10.1002/9780470230381">Simulation and the Monte Carlo Method, Second Edition</a> by Rubinstein and Kroese (2008)</li>
     <li><a href="http://www.athenasc.com/nonlinbook.html">Nonlinear Programming: 3rd Edition</a> by Dimitri Bertsekas</li>
     <li><a href="https://epubs.siam.org/doi/book/10.1137/1.9780898718577">Practical Methods for Optimal Control and Estimation Using Nonlinear Programming</a> by John T. Betts</li>
     <li><a href="https://epubs.siam.org/doi/book/10.1137/1.9780898717761">Evaluating Derivatives: Principles and Techniques of Algorithmic Differentiation, Second Edition</a> by Andreas Griewank and Andrea Walther</li>
@@ -131,14 +132,18 @@
     <li><p>Occupation measures, induced randomized stationary policy: theorem 6.9.1 in Puterman (1994)</p></li>
     <li><p>Characterization of basic feasible solutions as Markov Deterministic decision rules: proposition 6.9.3 in Puterman (1994)</p></li>
     <li><p>Bias of the MRP in the average reward formulation: section 8.2.1 in Puterman (1994)</p></li>
-    <li><p>Laurent series expansion in the average reward forumulation: section 8.2.2 in Puterman (1994)</p></li>
-    <li><p>Representation of the total expected discounted reward in terms of the interest rate</p></li>
-    <li><p>Corollary 8.2.4: decomposition of the total expected discounted reward of a policy into the gain and bias terms</p></li>
-    <li><p>Corollary 8.2.5: gain as the limit of discount factor going to 1 in the total expected discounted reward</p></li>
-    <li><p>Bellman optimality equations in the total expected discounted reward criterion</p></li>
-    <li><p>Equality between taking the maximum over the set of deterministic Markovian decision rules instead of the randomized Markovian decision rules: proposition 6.2.1 in Puterman (1994)</p></li>
-    <li><p>Contraction mappings: section 6.2.3 in Puterman (1994)</p></li>
-    <li><p>Banach fixed-point theorem: theorem 6.2.3 in Puterman (1994)</p></li>
+    <li>Laurent series expansion in the average reward forumulation: section 8.2.2 in Puterman (1994)
+    <ul>
+    <li>Representation of the total expected discounted reward in terms of the interest rate</li>
+    <li>Corollary 8.2.4: decomposition of the total expected discounted reward of a policy into the gain and bias terms</li>
+    <li>Corollary 8.2.5: gain as the limit of discount factor going to 1 in the total expected discounted reward</li>
+    </ul></li>
+    <li>Bellman optimality equations in the total expected discounted reward criterion
+    <ul>
+    <li>Equality between taking the maximum over the set of deterministic Markovian decision rules instead of the randomized Markovian decision rules: proposition 6.2.1 in Puterman (1994)</li>
+    <li>Contraction mappings: section 6.2.3 in Puterman (1994)</li>
+    <li>Banach fixed-point theorem: theorem 6.2.3 in Puterman (1994)</li>
+    </ul></li>
     </ul>
     <h3 id="tuesday-january-21">Tuesday January 21</h3>
     <ul>
@@ -151,17 +156,17 @@
     </ul>
     <h3 id="friday-january-24">Friday January 24</h3>
     <ul>
-    <li><p>Policy Iteration: section 6.4</p>
+    <li>Policy Iteration: section 6.4
     <ul>
-    <li><p>Monotonicity of the value iterates: proposition 6.4.1</p></li>
-    <li><p>Convergence of policy iteration: theorem 6.4.2</p></li>
-    <li><p>PI as a constructive proof for the existence of a solution to the Bellman optimality equations</p></li>
+    <li>Monotonicity of the value iterates: proposition 6.4.1</li>
+    <li>Convergence of policy iteration: theorem 6.4.2</li>
+    <li>PI as a constructive proof for the existence of a solution to the Bellman optimality equations</li>
     </ul></li>
-    <li><p>Newton-Kantorovich Iterations: section 6.4.3</p>
+    <li>Newton-Kantorovich Iterations: section 6.4.3
     <ul>
-    <li><p>Gateaux derivatives</p></li>
-    <li><p>Policy iteration as Newton-Kantorovich: proposition 6.4.4</p></li>
-    <li><p>See <a href="https://doi.org/10.1016/c2013-0-03044-7">Functional Analysis 2nd edition</a> by Kantorovich and Akilov (1982)</p></li>
+    <li>Gateaux derivatives</li>
+    <li>Policy iteration as Newton-Kantorovich: proposition 6.4.4</li>
+    <li>See <a href="https://doi.org/10.1016/c2013-0-03044-7">Functional Analysis 2nd edition</a> by Kantorovich and Akilov (1982)</li>
     <li><pre><code>  @book{KantorovichAkilov1982,
       title={Functional Analysis},
       author={Kantorovich, L.V. and Akilov, G.P.},
@@ -274,10 +279,98 @@
     <li>Non-linear case</li>
     <li>Counterexample</li>
     </ul>
-    <h3 id="week-of-february-17">Week of February 17</h3>
-    <p>Policy gradients: occupation measures, discounted objective, implicit differentiation and derivation in the infinite horizon case</p>
-    <h3 id="week-of-february-24">Week of February 24</h3>
-    <p>Policy gradients: derivative estimation, likelihood ratio methods (REINFORCE), reparametrization (IPA), baselines (control variates), actor-critic systems</p>
+    <h3 id="tuesday-february-18">Tuesday February 18</h3>
+    <ul>
+    <li>Intuition for stochastic approximation. Robbins-Monro algorithm
+    <ul>
+    <li>Root-finding problems</li>
+    <li>Newton's method (live coding)</li>
+    <li>Martingale differences</li>
+    <li>See sections 1.1.1 and 1.1.2 of Kushner and Yin (2003)</li>
+    </ul></li>
+    <li>ODE of Q-learning in the tabular setting
+    <ul>
+    <li>Martingale differences for Q-learning</li>
+    <li>See page 44 of Kushner and Yin (2003)</li>
+    </ul></li>
+    <li>Euler's method
+    <ul>
+    <li>See Nocedal and Wright (2006)</li>
+    </ul></li>
+    </ul>
+    <h3 id="friday-february-21">Friday February 21</h3>
+    <ul>
+    <li>Martingale differences in stochastic approximation (continued)
+    <ul>
+    <li>Section 1.1.2 of Kushner and Yin (2003)</li>
+    <li>Demonstration with colab notebook</li>
+    </ul></li>
+    <li>Derivative approximation with finite differences</li>
+    <li>Forward-difference/one-sided-difference</li>
+    <li>Central-difference formula</li>
+    <li>Taylor's Theorem: see thm. 2.1 in Nocedal and Wright 2006</li>
+    <li><p>Section 8.1 of Nocedal and Wright (2006)</p></li>
+    <li>Effect of noise on finite differences</li>
+    <li>See section 9.1 of Nocedal and Wright (2006)
+    <ul>
+    <li>Theorem 9.1 of Nocedal and Wright</li>
+    </ul></li>
+    <li><p>Intro to the likelihood ratio method</p></li>
+    </ul>
+    <h3 id="tuesday-february-25">Tuesday February 25</h3>
+    <ul>
+    <li>The likelihood ratio method</li>
+    <li><h2 id="see-lecuyer-1990">See L'Ecuyer 1990</h2>
+    <pre><code>@article{LEcuyer1990,
+      doi = {10.1287/mnsc.36.11.1364},
+      url = {https://doi.org/10.1287/mnsc.36.11.1364},
+      year = {1990},
+      month = nov,
+      publisher = {Institute for Operations Research and the Management Sciences ({INFORMS})},
+      volume = {36},
+      number = {11},
+      pages = {1364--1383},
+      author = {Pierre L{\textquotesingle}Ecuyer},
+      title = {A Unified View of the {IPA},  {SF},  and {LR} Gradient Estimation Techniques},
+      journal = {Management Science}
+    }</code></pre></li>
+    <li>Distributional vs structural parameters
+    <ul>
+    <li>Section 7.1 of Rubinstein and Kroese (2008)</li>
+    </ul></li>
+    <li>The score function estimator as a subcase of LR
+    <ul>
+    <li>See the L'Ecuyer paper and section 7.2 of Rubinstein and Kroese (2008)</li>
+    </ul></li>
+    <li>Connection between the score function and the Fisher information matrix
+    <ul>
+    <li>See section 1.14.4 of Rubinstein and Kroese (2008)</li>
+    </ul></li>
+    <li>The connection between the score function and maximum likelihood estimation
+    <ul>
+    <li>See section 1.14.3 of Rubinstein and Kroese (2008)</li>
+    </ul></li>
+    </ul>
+    <h3 id="friday-february-28">Friday February 28</h3>
+    <ul>
+    <li>Recap of the likelihood ration method</li>
+    <li>Transformations of random variables</li>
+    <li>See section 1.7.2 of Rubinstein and Kroese (2008)</li>
+    <li>The inverse transform method
+    <ul>
+    <li>See section 2.3.1 of Rubinstein and Kroese (2008)</li>
+    <li>Example with the exponential distribution (live coding)</li>
+    <li>See section 2.4.1.1 of Rubinstein and Kroese (2008)</li>
+    </ul></li>
+    <li>From LR to IPA:
+    <ul>
+    <li>See L'Ecuyer (1990)</li>
+    </ul></li>
+    <li>Derivation and empirical comparision of LR and IPA estimators for the exponential distribution
+    <ul>
+    <li>See colab notebook (shared in the mailing list)</li>
+    </ul></li>
+    </ul>
     <h3 id="week-of-march-2">Week of March 2</h3>
     <p>Spring break</p>
     <h3 id="week-of-march-9">Week of March 9</h3>
