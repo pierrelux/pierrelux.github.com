@@ -36,33 +36,53 @@
     </nav>
     <div class="container container-article">
     <div class="frontpage">
-    <h1 id="reinforcement-learning-and-optimal-control">Reinforcement Learning and Optimal Control (Only offered in the Fall)</h1>
+    <h1 id="reinforcement-learning-and-optimal-control">Apprentissage par Renforcement et Commande Optimale</h1>
+    <h2><em>Reinforcement Learning and Optimal Control</em></h2>
 
-    <p>Important: this course is only offered in the Fall. Next: Fall 2021</p>
-    <p>This course (<a href="https://admission.umontreal.ca/cours-et-horaires/cours/ift-6760c/">IFT6760C</a>) is intended for advanced graduate students with a good background in machine learning,
-       mathematics, operations research or statistics. You can register to <a href="https://admission.umontreal.ca/cours-et-horaires/cours/ift-6760c/">IFT6760C</a> 
-       on <a href="https:///academique-dmz.synchro.umontreal.ca">Synchro</a> if your affiliation is with UdeM, or via the <a href="https://mobilite-cours.crepuq.qc.ca/4DSTATIC/ENAccueil.html">CREPUQ</a> 
-       if you are from another institution. Due to the research-oriented nature of this class, you need to be comfortable with a teaching format involving <em>open-ended</em> questions and assignments. 
-       You will be required to think critically and adopt an open mindset. My teaching goal with this course is for all the participants to build their own understanding of reinforcement learning in 
-       relation to their primary research area while sharing their unique perspective and insights with the entire class.</p>
+    <h2>Préalables/Prerequisites</h2>
+    <p>Il est primordial que vous ayez réussi avec succès tous les cours suivants avant d'entreprendre celui-ci:</p>
+    <ul>
+      <li><a href="http://mitliagkas.github.io/ift6390-ml-class/">IFT 6390, Fondements de l'apprentissage machine</a></li>
+      <li><a href="http://www.iro.umontreal.ca/~slacoste/teaching/ift6269/A20/">IFT 6269, Modèles graphiques probabilistes et apprentissage</a></li>
+      <li><a href="https://sites.google.com/mila.quebec/ift6135">IFT 6135, Apprentissage de représentations</a></li>
+    </ul>
+
+    <p>De plus, vous devez maîtriser le langage Python et de bien connaître Numpy/Scipy et être capable d'écrire du code vectorisé en Jax. Il est aussi attendu que vous 
+    puissiez puiser dans vos connaissances en algèbre linéaire, analyse, probabilité, statistique, processus stochastiques, et optimisation sans et avec contraintes pour dérivez vos propres preuves mathématiques.
+    Vous devez égalements être capables de lire le jargon technique des conférences <a href="https://papers.nips.cc/">NeurIPS</a>, 
+    <a href="http://proceedings.mlr.press/">ICML</a> et <a href="https://openreview.net/group?id=ICLR.cc/2021/Conference">ICLR</a>.</p>
+
+    <p><em>You must have taken the following classes before taking this one:
+      <ul>
+        <li><a href="http://mitliagkas.github.io/ift6390-ml-class/">IFT 6390, Fundamentals of machine learning</a></li>
+        <li><a href="http://www.iro.umontreal.ca/~slacoste/teaching/ift6269/A20/">IFT 6269, Probabilistic Graphical Models</a></li>
+        <li><a href="https://sites.google.com/mila.quebec/ift6135">IFT 6135, Representation Learning</a></li>
+      </ul>
+    </em></p>
+    <p><em>Furthermore, you need to master Python and know how to write Numpy/Scipy code as well as vectorized code in Jax. I also take for granted that you can use your background in linear algebra, analysis, probability, statistics, stochastic processes,
+      constrained and unconstrained optimization to derive your own proofs.You also need to be able to read technical jargon from the conferences <a href="https://papers.nips.cc/">NeurIPS</a>, 
+      <a href="http://proceedings.mlr.press/">ICML</a> and <a href="https://openreview.net/group?id=ICLR.cc/2021/Conference">ICLR</a>.</em></p>
+    
 
     <h2 id="topics">Sujets/Topics</h2>
     <p> Processus de décision markovien, formulation sous forme de programme linéaire, forme lisse des équations de Bellman, équations de Bellman projettées, analyse des algorithmes de type TD, 
       estimation de dérivées, commande optimale en temps continu et discret, principe du maximum de Pontryagin, Hamiltonien en temps discret et en temps continu, méthode par état adjoint et 
       méthode variationelle pour le calcul de sensibilité, méthodes de contrôle directes et indirectes, apprentissage par renforcement inversé, et plus!</p>
 
-    <p>Markov Decision Processes, LP formulation, occupation measure, smooth bellman equations, projected bellman equations, analysis of TD algorithms, derivative estimation, 
+    <p><em>Markov Decision Processes, LP formulation, occupation measure, smooth bellman equations, projected bellman equations, analysis of TD algorithms, derivative estimation, 
     discrete and continuous optimal control, Pontryagin maximum principle, discrete and continuous time Hamiltonian,
-    adjoint and forward sensitivity equations, single shooting, multiple shooting, collocation methods, inverse reinforcement learning, and more!</p>
+    adjoint and forward sensitivity equations, single shooting, multiple shooting, collocation methods, inverse reinforcement learning, and more!</em></p>
 
-    <h2 id="evaluation">Evaluation</h2>
+    <h2 id="evaluation">Évaluation/Evaluation</h2>
     <ul>
-      <li>New RL problem (15%): pick a control problem from the literature, describe it, reproduce it (Colab), solve it. </li>
-      <li>Final project (25%)</li>
-      <li>Assignments: (4 x 15% = 60%)</li>
+      <li>Devoirs/Assignments: 3 x 10 = 30%</li>
+      <li>Intra/Midterm: 20%</li>
+      <li>Final:35%</li>
+      <li>Étude de cas/case study: 15%</li>
     </ul>
-    <h2 id="recommended-textbooks">Recommended Textbooks</h2>
-    <p>There is no mandatory textbook. I will however be referencing content from:</p>
+    <h2 id="recommended-textbooks">Livres/Textbooks</h2>
+    <p>Le contenu du cours est basé sur les livres suivants:</p>
+    <p><em>The course content is based on the following books</em>:</p>
     <ul>
     <li><a href="https://onlinelibrary.wiley.com/doi/book/10.1002/9780470316887">Markov Decision Processes: Discrete Stochastic Dynamic Programming</a> by Martin Puterman</li>
     <li><a href="https://web.mit.edu/dimitrib/www/RLbook.html">Reinforcement Learning and Optimal Control</a> by Dimitri Bertsekas</li>
@@ -71,7 +91,7 @@
     <li><a href="https://onlinelibrary.wiley.com/doi/book/10.1002/9780470230381">Simulation and the Monte Carlo Method, Second Edition</a> by Rubinstein and Kroese (2008)</li>
     </ul>
 
-    <h2 id="wellbeing">Wellbeing</h2>
+    <h2 id="wellbeing">Bien-Être/Wellbeing</h2>
     <ul>
     <li>UdeM: <a href="http://www.cscp.umontreal.ca">Centre de santé et de consultation psychologique</a></li>
     <li>McGill: <a href="https://www.mcgill.ca/wellness-hub/">Student wellness hub</a></li>
@@ -84,14 +104,5 @@
     </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-    <script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-     (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-       m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-         })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-  ga('create', 'UA-68825837-1', 'auto');
-    ga('send', 'pageview');
-    </script>
-  </body>
+    </body>
 </html>
