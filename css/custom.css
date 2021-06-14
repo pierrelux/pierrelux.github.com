@@ -91,7 +91,7 @@ ul.nav a { color: #220000 !important; }
     text-decoration: none;
 }
 .frontpage ul {
-    list-style-type: circle;
+    list-style-type: disc;
 }
 a { color: #bb7788; }
 a:hover { color: #bb7788; }
@@ -166,3 +166,5 @@ pre {
     background-color: rgb(243, 218, 200);
     border-color: rgb(219, 197, 180);
 }
+
+
