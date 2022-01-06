@@ -36,111 +36,220 @@
     </nav>
     <div class="container container-article">
     <div class="frontpage">
-    <h1 id="reinforcement-learning-and-optimal-control">Fondements de l’apprentissage machine</h1>
+    <h1 id="reinforcement-learning-and-optimal-control">IFT 6390 - Fondements de l'apprentissage machine</h1>
+      <p>J'enseignerai ce cours en français cette année. Une version identique en anglais est offerte par mon 
+        collègue <a href="http://mitliagkas.github.io/ift6390-ml-class/">Ioannis Mitliagkas</a> à la session d'automne. 
+        Veuillez noter également que ce cours, IFT6390, est offert aux cycles supérieurs; mon collègue
+        <a href="https://www-labs.iro.umontreal.ca/~grabus/courses/ift3395-f21.html">Guillaume Rabusseau</a> enseigne la version analogue au 1er cycle. 
+      </p>
+      <h1>Mode d'enseignement</h1>
+      <p>Les directives du DIRO en date d'aujourd'hui (6 janvier) nous demandent d'enseigner en mode virtuel jusqu'à la fin du mois de janvier. Le lien pour accéder au cours via Google Meet 
+      est disponible dans Studium. Tout le contenu du cours sera déposé dans un répertoire Google Drive partagé; nous n'utiliserons pas Studium à cette fin. Les devoirs et notes seront mis 
+      en ligne sur gradescope.ca. Un canal Slack est disponible pour les communications directes de chat. </p>
 
-    <p>Ce cours (<a href="https://admission.umontreal.ca/cours-et-horaires/cours/ift-6390/">IFT6390</a>) étant conçu pour les étudiants au 2e et 3e cycles, la langue parlée par la majorité des étudiants est l'anglais. Le cours sera donc enseigné dans cette langue. 
-      Il bien sûr possible de poser des questions en français, tout comme de répondre aux examens et devoirs dans la langue de Molière. Une version pour le 1er cycle (enseignée en français) est offerte également 
-      par <a href="https://www-labs.iro.umontreal.ca/~grabus/courses/ift3395-f20.html">Guillaume Rabusseau</a>.
-    </p>
-    
-    <h1>Plateformes virtuelles</h1>
-    <p>Le cours est enseigné en direct sur Google Meet. Les enregistrements et notes écrites sont ensuites déposées dans un dossier Google Drive. Les notes sont téléversées sur Studium. Les discussions en direct se font sur Slack </p>
-    <p>Les liens privées pour accéder au contenu seront envoyés aux adresses de courriel qui me sont disponible dans Studium.</p>
+      <h1>Avertissements</h1>
+      <p><a href="http://mitliagkas.github.io/ift6390-ml-class-prerequisites/">Le concensus</a> provenant de nos étudiants est que ce cours est difficile et demande un investissement en temps important. 
+      Les étudiants n'ayant pas les bases suffisantes en algèbre linéaire, probabilité et programmation python nous ont indiqué qu'ils devaient investir plus de 25h par semaine à ce cours.
+      Avec de bonnes bases dans ces trois sujets, vous devrez compter environ 12h de travail par semaine. </p>
 
-    <h1>Horaire</h1>
-    <p>
+      <h3>Intégrité</h3>
+      <p>Le mode d'enseignement à distance se prête plus facilement au plagiat. 
+        Nous avons dû malheureusement appliquer les <a href="https://integrite.umontreal.ca/reglements/les-reglements-expliques/">règles sévères du département</a> l'année dernière: 
+        une expérience que je ne souhaite pas répéter. En cas de plagiat, les instructeurs sont dans l'obligation d'interrompre l'évaluation et de soummettre un rapport immédiatement 
+        à un comité disciplinaire chapeauté directement par le recteur. Une grave erreur de carrière à ne pas commettre</p>
+
+      <p>Lorsque vous travaillez en groupe, assurez-vous que vos réponses soient toujours formulées dans vos propres mots, et de même pour votre code. Les auxiliaires de cours et moi-même 
+        viennent rapidement à reconnaître les groupes de travail récurrents et portons un attention particulière à l'originalité de vos réponses. Il est défendu également dans tous les cas de
+        reproduire (copier-coller) des segments de textes ou de preuves de sources tièreces: même avec citation. En cas de doutes, consultez vos auxiliaires.
+      </p>
+      <h1>Évaluation</h1>
       <ul>
-        <li>Lundi: 12h30 à 14h30</li>
-        <li>Mercredi: 14h30 à 15h30</li>
+        <li>Quizz hebdomadaires: 10%</li>
+        <li>Devoirs, 10% chaque: 30%</li>
+        <li>Examen intra: 20%</li>
+        <li>Examen final: 30%</li>
+        <li>Projet Kaggle: 10%</li>
       </ul>
-    </p>
-    <h1>Sujets</h1>
-    <p>
-      <ul>
-        <li>Récapitulatif de l'algèbre linéaire et notions de calcul différentiel</li>
-        <li>Terminologie/taxonomie générale</li>
-        <li>Apprentissage supervisé</li>
-          <ul>
-            <li>Problèmes de classification et de régression</li>
-          </ul>
-        <li>Apprentissage non-supervisé</li>
-          <ul>
-            <li>Estimation par noyau</li>
-            <li>k plus proches voisins </li>
-            <li>Réduction de dimensions</li>
-          </ul>
-        <li>Principes de l'apprentissage statistique</li>
-          <ul>
-            <li>Capacité, généralisation et complexité des modèles</li>
-            <li>Sur-entraînement</li>
-            <li>Validation croisée</li>
-            <li>Validation noncroisée</li>
-            <li>Validation croisée à k blocs</li>
-            <li>Phénomène de double descente</li>
-          </ul>
-        <li>Notions d'optimisation</li>
-          <ul>
-            <li>Optimisation sans contraintes</li>
-              <ul>
-                <li>Conditions nécessaires d'optimalité de premier ordre</li>
-                <li>Conditions nécessaires et suffisantes d'optimalité</li>
-              </ul>
-              <li>Optimisation avec contraintes</li>
-              <ul>
-                <li>Conditions nécessaires d'optimalité de premier ordre</li>
-                <li>Conditions nécessaires et suffisantes d'optimalité</li>
-              </ul>
-            <li>Algorithmes</li>
+      <h1>Horaire</h1>
+      <p>
+        <table>
+          <tr>
+              <th>Jours</th>
+              <th>Heures</th>
+              <th>Dates de début / fin</th>
+          </tr>
+          
+              <tr>
+                  
+                          <td>
+                              
+                                  Lundi
+                              
+                          </td>
+                          <td>De 12 h 30 à 14 h 29</td>
+                      
+                  <td>Du 10/01/2022 au 21/02/2022</td>
+              </tr>
+          
+              <tr>
+                  
+                          <td>
+                              
+                                  Mercredi
+                              
+                          </td>
+                          <td>De 14 h 30 à 15 h 29</td>
+                      
+                  <td>Du 12/01/2022 au 16/02/2022</td>
+              </tr>
+          
+              <tr>
+                  
+                          <td>
+                              
+                                  Lundi
+                              
+                          </td>
+                          <td>De 12 h 30 à 14 h 29</td>
+                      
+                  <td>Du 07/03/2022 au 11/04/2022</td>
+              </tr>
+          
+              <tr>
+                  
+                          <td>
+                              
+                                  Mercredi
+                              
+                          </td>
+                          <td>De 14 h 30 à 15 h 29</td>
+                      
+                  <td>Du 09/03/2022 au 13/04/2022</td>
+              </tr>
+          
+      </table>
+  
+      <table>
+          <tr>
+              <th>Jours</th>
+              <th>Heures</th>
+              <th>Dates de début / fin</th>
+          </tr>
+          
+              <tr>
+                  
+                          <td>
+                              
+                                  Mercredi
+                              
+                          </td>
+                          <td>De 15 h 30 à 17 h 29</td>
+                      
+                  <td>Du 12/01/2022 au 16/02/2022</td>
+              </tr>
+          
+              <tr>
+                  
+                          <td>
+                              
+                                  Mercredi
+                              
+                          </td>
+                          <td>De 15 h 30 à 17 h 29</td>
+                      
+                  <td>Du 09/03/2022 au 13/04/2022</td>
+              </tr>
+          
+      </table>
+      </p>
+      <h1>Sujets</h1>
+      <p>
+        <ul>
+          <li>Récapitulatif de l'algèbre linéaire et notions de calcul différentiel</li>
+          <li>Terminologie/taxonomie générale</li>
+          <li>Apprentissage supervisé</li>
             <ul>
-              <li>Méthode de Newton</li>
-              <li>Optimisation sans contraintes: descente de gradient</li>
-                <ul>
-                  <li>Dérivation sous forme de problème avec contrainte</li>
-                </ul>
-              <li>Optimisation avec contrainte</li>
-                <ul><li>Sequential Quadratic Programming</li></ul>
+              <li>Problèmes de classification et de régression</li>
             </ul>
-          </ul>
-          <li>Estimateurs statistiques</li>
-          <ul>
-            <li>Estimateur du maximum de vraisemblance</li>
-            <li>L'estimateur du maximum a posteriori (MAP)</li>
-        </ul>          
-        <li>Modèles classiques linéaires</li>
-          <ul>
-            <li>Régression linéaire</li>
-            <li>Régression logistique</li>
-            <li>SVM linéaire</li>
-          </ul>
-        <li>Modèles classiques non-linéaires</li>
-          <ul>
-            <li>Réseaux de neuronnes artificiels</li>
-              <ul>
-                <li>Différentiation Automatique</li>
+          <li>Apprentissage non-supervisé</li>
+            <ul>
+              <li>Estimation par noyau</li>
+              <li>k plus proches voisins </li>
+              <li>Réduction de dimensions</li>
+            </ul>
+          <li>Principes de l'apprentissage statistique</li>
+            <ul>
+              <li>Capacité, généralisation et complexité des modèles</li>
+              <li>Sur-entraînement</li>
+              <li>Validation croisée</li>
+              <li>Validation noncroisée</li>
+              <li>Validation croisée à k blocs</li>
+              <li>Phénomène de double descente</li>
+            </ul>
+          <li>Notions d'optimisation</li>
+            <ul>
+              <li>Optimisation sans contraintes</li>
                 <ul>
-                  <li>Mode direct</li>
-                  <li>Mode inverse</li>
+                  <li>Conditions nécessaires d'optimalité de premier ordre</li>
+                  <li>Conditions nécessaires et suffisantes d'optimalité</li>
                 </ul>
-                <li>Réseaux récurrents, à convolutions</li>
+                <li>Optimisation avec contraintes</li>
+                <ul>
+                  <li>Conditions nécessaires d'optimalité de premier ordre</li>
+                  <li>Conditions nécessaires et suffisantes d'optimalité</li>
+                </ul>
+              <li>Algorithmes</li>
+              <ul>
+                <li>Méthode de Newton</li>
+                <li>Optimisation sans contraintes: descente de gradient</li>
+                  <ul>
+                    <li>Dérivation sous forme de problème avec contrainte</li>
+                  </ul>
+                <li>Optimisation avec contrainte</li>
+                  <ul><li>Sequential Quadratic Programming</li></ul>
               </ul>
-            <li>Arbres de décisions, forêts aléatoires</li>
-          </ul>
-        <li>Apprentissage non-supervisé</li>
-          <ul>
-            <li>PCA</li>
-            <li>k-means</li>
-          </ul>
-        <li>Méta-apprentissage</li>
-      </ul>
+            </ul>
+            <li>Estimateurs statistiques</li>
+            <ul>
+              <li>Estimateur du maximum de vraisemblance</li>
+              <li>L'estimateur du maximum a posteriori (MAP)</li>
+          </ul>          
+          <li>Modèles classiques linéaires</li>
+            <ul>
+              <li>Régression linéaire</li>
+              <li>Régression logistique</li>
+              <li>SVM linéaire</li>
+            </ul>
+          <li>Modèles classiques non-linéaires</li>
+            <ul>
+              <li>Réseaux de neuronnes artificiels</li>
+                <ul>
+                  <li>Différentiation Automatique</li>
+                  <ul>
+                    <li>Mode direct</li>
+                    <li>Mode inverse</li>
+                  </ul>
+                  <li>Réseaux récurrents, à convolutions</li>
+                </ul>
+              <li>Arbres de décisions, forêts aléatoires</li>
+            </ul>
+          <li>Apprentissage non-supervisé</li>
+            <ul>
+              <li>PCA</li>
+              <li>k-means</li>
+            </ul>
+          <li>Méta-apprentissage</li>
+        </ul>
+  
+      </p>
 
-    </p>
 
-    <h2 id="wellbeing">Bien-être</h2>
+    <h1 id="wellbeing">Bien-être</h1>
     <ul>
     <li>UdeM: <a href="http://www.cscp.umontreal.ca">Centre de santé et de consultation psychologique</a></li>
     <li>McGill: <a href="https://www.mcgill.ca/wellness-hub/">Student wellness hub</a></li>
     <li>Polytechnique: <a href="https://www.polymtl.ca/soutien/">Soutien à la réussite</a></li>
-    <li>HEC: <a href="https://www.hec.ca/en/students/support-resources/psychological-support/index.html">Psychological support and ressources</a></li>
+    <li>HEC: <a href="https://www.hec.ca/en/students/support-resources/psychological-support/index.html">Psychological support and resources</a></li>
     <li>ASEQ: <a href="http://www.aseq.ca/rte/fr/FA%C3%89CUM_Programmedaide_Programmedaide">Student Health Support Program - Mental Health Resources</a></li>
     </ul>
 
