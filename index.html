@@ -1,170 +1,124 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="">
-
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="color-scheme" content="light dark" />
     <title>Pierre-Luc Bacon</title>
-    <link href="https://fonts.googleapis.com/css?family=Libre+Baskerville|Roboto&display=swap" rel="stylesheet">
-    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet">
-    <link href="/css/custom.css" rel="stylesheet">
+    <meta name="description" content="A pure HTML example, without dependencies." />
 
-      </head>
+    <!-- Pico.css -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@picocss/pico@2.0.6/css/pico.min.css"
+    />
+  </head>
 
   <body>
-    <nav class="navbar navbar-default navbar-custom">
-        <div class="container-fluid">
-            <div class="navbar-header">
-                <a class="page-scroll navbar-brand" href="/">Pierre-Luc Bacon</a>
+    <!-- Header -->
+    <header class="container">
+    <nav>
+        <ul>
+          <li>
+            <hgroup>
+                <h1>Pierre-Luc Bacon</h1>
+                <p>Assistant Professor at Université de Montréal</p>
+            </hgroup> 
+          </li>
+        </ul>
+        <ul>
+          <li><a href="index.html">Publications</a></li>
+          <li><a href="group.html">Group</a></li>
+        </ul>
+      </nav>
+      <section>
+        <div class="grid">
+            <div>
+                <img src="https://ca.slack-edge.com/T1L755RDX-UNWDAUR0V-0ce5a2551e20-512" alt="Pierre-Luc Bacon" style="width:60%;">
             </div>
-
-            <ul class="nav navbar-nav navbar-right">
-                <li>
-                    <a class="page-scroll" href="/teaching">Teaching</a>
-                </li>
-                <li>
-                    <a class="page-scroll" href="/group">Group</a>
-                </li>
-                <li>
-                    <a class="page-scroll" href="/contact">Contact</a>
-                </li>
-            </ul>
+            <div>
+                <p>
+                    I'm an Assistant Professor at the 
+                    <a href="https://diro.umontreal.ca/accueil/">University of Montreal's DIRO</a>, and I hold a 
+                    <a href="https://www.cifar.ca/bio/pierre-luc-bacon">Facebook CIFAR AI Chair</a>. I'm also a member of 
+                    <a href="https://mila.quebec/en/">Mila</a> and the 
+                    <a href="https://ivado.ca/en/">Institute for Data Valorization (IVADO)</a>. I specialize in developing practical deep reinforcement learning methods through the lens of representation learning and optimization techniques, applying these to real-world challenges in health, environmental sustainability, and drug design to enhance AI's practical impact. My research, which was the focus of my 
+                    <a href="bacon2018thesis.pdf">PhD thesis</a> under the supervision of 
+                    <a href="http://cs.mcgill.ca/~dprecup">Doina Precup</a> and later in my postdoctoral work with 
+                    <a href="https://cs.stanford.edu/people/ebrun/">Emma Brunskill</a>, pertains to overcoming the <em>curse of horizon</em> when planning and learning over long time spans. My recent work focuses on learning world models in continuous time, employing decision-aware methods, and exploring the synergy between sequence modeling and reinforcement learning to effectively address these challenges.
+                    </p>
+            </div>
         </div>
-    </nav>
-    <div class="container container-article">
-    <div class="frontpage">
-    <div class="row">
-    <div class="col-md-4">
-    <img src="/pierreluc.jpg" alt="profile photo" style="margin-top: 1em"/>
-    </div>
-    <div class="col-md-8">
-    <p style="margin:1em">
-    I'm an assistant professor at University of Montreal's <a href="https://diro.umontreal.ca/accueil/">DIRO</a>, a member of <a href="https://mila.quebec/en/">Mila</a> and the Institute for Data Valorization (<a href="https://ivado.ca/en/">IVADO</a>) and I hold a <a href="https://www.cifar.ca/bio/pierre-luc-bacon">Facebook CIFAR AI</a> chair. I completed my <a href="bacon2018thesis.pdf">PhD thesis</a> under the supervision of <a href="http://cs.mcgill.ca/~dprecup">Doina Precup</a> and worked with <a href="https://cs.stanford.edu/people/ebrun/">Emma Brunskill</a> for my postdoc. My research generally pertains to the challenge posed by the <em>curse of horizon</em> when learning and planning over long time spans. I'm interested to tackle this problem from a representation learning perspective grounded in optimization methods.
-    </p>
-    </div>
-    </div>
-    <p><br /></p>
-    <h2 id"section">2024</h2>
-      <ul>
-        <li>
-          <a href="https://arxiv.org/abs/2312.14331">Maximum entropy GFlowNets with soft Q-learning</a>.
-            Sobhan Mohammadpour, Emmanuel Bengio, Emma Frejinger, Pierre-Luc Bacon. AISTATS 2024.
-        </li>
-        <li>
-          <a href="https://openreview.net/forum?id=UaMgmoKEBj">Decoupling regularization from the action space</a>.
-            Sobhan Mohammadpour, Pierre-Luc Bacon, Emma Frejinger. ICLR 2024.
-        </li>
-        <li>
-          <a href="https://paperswithcode.com/paper/bridging-state-and-history-representations">Bridging State and History Representations: Understanding Self-Predictive RL</a>.
-            Tianwei Ni, Benjamin Eysenbach, Erfan Seyedsalehi, Michel Ma, Clement Gehring, Aditya Mahajan, Pierre-Luc Bacon. ICLR 2024.
-        </li>
-        <li>
-          <a href="https://arxiv.org/abs/2310.15386v1">Course Correcting Koopman Representations</a>.
-            Mahan Fathi, Clement Gehring, Jonathan Pilault, David Kanaa, Pierre-Luc Bacon, Ross Goroshin. ICLR 2024.
-        </li>
-        <li>
-          <a href="https://arxiv.org/abs/2310.00166">Motif: Intrinsic Motivation from Artificial Intelligence Feedback</a>.
-            Martin Klissarov, Pierluca D'Oro, Shagun Sodhani, Roberta Raileanu, Pierre-Luc Bacon, Pascal Vincent, Amy Zhang, Mikael Henaff. ICLR 2024.
-        </li>
-      </ul>
+    </section>
+    </header>
+    <!-- ./ Header -->
 
-    <h2 id="section">2023</h2>
-      <ul>
-        <li><a href="https://arxiv.org/abs/2307.03864">When Do Transformers Shine in RL? Decoupling Memory from Credit Assignment</a>. Tianwei Ni, Michel Ma, Benjamin Eysenbach, Pierre-Luc Bacon. NeurIPS 2023 oral</li>
-        <li><a href="https://arxiv.org/abs/2306.09539">Block-State Transformers</a>. Jonathan Pilault, Mahan Fathi, Orhan Firat, Christopher Pal, Pierre-Luc Bacon, Ross Goroshin. NeurIPS 2023 poster</li>
-        <li><a href="https://arxiv.org/abs/2309.14597">Policy Optimization in a Noisy Neighborhood: On Return Landscapes in Continuous Control</a>. Nathan Rahn, Pierluca D'Oro, Harley Wiltzer, Pierre-Luc Bacon, Marc G Bellemare. NeurIPS 2023 poster</li>
-        <li><a href="https://openreview.net/pdf?id=UdaTyy0BNB">Double Gumbel Q-Learning</a>. David Yu-Tung Hui, Aaron Courville, Pierre-Luc Bacon. NeurIPS 2023 spotlight</li>
-        <li><a href="https://openreview.net/forum?id=OpC-9aBBVJe">Sample-Efficient Reinforcement Learning by Breaking the Replay Ratio Barrier</a>. Pierluca D'Oro, Max Schwarzer, Evgenii Nikishin, Pierre-Luc Bacon, Marc G Bellemare, Aaron Courville. ICLR 2023 notable top 5%</li>
-      </ul>
-    <h2 id="section">2022</h2>
-    <ul>
-      <li><a href="https://openreview.net/forum?id=UiRSQykVNiC">Myriad: a real-world testbed to bridge trajectory optimization and deep learning</a>. Nikolaus H. R. Howe, Simon Dufort-Labbé, Nitarshan Rajkumar, Pierre-Luc Bacon. NeurIPS 2022 Datasets and Benchmarks </li>
-      <li><a href="https://proceedings.mlr.press/v162/nikishin22a.html">The Primacy Bias in Deep Reinforcement Learning</a>. Evgenii Nikishin*, Max Schwarzer*, Pierluca D'Oro*, Pierre-Luc Bacon, Aaron Courville. ICML 2022 and RLDM 2022</li>
-      <li><a href="https://arxiv.org/abs/2112.12228">Direct Behavior Specification via Constrained Reinforcement Learning</a>. Julien Roy, Roger Girgis, Joshua Romoff, Pierre-Luc Bacon, Christopher Pal. ICML 2022</li>
-      <li><p><a href="https://arxiv.org/abs/2203.01443">Continuous-Time Meta-Learning with Forward Mode Differentiation</a>. Tristan Deleu, David Kanaa, Leo Feng, Giancarlo Kerg, Yoshua Bengio, Guillaume Lajoie, Pierre-Luc Bacon. ICLR, 2022.</p></li>
-    </ul>
-    <h2 id="section">2021</h2>
-    <ul>
-      <li><p>Pierluca D'Oro, Pierre-Luc Bacon. <a href="https://www.google.com/url?q=https%3A%2F%2Fwww.loreggia.eu%2FMetacogNeurIPS2021%2FMADL2021_paper_8.pdf&sa=D&sntz=1&usg=AFQjCNFqmkswwhE9dytjUUPn24yI3kvwJA">Meta Dynamic Programming</a>. NeurIPS workshop "Metacognition in the Age of AI: Challenges and Opportunities", 2021.</p></li>
-      <li><p>Michel Ma, Pierluca D'Oro, Pierre-Luc Bacon. <a href="https://openreview.net/pdf?id=doy35IAGewq">Long-Term Credit Assignment via Model-based Temporal Shortcuts</a>. NeurIPS Deep Reinforcement Learning Workshop, 2021.</p></li>
-      <li><p>Andreea Deac, Petar Veličković, Ognjen Milinković, Pierre-Luc Bacon, Jian Tang, Mladen Nikolić. <a href="https://arxiv.org/abs/2110.05442">Neural Algorithmic Reasoners are Implicit Planners</a>. NeurIPS, 2021.</p></li>
-      <li><p>Evgenii Nikishin, Romina Abachi, Rishabh Agarwal, Pierre-Luc Bacon. <a href="https://arxiv.org/abs/2106.03273">"Control-Oriented Model-Based Reinforcement Learning with Implicit Differentiation"</a>. AAAI, 2022. (<a href="https://arxiv.org/abs/2106.03273">arXiv</a>)</p></li>
-    </ul>
+    <!-- Main -->
+    <main class="container">
+    
 
-    <h2 id="section">2020</h2>
-    <ul>
-      <li><p>Michel Ma, Pierre-Luc Bacon. <a href="https://offline-rl-neurips.github.io/program/offrl_57.html">Counterfactual Policy Evaluation and the Conditional Monte Carlo Method</a>. NeurIPS workshop on Offline Reinforcement, 2020. </p></li>
-      <li><p>Yao Liu, Pierre-Luc Bacon, Emma Brunskill. &quot;<a href="https://arxiv.org/abs/1910.06508">Understanding the Curse of Horizon in Off-Policy Evaluation via Conditional Importance Sampling</a>&quot;. Thirty-seventh International Conference on Machine Learning (ICML), 2020. (<a href="https://arxiv.org/abs/1910.06508">arXiv</a>)</p></li>
-      <li><p>Jean Harb, Tom Schaul, Doina Precup, Pierre-Luc Bacon. &quot;<a href="https://arxiv.org/abs/2002.11833">Policy Evaluation Networks</a>&quot;. In submission. (<a href="https://arxiv.org/abs/2002.11833">arXiv</a>)</p></li>
-      <li><p>Joshua Romoff, Peter Henderson, David Kanaa, Emmanuel Bengio, Ahmed Touati, Pierre-Luc Bacon, Joelle Pineau. &quot;<a href="https://arxiv.org/abs/2007.02786">TDprop: Does Jacobi Preconditioning Help Temporal Difference Learning?</a>&quot;. Theoretical Foundations of Reinforcement Learning workshop at ICML 2020. (<a href="https://arxiv.org/abs/2007.02786">arXiv</a>)</p></li>
-      <li><p>Khimya Khetarpal, Martin Klissarov, Maxime Chevalier-Boisvert, Pierre-Luc Bacon, Doina Precup. <a href="https://arxiv.org/abs/2001.00271">Options of Interest: Temporal Abstraction with Interest Functions</a>. Thirthy-fourth AAAI Conference On Artificial Intelligence (AAAI), 2020.</p></li>
-    </ul>
-    <h2 id="section-1">2019</h2>
-    <ul>
-    <li><p>Pierre-Luc Bacon, Florian T. Schaefer, Clement Gehring, Animashree Anandkumar, Emma Brunskill. &quot;<a href="https://optrl2019.github.io/assets/accepted_papers/70.pdf">A Lagrangian Method for Inverse Problems in Reinforcement Learning</a>&quot;. <a href="https://optrl2019.github.io/">NeurIPS 2019 Optimization Foundations for Reinforcement Learning Workshop</a></p></li>
-    <li><p>Benjamin Petit, Loren Amdahl-Culleton, Yao Liu , Jimmy Smith, Pierre-Luc Bacon. &quot;<a href="https://optrl2019.github.io/assets/accepted_papers/72.pdf">All-Action Policy Gradient Methods: A Numerical Integration Approach</a>&quot;. <a href="https://optrl2019.github.io/">NeurIPS 2019 Optimization Foundations for Reinforcement Learning Workshop</a>.</p></li>
-    <li><p>Pierre-Luc Bacon, Dilip Arumugam, Emma Brunskill. &quot;Goal-Directed Learning as a Bi-level Optimization Problem&quot;. 4th Multidisciplinary Conference on Reinforcement Learning and Decision Making (RLDM), 2019.</p></li>
-    </ul>
-    <h2 id="section-2">2018</h2>
-    <ul>
-    <li><p>Pierre-Luc Bacon. &quot;<a href="bacon2018thesis.pdf">Temporal Representation Learning</a>&quot;. PhD Thesis. McGill University, Montreal, June 2018.</p></li>
-    <li><p>Pierre-Luc Bacon and Doina Precup. &quot;<a href="https://www.aaai.org/ojs/index.php/aimagazine/article/view/2780">Constructing Temporal Abstractions Autonomously in Reinforcement Learning</a>&quot;. Association for the Advancement of Artificial Intelligence (AAAI). p. 39. 2018.</p></li>
-    <li><p>Ahmed Touati, Pierre-Luc Bacon, Doina Precup, Pascal Vincent. &quot;<a href="http://proceedings.mlr.press/v80/touati18a.html">Convergent Tree-Backup and Retrace with Function Approximation</a>&quot;. In proceedings of the 35th International Conference on Machine Learning (ICML), 2018. (<a href="http://proceedings.mlr.press/v80/touati18a.html">camera ready</a>, <a href="https://arxiv.org/abs/1705.09322">arXiv</a>)</p></li>
-    <li><p>Anna Harutyunyan, Peter Vrancx, Pierre-Luc Bacon, Doina Precup, Ann Nowe. &quot;<a href="https://www.aaai.org/ocs/index.php/AAAI/AAAI18/paper/view/16907">Learning with Options that Terminate Off-Policy</a>&quot;. Thirthy-first AAAI Conference On Artificial Intelligence (AAAI), 2018. (<a href="https://www.aaai.org/ocs/index.php/AAAI/AAAI18/paper/view/16907">camera ready</a>, <a href="https://arxiv.org/abs/1711.03817">arXiv</a>)</p></li>
-    <li><p>Jean Harb*, Pierre-Luc Bacon*, Martin Klissarov, Doina Precup. &quot;<a href="https://www.aaai.org/ocs/index.php/AAAI/AAAI18/paper/view/17421">When Waiting is not an Option : Learning Options with a Deliberation Cost</a>&quot;. Thirthy-first AAAI Conference On Artificial Intelligence (AAAI), 2018. (<a href="https://www.aaai.org/ocs/index.php/AAAI/AAAI18/paper/view/17421">camera ready</a>, <a href="https://arxiv.org/abs/1709.04571">arXiv</a>)</p></li>
-    <li><p>Peter Henderson, Wei-Di Chang, Pierre-Luc Bacon, David Meger, Joelle Pineau, Doina Precup. &quot;<a href="https://www.aaai.org/ocs/index.php/AAAI/AAAI18/paper/view/17098">OptionGAN: Learning Joint Reward-Policy Options using Generative Adversarial Inverse Reinforcement Learning</a>&quot;. Thirthy-first AAAI Conference On Artificial Intelligence (AAAI), 2018. (<a href="https://www.aaai.org/ocs/index.php/AAAI/AAAI18/paper/view/17098">camera ready</a>, <a href="https://arxiv.org/abs/1709.06683">arXiv</a>)</p></li>
-    <li><p>Daniel J. Mankowitz, Timothy Mann, Pierre-Luc Bacon, Shie Mannor, Doina Precup. &quot;<a href="https://www.aaai.org/ocs/index.php/AAAI/AAAI18/paper/view/16825">Learning Robust Options</a>&quot;. Thirthy-first AAAI Conference On Artificial Intelligence (AAAI), 2018. (<a href="https://www.aaai.org/ocs/index.php/AAAI/AAAI18/paper/view/16825">camera ready</a>)</p></li>
-    </ul>
-    <h2 id="section-3">2017</h2>
-    <ul>
-    <li><p>Pierre-Luc Bacon, Doina Precup. &quot;Unifying Multi-Step Methods through Matrix Splitting&quot;. 3rd Multidisciplinary Conference on Reinforcement Learning and Decision Making, 2017.</p></li>
-    <li><p>Martin Klissarov, Pierre-Luc Bacon, Jean Harb, Doina Precup. &quot;Learnings Options End-to-End for Continuous Action Tasks&quot;. Hierarchical Reinforcement Learning Workshop (NIPS), 2017.</p></li>
-    <li><p>Pierre-Luc Bacon, Doina Precup. &quot;A Unified View on Multi-Steps Methods using Matrix Splittings&quot;. Data Learning and Inference (DALI), 2017.</p></li>
-    <li><p>Pierre-Luc Bacon, Jean Harb, Doina Precup. &quot;<a href="https://aaai.org/ocs/index.php/AAAI/AAAI17/paper/view/14858">The Option-Critic Architecture</a>&quot;. Thirthy-first AAAI Conference On Artificial Intelligence (AAAI), 2017. (<a href="https://aaai.org/ocs/index.php/AAAI/AAAI17/paper/view/14858">camera ready</a>, <a href="https://arxiv.org/abs/1609.05140v2">arXiv</a>, <a href="/optioncritic-aaai2017-slides.pdf">slides</a>)</p></li>
-    </ul>
-    <h2 id="section-4">2016</h2>
-    <ul>
-    <li><p>Pierre-Luc Bacon, Doina Precup. &quot;<a href="https://arxiv.org/abs/1612.00916">A Matrix Splitting Perspective on Planning with Options</a>&quot;. Continual Learning and Deep Networks Workshop, NIPS 2016. (<a href="/Bacon2016-cldlnips2016-poster.pdf">poster</a>)</p></li>
-    <li><p>Doina Precup, Pierre-Luc Bacon. &quot;Advances in Option Construction: The option-critic architecture&quot;. Abstraction in RL Workshop, ICML 2016. (<a href="https://youtu.be/8r_EoYnPjGk">video</a>, <a href="http://technion.ac.il/~danielm/icml_slides/Talk6.pdf">slides</a>)</p></li>
-    <li><p>Pierre-Luc Bacon and Doina Precup. &quot;The good, the bad and the discovery: the specification problem of options discovery&quot;. 10th Barbados Workshop on Reinforcement Learning, 2016.</p></li>
-    <li><p>Emmanuel Bengio, Pierre-Luc Bacon, Joelle Pineau, Doina Precup. &quot;<a href="http://arxiv.org/abs/1511.06297">Conditional Computation in Neural Networks for faster models</a>&quot;. CoRR abs/1511.06297, 2016.</p></li>
-    </ul>
-    <h2 id="section-5">2015</h2>
-    <ul>
-    <li><p>Pierre-Luc Bacon and Doina Precup. &quot;<a href="/deliberation-29oct2015.pdf">Learning with options: Just deliberate and relax</a>&quot;. Bounded Optimality and Rational Metareasoning Workshop, NIPS 2015. (<a href="/delibposter.pdf">poster</a>)</p></li>
-    <li><p>Pierre-Luc Bacon and Doina Precup. &quot;The option-critic architecture&quot;. Deep Reinforcement Learning Workshop, NIPS 2015. (<a href="/optioncriticposter.pdf">poster</a>)</p></li>
-    <li><p>Pierre-Luc Bacon, <a href="http://www.cs.upc.edu/~bballe/">Borja Balle</a> and Doina Precup. &quot;<a href="/bacon2015-uai.pdf">Learning and Planning with Timing Information in Markov Decision Processes</a>&quot;. 31st Conference on Uncertainty in Artificial Intelligence (UAI), 2015. (<a href="/bacon2015-rldm-poster.pdf">poster</a>)</p></li>
-    <li><p>Joelle Pineau, Pierre-Luc Bacon. &quot;<a href="http://www.cs.mcgill.ca/~jpineau/files/jpineau-icml15ws-mud2.pdf">Analyzing Open Data from the City of Montreal</a>&quot;. 2nd ICML Workshop on Mining Urban Data (MUD), 2015.</p></li>
-    <li><p>Pierre-Luc Bacon, Doina Precup. &quot;Learning Recognizers&quot;. 9th Barbados Workshop on Reinforcement Learning, 2015. (<a href="/barbados2015.pdf">slides</a>)</p></li>
-    <li><p>Pierre-Luc Bacon, Emmanuel Bengio, Doina Precup, Joelle Pineau. &quot;<a href="/bacon-2015-condnet.pdf">Conditional computation in neural networks using a decision-theoretic approach</a>&quot;. 2nd Multidisciplinary Conference on Reinforcement Learning and Decision Making, 2015.</p></li>
-    <li><p>Pierre-Luc Bacon, Borja Balle and Doina Precup. &quot;<a href="/bacon-2015-odm-rldm2015.pdf">Learning and Planning with Timing Information in Markov Decision Processes</a>&quot;. 2nd Multidisciplinary Conference on Reinforcement Learning and Decision Making, 2015.</p></li>
-    </ul>
-    <h2 id="section-6">2014</h2>
-    <ul>
-    <li>Pierre-Luc Bacon, Borja Balle and Doina Precup. &quot;<a href="/bacon-2014-predictive_timing_models.pdf">Predictive Timing Models</a>&quot;. 2014 NIPS Workshop &quot;From Bad Models to Good Policies&quot;. (<a href="/bacon-2014-predictive_timing_models-poster.pdf">poster</a>, <a href="/bacon-2014-predictive_timing_models-slides.pdf">slides</a>, <a href="https://www.youtube.com/watch?v=CHYoFjfIyMc">video</a>)</li>
-    </ul>
-    <h2 id="section-7">2013</h2>
-    <ul>
-    <li><p>Pierre-Luc Bacon and Doina Precup. &quot;<a href="/bacon-2013-label_propagation.pdf">Using Label Propagation for Learning Temporally Abstract Actions in Reinforcement Learning</a>&quot;. AAMAS Workshop on &quot;Multiagent Interaction Networks&quot;, 2013.</p></li>
-    <li><p>Pierre-Luc Bacon. &quot;<a href="/bacon-2013-msc.pdf">On the Bottleneck Concept for Options Discovery: Theoretical Underpinnings and Extension in Continuous State Spaces</a>&quot;. Master's thesis, McGill University, 2013.</p></li>
-    </ul>
-    <p></br></p>
-    </div>
-    </div>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-    <script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-     (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-       m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-         })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+    <section>
+        <h2>Publications</h2>
+        <h3>2024</h3>
+        <ul>
+            <li>
+            <a href="https://arxiv.org/abs/2312.14331">Maximum entropy GFlowNets with soft Q-learning</a>.
+                Sobhan Mohammadpour, Emmanuel Bengio, Emma Frejinger, Pierre-Luc Bacon. AISTATS 2024.
+            </li>
+            <li>
+            <a href="https://openreview.net/forum?id=UaMgmoKEBj">Decoupling regularization from the action space</a>.
+                Sobhan Mohammadpour, Pierre-Luc Bacon, Emma Frejinger. ICLR 2024.
+            </li>
+            <li>
+            <a href="https://paperswithcode.com/paper/bridging-state-and-history-representations">Bridging State and History Representations: Understanding Self-Predictive RL</a>.
+                Tianwei Ni, Benjamin Eysenbach, Erfan Seyedsalehi, Michel Ma, Clement Gehring, Aditya Mahajan, Pierre-Luc Bacon. ICLR 2024.
+            </li>
+            <li>
+            <a href="https://arxiv.org/abs/2310.15386v1">Course Correcting Koopman Representations</a>.
+                Mahan Fathi, Clement Gehring, Jonathan Pilault, David Kanaa, Pierre-Luc Bacon, Ross Goroshin. ICLR 2024.
+            </li>
+            <li>
+            <a href="https://arxiv.org/abs/2310.00166">Motif: Intrinsic Motivation from Artificial Intelligence Feedback</a>.
+                Martin Klissarov, Pierluca D'Oro, Shagun Sodhani, Roberta Raileanu, Pierre-Luc Bacon, Pascal Vincent, Amy Zhang, Mikael Henaff. ICLR 2024.
+            </li>
+        </ul>
 
-  ga('create', 'UA-68825837-1', 'auto');
-    ga('send', 'pageview');
+        <h3>2023</h3>
+        <ul>
+            <li><a href="https://arxiv.org/abs/2307.03864">When Do Transformers Shine in RL? Decoupling Memory from Credit Assignment</a>. Tianwei Ni, Michel Ma, Benjamin Eysenbach, Pierre-Luc Bacon. NeurIPS 2023 oral</li>
+            <li><a href="https://arxiv.org/abs/2306.09539">Block-State Transformers</a>. Jonathan Pilault, Mahan Fathi, Orhan Firat, Christopher Pal, Pierre-Luc Bacon, Ross Goroshin. NeurIPS 2023 poster</li>
+            <li><a href="https://arxiv.org/abs/2309.14597">Policy Optimization in a Noisy Neighborhood: On Return Landscapes in Continuous Control</a>. Nathan Rahn, Pierluca D'Oro, Harley Wiltzer, Pierre-Luc Bacon, Marc G Bellemare. NeurIPS 2023 poster</li>
+            <li><a href="https://openreview.net/pdf?id=UdaTyy0BNB">Double Gumbel Q-Learning</a>. David Yu-Tung Hui, Aaron Courville, Pierre-Luc Bacon. NeurIPS 2023 spotlight</li>
+            <li><a href="https://openreview.net/forum?id=OpC-9aBBVJe">Sample-Efficient Reinforcement Learning by Breaking the Replay Ratio Barrier</a>. Pierluca D'Oro, Max Schwarzer, Evgenii Nikishin, Pierre-Luc Bacon, Marc G Bellemare, Aaron Courville. ICLR 2023 notable top 5%</li>
+        </ul>
+        <h3>2022</h3>
+        <ul>
+        <li><a href="https://openreview.net/forum?id=UiRSQykVNiC">Myriad: a real-world testbed to bridge trajectory optimization and deep learning</a>. Nikolaus H. R. Howe, Simon Dufort-Labbé, Nitarshan Rajkumar, Pierre-Luc Bacon. NeurIPS 2022 Datasets and Benchmarks </li>
+        <li><a href="https://proceedings.mlr.press/v162/nikishin22a.html">The Primacy Bias in Deep Reinforcement Learning</a>. Evgenii Nikishin*, Max Schwarzer*, Pierluca D'Oro*, Pierre-Luc Bacon, Aaron Courville. ICML 2022 and RLDM 2022</li>
+        <li><a href="https://arxiv.org/abs/2112.12228">Direct Behavior Specification via Constrained Reinforcement Learning</a>. Julien Roy, Roger Girgis, Joshua Romoff, Pierre-Luc Bacon, Christopher Pal. ICML 2022</li>
+        <li><p><a href="https://arxiv.org/abs/2203.01443">Continuous-Time Meta-Learning with Forward Mode Differentiation</a>. Tristan Deleu, David Kanaa, Leo Feng, Giancarlo Kerg, Yoshua Bengio, Guillaume Lajoie, Pierre-Luc Bacon. ICLR, 2022.</p></li>
+        </ul>
+        <h3 >2021</h3>
+        <ul>
+        <li>Pierluca D'Oro, Pierre-Luc Bacon. <a href="https://www.google.com/url?q=https%3A%2F%2Fwww.loreggia.eu%2FMetacogNeurIPS2021%2FMADL2021_paper_8.pdf&sa=D&sntz=1&usg=AFQjCNFqmkswwhE9dytjUUPn24yI3kvwJA">Meta Dynamic Programming</a>. NeurIPS workshop "Metacognition in the Age of AI: Challenges and Opportunities", 2021.</li>
+        <li>Michel Ma, Pierluca D'Oro, Pierre-Luc Bacon. <a href="https://openreview.net/pdf?id=doy35IAGewq">Long-Term Credit Assignment via Model-based Temporal Shortcuts</a>. NeurIPS Deep Reinforcement Learning Workshop, 2021.</li>
+        <li>Andreea Deac, Petar Veličković, Ognjen Milinković, Pierre-Luc Bacon, Jian Tang, Mladen Nikolić. <a href="https://arxiv.org/abs/2110.05442">Neural Algorithmic Reasoners are Implicit Planners</a>. NeurIPS, 2021.</li>
+        <li>Evgenii Nikishin, Romina Abachi, Rishabh Agarwal, Pierre-Luc Bacon. <a href="https://arxiv.org/abs/2106.03273">"Control-Oriented Model-Based Reinforcement Learning with Implicit Differentiation"</a>. AAAI, 2022. (<a href="https://arxiv.org/abs/2106.03273">arXiv</a>)</li>
+        </ul>
 
-    </script>
+        <h3>2020</h3>
+        <ul>
+        <li>Michel Ma, Pierre-Luc Bacon. <a href="https://offline-rl-neurips.github.io/program/offrl_57.html">Counterfactual Policy Evaluation and the Conditional Monte Carlo Method</a>. NeurIPS workshop on Offline Reinforcement, 2020.</li>
+        <li>Yao Liu, Pierre-Luc Bacon, Emma Brunskill. &quot;<a href="https://arxiv.org/abs/1910.06508">Understanding the Curse of Horizon in Off-Policy Evaluation via Conditional Importance Sampling</a>&quot;. Thirty-seventh International Conference on Machine Learning (ICML), 2020. (<a href="https://arxiv.org/abs/1910.06508">arXiv</a>)</li>
+        <li>Jean Harb, Tom Schaul, Doina Precup, Pierre-Luc Bacon. &quot;<a href="https://arxiv.org/abs/2002.11833">Policy Evaluation Networks</a>&quot;. In submission. (<a href="https://arxiv.org/abs/2002.11833">arXiv</a>)</li>
+        <li>Joshua Romoff, Peter Henderson, David Kanaa, Emmanuel Bengio, Ahmed Touati, Pierre-Luc Bacon, Joelle Pineau. &quot;<a href="https://arxiv.org/abs/2007.02786">TDprop: Does Jacobi Preconditioning Help Temporal Difference Learning?</a>&quot;. Theoretical Foundations of Reinforcement Learning workshop at ICML 2020. (<a href="https://arxiv.org/abs/2007.02786">arXiv</a>)</li>
+        <li>Khimya Khetarpal, Martin Klissarov, Maxime Chevalier-Boisvert, Pierre-Luc Bacon, Doina Precup. <a href="https://arxiv.org/abs/2001.00271">Options of Interest: Temporal Abstraction with Interest Functions</a>. Thirthy-fourth AAAI Conference On Artificial Intelligence (AAAI), 2020.</li>
+        </ul>
+
+    </section>
+    </main>
+    <!-- ./ Main -->
+
+
   </body>
 </html>
