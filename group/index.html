@@ -1,92 +1,121 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="">
 
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="color-scheme" content="light dark" />
     <title>Pierre-Luc Bacon</title>
-    <link href="https://fonts.googleapis.com/css?family=Libre+Baskerville|Roboto&display=swap" rel="stylesheet">
-    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet">
-    <link href="/css/custom.css" rel="stylesheet">
+    <meta name="description" content="A pure HTML example, without dependencies." />
 
-      </head>
+    <!-- Pico.css -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2.0.6/css/pico.min.css" />
+</head>
 
-  <body>
-    <nav class="navbar navbar-default navbar-custom">
-        <div class="container-fluid">
-            <div class="navbar-header">
-                <a class="page-scroll navbar-brand" href="/">Pierre-Luc Bacon</a>
-            </div>
-
-            <ul class="nav navbar-nav navbar-right">
+<body>
+    <!-- Header -->
+    <header class="container">
+        <nav>
+            <ul>
                 <li>
-                    <a class="page-scroll" href="/teaching">Teaching</a>
-                </li>
-                <li>
-                    <a class="page-scroll" href="/group">Group</a>
-                </li>
-                <li>
-                    <a class="page-scroll" href="/contact">Contact</a>
+                    <hgroup>
+                        <h1>Pierre-Luc Bacon</h1>
+                        <p>Assistant Professor at Université de Montréal</p>
+                    </hgroup>
                 </li>
             </ul>
-        </div>
-    </nav>
-    <div class="container container-article">
-    <div class="frontpage">
-    <h1 id="masters-students">Masters Students</h1>
-    <ul>
-      <li>Léa Côté-Turcotte</li>
-    </ul>
+            <ul>
+                <li><a href="index.html">Publications</a></li>
+                <li><a href="group.html">Group</a></li>
+            </ul>
+        </nav>
 
-    <h1 id="phd-students">PhD Students</h1>
-    <ul>
-      <li><a href="https://amuni3.github.io/">Aneri Muni</a></li>
-      <li><a href="https://mila.quebec/en/person/evgenii-nikishin/">Evgenii Nikishin</a></li>
-      <li><a href="https://ca.linkedin.com/in/michel-ma">Michel Ma</a></li>
-      <li><a href="https://nikihowe.com/">Nikolaus Howe</a></li>
-      <li><a href="https://proceduralia.github.io/">Pierluca D'Oro</a></li>
-      <li><a href="http://tianwe.in/">Tianwei (Victor) Ni</a></li>  
-    </ul>
-  
-    <h1>Postdocs</h1> 
-    <ul>
-      <li><a href="http://people.csail.mit.edu/gehring/">Clement Gehring</a></li>
-      <li><a href="https://scholar.google.com/citations?user=IBIXZCAAAAAJ&hl=fr">Esther Derman</a></li>
-    </ul>
-      
-    <h1>Theses</h1> 
-    <ul>
-        <li><a href="https://mila.quebec/en/person/julien-roy/">Julien Roy</a>, PhD 2024 "Effective Reward Specification in Deep Reinforcement Learning," in co-supervision with Chris Pal.</li>
-        <li><a href="https://ca.linkedin.com/in/vincent-taboga-1292a3114">Vincent Taboga</a>, PhD 2024 "On Intelligent and Adaptive Control of Thermal Loads in Buildings under
-Demand Response Programs", in co-supervision with Hanane Dagdougui</li>
-       <li><a href="https://mahanfathi.github.io/">Mahan Fathi</a> (ماهان فتحی), MSc 2024 "Beyond the Horizon: Improved Long-range Sequence Modeling from Dynamical Systems to Language"</li>
-       <li><a href="https://sobhan.info/">Sobhan Mohammadpour</a>, MSc 2023 "On Choice Models in the Context of MDPs," in co-supervision with Emma Frejinger.</li>
-       <li><a href="https://informaticspadideh.com/">Padideh Nouri</a>, MSc 2023 "Sample Efficient Reinforcement Learning for Biological Sequence Design"</li>
-       <li><a href="https://dyth.github.io/">David Yu-Tung Hui</a> (許宇同), MSc 2023 "Stable Continuous Control," in co-supervision with Aaron Courville</li>
-       <li><a href="https://www.linkedin.com/in/paul-crouther-47221b52/">Paul Crouther</a>, MSc 2023 "Model-Based Hyperparameter Optimization"</li>
-       <li><a href="https://scholar.google.com/citations?user=SSTZj1QAAAAJ&hl=en">Anushree Rankawat</a>, MSc 2023 "Accelerated Algorithms for Temporal Difference Learning Methods"</li>
-       <li><a href="https://github.com/SimonDufLab">Simon Dufort-Labée</a>, MSc 2021 "Steepest Descent as Linear Quadratic Regulation"</li>
-       <li><a href="https://nikihowe.com/">Nikolaus Howe</a>, MSc 2021 "Learning Neural Ordinary Differential Equations for Optimal Control"</li>
-       <li><a href="https://ca.linkedin.com/in/michel-ma">Michel Ma</a>, MSc 2021 "Parsimonious Reasoning in Reinforcement Learning for Better Credit Assignment"</li>
-    </ul>
-      
-    <h1 id="alumni">Alumni and Collaborators</h1>
-    <ul>
-      <li><a href="http://linkedin.com/in/davidkanaa">David Kanaa</a></li>
-      <li>Dilip Arumugam, intern</li>
-      <li>Romina Abachi, intern</li>
-      <li>Lama Saouma, intern</li>
-      <li>Qizhen (Irene) Zhang, intern</li>
-      <li><a href="https://github.com/VictorButoi">Victor Butoi</a>, intern</li>
-      <li><a href="https://github.com/ioneliabuzatu">Ionelia Buzatu</a>, intern</li>
-      <li><a href="https://ryan-dorazio.github.io/">Ryan D'Orazio</a>, collaboration with Ioannis Mitliagkas</li>
-      <li><a href="https://arushi-12130.jimdosite.com/">Arushi Jain</a>, colloaboration with Doina Precup</li>
-    </ul> 
+    </header>
+    <!-- ./ Header -->
 
-    </div>
-    </div>
-  </body>
+    <!-- Main -->
+    <main class="container">
+
+
+        <section>
+            <section class="postdoc">
+                <h2>Postdocs</h2>
+                <ul>
+                    <li><a href="http://people.csail.mit.edu/gehring/">Clement Gehring</a></li>
+                    <li><a href="https://scholar.google.com/citations?user=IBIXZCAAAAAJ&hl=fr">Esther Derman</a></li>
+                </ul>
+            </section>
+
+            <section class="phd">
+                <h2>PhD Students</h2>
+                <ul>
+                    <li><a href="https://amuni3.github.io/">Aneri Muni</a></li>
+                    <li><a href="https://mila.quebec/en/person/evgenii-nikishin/">Evgenii Nikishin</a></li>
+                    <li><a href="https://ca.linkedin.com/in/michel-ma">Michel Ma</a></li>
+                    <li><a href="https://nikihowe.com/">Nikolaus Howe</a></li>
+                    <li><a href="https://proceduralia.github.io/">Pierluca D'Oro</a></li>
+                    <li><a href="http://tianwe.in/">Tianwei (Victor) Ni</a></li>
+                </ul>
+            </section>
+
+            <section class="masters">
+                <h2>Masters Students</h2>
+                <ul>
+                    <li>Léa Côté-Turcotte</li>
+                </ul>
+            </section>
+
+
+
+            <section class="thesis">
+                <h2>Theses</h2>
+                <ul>
+                    <li><a href="https://mila.quebec/en/person/julien-roy/">Julien Roy</a>, PhD 2024 "Effective Reward
+                        Specification in Deep Reinforcement Learning," in co-supervision with Chris Pal.</li>
+                    <li><a href="https://ca.linkedin.com/in/vincent-taboga-1292a3114">Vincent Taboga</a>, PhD 2024 "On
+                        Intelligent and Adaptive Control of Thermal Loads in Buildings under
+                        Demand Response Programs", in co-supervision with Hanane Dagdougui</li>
+                    <li><a href="https://mahanfathi.github.io/">Mahan Fathi</a> (ماهان فتحی), MSc 2024 "Beyond the
+                        Horizon: Improved Long-range Sequence Modeling from Dynamical Systems to Language"</li>
+                    <li><a href="https://sobhan.info/">Sobhan Mohammadpour</a>, MSc 2023 "On Choice Models in the
+                        Context of MDPs," in co-supervision with Emma Frejinger.</li>
+                    <li><a href="https://informaticspadideh.com/">Padideh Nouri</a>, MSc 2023 "Sample Efficient
+                        Reinforcement Learning for Biological Sequence Design"</li>
+                    <li><a href="https://dyth.github.io/">David Yu-Tung Hui</a> (許宇同), MSc 2023 "Stable Continuous
+                        Control," in co-supervision with Aaron Courville</li>
+                    <li><a href="https://www.linkedin.com/in/paul-crouther-47221b52/">Paul Crouther</a>, MSc 2023
+                        "Model-Based Hyperparameter Optimization"</li>
+                    <li><a href="https://scholar.google.com/citations?user=SSTZj1QAAAAJ&hl=en">Anushree Rankawat</a>,
+                        MSc 2023 "Accelerated Algorithms for Temporal Difference Learning Methods"</li>
+                    <li><a href="https://github.com/SimonDufLab">Simon Dufort-Labée</a>, MSc 2021 "Steepest Descent as
+                        Linear Quadratic Regulation"</li>
+                    <li><a href="https://nikihowe.com/">Nikolaus Howe</a>, MSc 2021 "Learning Neural Ordinary
+                        Differential Equations for Optimal Control"</li>
+                    <li><a href="https://ca.linkedin.com/in/michel-ma">Michel Ma</a>, MSc 2021 "Parsimonious Reasoning
+                        in Reinforcement Learning for Better Credit Assignment"</li>
+                </ul>
+            </section>
+            <section class="collaborators">
+                <h2 id="alumni">Collaborators</h1>
+                    <ul>
+                        <li><a href="http://linkedin.com/in/davidkanaa">David Kanaa</a></li>
+                        <li>Dilip Arumugam, intern</li>
+                        <li>Romina Abachi, intern</li>
+                        <li>Lama Saouma, intern</li>
+                        <li>Qizhen (Irene) Zhang, intern</li>
+                        <li><a href="https://github.com/VictorButoi">Victor Butoi</a>, intern</li>
+                        <li><a href="https://github.com/ioneliabuzatu">Ionelia Buzatu</a>, intern</li>
+                        <li><a href="https://ryan-dorazio.github.io/">Ryan D'Orazio</a>, collaboration with Ioannis
+                            Mitliagkas</li>
+                        <li><a href="https://arushi-12130.jimdosite.com/">Arushi Jain</a>, colloaboration with Doina
+                            Precup</li>
+                    </ul>
+            </section>
+        </section>
+    </main>
+    <!-- ./ Main -->
+
+
+</body>
+
 </html>
