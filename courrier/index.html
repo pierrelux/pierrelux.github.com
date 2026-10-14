@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Courrier</title>
+<style>
+  :root { --fg: #1d1d1f; --muted: #5f6368; --bg: #fff; --link: #1a5fb4; }
+  @media (prefers-color-scheme: dark) {
+    :root { --fg: #e8e8ea; --muted: #a0a4a8; --bg: #161618; --link: #8ab4f8; }
+  }
+  body { margin: 0; background: var(--bg); color: var(--fg);
+         font: 17px/1.55 -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif; }
+  main { max-width: 40rem; margin: 0 auto; padding: 3rem 1rem 4rem; }
+  h1 { font-size: 2rem; margin: 0 0 .25rem; }
+  h2 { font-size: 1.15rem; margin: 2rem 0 .5rem; }
+  .lede { color: var(--muted); margin-top: 0; }
+  a { color: var(--link); }
+  code { font-size: .9em; }
+  footer { margin-top: 3rem; color: var(--muted); font-size: .9rem; }
+</style>
+</head>
+<body>
+<main>
+  <h1>Courrier</h1>
+  <p class="lede">A desktop mail client for macOS that shows several Gmail and
+  Google Workspace accounts in one inbox, with a chat-style reply composer.</p>
+
+  <p>Courrier is a personal project by Pierre-Luc Bacon. It runs on the
+  developer's own Mac and is not distributed to other people.</p>
+
+  <h2>What it does with your Google account</h2>
+  <p>Courrier signs in with Google and asks for a single permission,
+  <code>gmail.modify</code>. It uses it to:</p>
+  <ul>
+    <li>list and read the conversations in your inbox;</li>
+    <li>mark messages read or unread, and archive them;</li>
+    <li>send the replies and messages you write;</li>
+    <li>read your Gmail send-as addresses, to choose the From address.</li>
+  </ul>
+  <p>This permission does not allow permanently deleting mail. Courrier does not
+  ask for your contacts, calendar, Drive or any other Google data.</p>
+
+  <p>There is no Courrier server. The app on your Mac talks to Google directly,
+  and your mail and sign-in tokens stay between the two. Details are in the
+  <a href="privacy.html">privacy policy</a>.</p>
+
+  <footer>
+    <a href="privacy.html">Privacy policy</a> ·
+    Contact: <a href="mailto:pierrelucbacon@gmail.com">pierrelucbacon@gmail.com</a>
+  </footer>
+</main>
+</body>
+</html>

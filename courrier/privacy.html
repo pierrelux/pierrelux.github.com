@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Courrier privacy policy</title>
+<style>
+  :root { --fg: #1d1d1f; --muted: #5f6368; --bg: #fff; --link: #1a5fb4; }
+  @media (prefers-color-scheme: dark) {
+    :root { --fg: #e8e8ea; --muted: #a0a4a8; --bg: #161618; --link: #8ab4f8; }
+  }
+  body { margin: 0; background: var(--bg); color: var(--fg);
+         font: 17px/1.55 -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif; }
+  main { max-width: 40rem; margin: 0 auto; padding: 3rem 1rem 4rem; }
+  h1 { font-size: 1.8rem; margin: 0 0 .25rem; }
+  h2 { font-size: 1.15rem; margin: 2rem 0 .5rem; }
+  .lede { color: var(--muted); margin-top: 0; }
+  a { color: var(--link); }
+  code { font-size: .9em; }
+  footer { margin-top: 3rem; color: var(--muted); font-size: .9rem; }
+</style>
+</head>
+<body>
+<main>
+  <h1>Courrier privacy policy</h1>
+  <p class="lede">Last updated 14 October 2026</p>
+
+  <p><a href="./">Courrier</a> is a desktop mail client for macOS, written by
+  Pierre-Luc Bacon for personal use. This page explains what it does with the
+  data of the Google accounts you connect to it.</p>
+
+  <h2>What Courrier accesses</h2>
+  <p>When you add a Google account, Courrier asks Google for the
+  <code>gmail.modify</code> permission. With it, Courrier reads the messages in
+  your inbox and your Gmail send-as addresses, changes the read, unread and
+  inbox labels of messages when you mark or archive them, and sends the
+  messages you write. It cannot permanently delete mail, and it does not
+  request any other Google data.</p>
+
+  <h2>How it is used</h2>
+  <p>Only to show your mail in the app and carry out what you do there. Courrier
+  does not show ads, does not analyze your mail for any other purpose, and does
+  not use it to train artificial intelligence or machine learning models.</p>
+
+  <h2>Where it is kept</h2>
+  <ul>
+    <li>Mail is downloaded from Gmail while the app runs and kept in memory. It
+    is not saved to disk.</li>
+    <li>Replies you have started but not sent are saved on your Mac, in the
+    app's local storage, until you send or discard them.</li>
+    <li>Google sign-in tokens are stored in the macOS Keychain.</li>
+    <li>The list of connected accounts (address, sidebar label, display name and color) is
+    stored in
+    <code>~/Library/Application Support/com.pierrelucbacon.courrier/</code>.</li>
+  </ul>
+
+  <h2>Who it is shared with</h2>
+  <p>No one. Courrier has no server: the app on your Mac talks only to Google
+  (<code>accounts.google.com</code>, <code>oauth2.googleapis.com</code> and
+  <code>gmail.googleapis.com</code>). The developer never receives your mail,
+  tokens or any other data. There are no analytics, crash reports or other
+  telemetry, and no data is sold or transferred to anyone.</p>
+
+  <h2>Google API Services User Data Policy</h2>
+  <p>Courrier's use and transfer to any other app of information received from
+  Google APIs will adhere to the
+  <a href="https://developers.google.com/terms/api-services-user-data-policy">Google
+  API Services User Data Policy</a>, including the Limited Use
+  requirements.</p>
+
+  <h2>Removing your data</h2>
+  <p>To revoke Courrier's access, open
+  <a href="https://myaccount.google.com/connections">your Google account's
+  third-party connections</a> and remove Courrier. To delete what Courrier keeps
+  on your Mac, delete the folder above and the Keychain items named
+  <code>com.pierrelucbacon.courrier</code>.</p>
+
+  <h2>Changes and contact</h2>
+  <p>If this policy changes, this page will be updated and the date above
+  changed. Questions:
+  <a href="mailto:pierrelucbacon@gmail.com">pierrelucbacon@gmail.com</a>.</p>
+
+  <footer><a href="./">Courrier</a></footer>
+</main>
+</body>
+</html>
