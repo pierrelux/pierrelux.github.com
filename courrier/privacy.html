@@ -23,7 +23,7 @@
 <body>
 <main>
   <h1>Courrier privacy policy</h1>
-  <p class="lede">Last updated 14 October 2026</p>
+  <p class="lede">Last updated 15 October 2026</p>
 
   <p><a href="./">Courrier</a> is a desktop mail client for macOS, written by
   Pierre-Luc Bacon for personal use. This page explains what it does with the
@@ -43,19 +43,37 @@
   not use it to train artificial intelligence or machine learning models.</p>
 
   <h2>Where it is kept</h2>
+  <p>Everything Courrier keeps stays on your Mac:</p>
   <ul>
-    <li>Mail is downloaded from Gmail while the app runs and kept in memory. It
-    is not saved to disk.</li>
-    <li>Replies you have started but not sent are saved on your Mac, in the
-    app's local storage, until you send or discard them.</li>
+    <li>A copy of each account's inbox is kept in a database file,
+    <code>mail.sqlite3</code>, that only your macOS user can read, so the inbox
+    shows at once when the app starts. It holds every unread conversation and
+    up to 500 read ones per account, both as Gmail sends them and as the app
+    displays them. Conversations that leave the inbox are removed from it.
+    Deleting the file is safe: Courrier downloads the inbox again.</li>
+    <li>Replies you have started but not sent are saved in the app's local
+    storage until you send or discard them.</li>
     <li>Google sign-in tokens are stored in the macOS Keychain.</li>
-    <li>The list of connected accounts (address, sidebar label, display name and color) is
-    stored in
+    <li>The list of connected accounts (address, sidebar label, display name
+    and color) is stored next to the mail database, in
     <code>~/Library/Application Support/com.pierrelucbacon.courrier/</code>.</li>
   </ul>
 
+  <h2>Images in formatted messages</h2>
+  <p>Newsletters, receipts and other formatted (HTML) messages are shown with
+  their images, as Gmail shows them. When you open one, Courrier downloads its
+  images from the web addresses written in the message, which usually belong
+  to the sender or their mailing service. Those servers can tell that the
+  message was opened, when, and from which IP address, as with any mail
+  program that shows images. Before a message is displayed, Courrier removes
+  tracking pixels (tiny invisible images used only to detect opens), and its
+  image requests carry no referrer. Messages shown as plain text load no
+  images.</p>
+
   <h2>Who it is shared with</h2>
-  <p>No one. Courrier has no server: the app on your Mac talks only to Google
+  <p>Courrier does not share your mail or account data with anyone. It has no
+  server. Apart from the image downloads described above, the app on your Mac
+  talks only to Google
   (<code>accounts.google.com</code>, <code>oauth2.googleapis.com</code> and
   <code>gmail.googleapis.com</code>). The developer never receives your mail,
   tokens or any other data. There are no analytics, crash reports or other
@@ -72,7 +90,8 @@
   <p>To revoke Courrier's access, open
   <a href="https://myaccount.google.com/connections">your Google account's
   third-party connections</a> and remove Courrier. To delete what Courrier keeps
-  on your Mac, delete the folder above and the Keychain items named
+  on your Mac, including the mail database, delete the folder above and the
+  Keychain items named
   <code>com.pierrelucbacon.courrier</code>.</p>
 
   <h2>Changes and contact</h2>
