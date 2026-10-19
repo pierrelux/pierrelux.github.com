@@ -23,7 +23,7 @@
 <body>
 <main>
   <h1>Courrier privacy policy</h1>
-  <p class="lede">Last updated 15 October 2026</p>
+  <p class="lede">Last updated 19 October 2026</p>
 
   <p><a href="./">Courrier</a> is a desktop mail client for macOS, written by
   Pierre-Luc Bacon for personal use. This page explains what it does with the
@@ -34,11 +34,14 @@
   <code>gmail.modify</code> permission. With it, Courrier reads the messages in
   your inbox and your Gmail send-as addresses, changes the read, unread and
   inbox labels of messages when you mark or archive them, and sends the
-  messages you write. It cannot permanently delete mail, and it does not
+  messages you write. When you search, it also uses Gmail's search over your
+  whole mailbox (except spam and trash) and reads the conversations you open
+  from the results. It cannot permanently delete mail, and it does not
   request any other Google data.</p>
 
   <h2>How it is used</h2>
-  <p>Only to show your mail in the app and carry out what you do there. Courrier
+  <p>Only to show your mail in the app and carry out what you do there,
+  including, when you use them, the Claude features described below. Courrier
   does not show ads, does not analyze your mail for any other purpose, and does
   not use it to train artificial intelligence or machine learning models.</p>
 
@@ -51,12 +54,29 @@
     up to 500 read ones per account, both as Gmail sends them and as the app
     displays them. Conversations that leave the inbox are removed from it.
     Deleting the file is safe: Courrier downloads the inbox again.</li>
+    <li>Conversations you open from search results, and those Claude reads
+    through Courrier's mail tools (below), are kept in the same file, apart
+    from the inbox copy, even when they are archived: the 100 most recently
+    used per account.</li>
+    <li>When suggestions on new mail are on (below), Claude's suggestion for
+    each new conversation is kept in the same file, until the conversation
+    leaves the inbox.</li>
     <li>Replies you have started but not sent are saved in the app's local
     storage until you send or discard them.</li>
     <li>Google sign-in tokens are stored in the macOS Keychain.</li>
     <li>The list of connected accounts (address, sidebar label, display name
     and color) is stored next to the mail database, in
-    <code>~/Library/Application Support/com.pierrelucbacon.courrier/</code>.</li>
+    <code>~/Library/Application Support/com.pierrelucbacon.courrier/</code>.
+    So are the Claude settings, in <code>agent.json</code>, which only your
+    macOS user can read: the "About you" text you write there, which accounts
+    get suggestions, the Claude models used and where the <code>claude</code>
+    program is.</li>
+    <li>Attachments you open are downloaded once to
+    <code>~/Library/Caches/com.pierrelucbacon.courrier/attachments/</code> and
+    opened from there.</li>
+    <li>Claude Code, not Courrier, keeps a record of each Ask Claude
+    conversation in <code>~/.claude/projects/</code>, as it does for its own
+    sessions, so that follow-up requests can continue it.</li>
   </ul>
 
   <h2>Images in formatted messages</h2>
@@ -70,14 +90,82 @@
   image requests carry no referrer. Messages shown as plain text load no
   images.</p>
 
+  <h2>Claude</h2>
+  <p>Courrier can ask Claude, Anthropic's AI assistant, for help with your
+  mail, in the two ways described below. Nothing goes to Anthropic until you
+  ask Claude something or turn suggestions on. Both run through Claude Code
+  (the <code>claude</code> program) installed on your Mac and signed in to
+  your own Claude account: Courrier has no Anthropic account or key of its
+  own, and what it sends goes from that program to Anthropic. Anthropic
+  handles it under the terms of your Claude account:
+  <a href="https://www.anthropic.com/legal/privacy">Anthropic's privacy
+  policy</a> and your account's privacy settings decide how long it is kept
+  and whether it may be used to improve Anthropic's models. Both features
+  also send the "About you" text from Courrier's Claude settings and the
+  names and addresses of your connected accounts.</p>
+
+  <h2>Ask Claude</h2>
+  <p>When you ask Claude for help with the open conversation (the line above
+  the reply box), Courrier sends your request, the conversation (each
+  message's text, sender, recipients and date, the subject, and the names of
+  attachments but not the attachments themselves) and the reply you have
+  started, if any. To answer, Claude can search and read your mail in all
+  your connected accounts, through Courrier's mail tools, and read your
+  Google Calendar, through the Google Calendar
+  connection of your Claude account if you have set one up. What it reads
+  this way goes to Anthropic too. Courrier itself has no access to your
+  calendar. These tools only read: Claude cannot send, change or delete mail,
+  or create, change or answer calendar events. It returns a short note and a
+  draft reply, which go into your reply box for you to read and edit, and
+  nothing is sent until you press Send.</p>
+  <p>When suggestions on new mail are on and Claude has suggested, with high
+  confidence, that a conversation needs a meeting time, opening that
+  conversation asks Claude for the reply in the background, as if you had
+  asked, but only when the sender is someone you have written to or a
+  colleague at one of your organizations. The draft waits until you choose to
+  use it.</p>
+  <p>Courrier's mail tools are a separate program, <code>courrier-mcp</code>.
+  It reads the mail database and, while the app is running, asks the app to
+  search Gmail and fetch conversations. It makes no network connection of its
+  own and cannot send, change or delete mail. You can also connect it
+  yourself to Claude Code or Claude Desktop, to ask them about your mail
+  outside Courrier; what they read through it then goes to Anthropic under
+  your Claude account, as above.</p>
+
+  <h2>Suggestions on new mail</h2>
+  <p>Courrier can also have Claude suggest what to do next with new mail,
+  shown as a short label on the inbox row, sometimes with ready answers to
+  choose from. This is off until you turn it on, account by account, in
+  Courrier's Claude settings. When it is on, after each sync Courrier looks at
+  those accounts' inbox conversations whose newest message arrived in the
+  last seven days. Rules that run on your Mac set most of them aside, and
+  those are never sent: mail from automated senders and mailing lists,
+  automatic replies, calendar invitations, Gmail's Promotions, Social, Updates
+  and Forums categories, conversations in which you wrote the last message,
+  and mail that does not name you in To or Cc.</p>
+  <p>For each remaining conversation, Courrier sends the account's label, the
+  subject, the sender's name and address, the date, whether you are in To or
+  Cc and how many others are, the newest message's own text without the
+  earlier messages it quotes (at most 1,500 characters), and the start of
+  your own previous message in the conversation, if any (at most 300
+  characters). Lines that mention a password or a code are removed first, and
+  a message that holds only such lines is not sent. Conversations go in
+  batches of up to 25 to a smaller Claude model that has no tools, so it
+  cannot read your other mail or your calendar, and Claude Code keeps no
+  record of these requests. A conversation is sent once for each new message,
+  and Claude's suggestion is stored in the mail database, as described
+  above.</p>
+
   <h2>Who it is shared with</h2>
-  <p>Courrier does not share your mail or account data with anyone. It has no
-  server. Apart from the image downloads described above, the app on your Mac
-  talks only to Google
+  <p>Courrier has no server, and the developer never receives your mail,
+  tokens or any other data. Apart from the image downloads described above,
+  the app on your Mac talks only to Google
   (<code>accounts.google.com</code>, <code>oauth2.googleapis.com</code> and
-  <code>gmail.googleapis.com</code>). The developer never receives your mail,
-  tokens or any other data. There are no analytics, crash reports or other
-  telemetry, and no data is sold or transferred to anyone.</p>
+  <code>gmail.googleapis.com</code>). When you use the Claude features,
+  Courrier hands mail to Claude Code on your Mac, which sends it to Anthropic
+  as described above; that is the only way Courrier lets your mail leave your
+  Mac other than to Google. There are no analytics, crash reports or other
+  telemetry, and no data is sold or transferred to anyone else.</p>
 
   <h2>Google API Services User Data Policy</h2>
   <p>Courrier's use and transfer to any other app of information received from
@@ -90,9 +178,13 @@
   <p>To revoke Courrier's access, open
   <a href="https://myaccount.google.com/connections">your Google account's
   third-party connections</a> and remove Courrier. To delete what Courrier keeps
-  on your Mac, including the mail database, delete the folder above and the
-  Keychain items named
-  <code>com.pierrelucbacon.courrier</code>.</p>
+  on your Mac, including the mail database and the Claude settings, delete the
+  two folders above and the Keychain items named
+  <code>com.pierrelucbacon.courrier</code>. Claude Code's records of Ask Claude
+  conversations are in the folder of <code>~/.claude/projects/</code> whose
+  name ends in <code>com-pierrelucbacon-courrier-agent</code>. What Anthropic
+  keeps is governed by its privacy policy and your Claude account's
+  settings.</p>
 
   <h2>Changes and contact</h2>
   <p>If this policy changes, this page will be updated and the date above
