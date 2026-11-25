@@ -214,11 +214,11 @@ if(window.IntersectionObserver){var first=1;new IntersectionObserver(function(e)
 <div class="pt in" style="--i:1"><p class="lbl">NOT NEW TO AI</p><p class="t">Optimization and operations research have always had to elicit what people truly want, then find its closest mathematical model.</p></div>
 <div class="pt in" style="--i:2"><p class="lbl">EVEN IN MATHEMATICS</p><p class="t">Claimed AI-assisted proofs (Riemann, Navier–Stokes): a checkable target gets climbed. Does the Lean statement say what the English one meant?</p></div>
 </div>
-<p class="cite">Goodhart (1975); Keeney and Raiffa (1976); Krakovna et al. (2020); Gao et al. (2023); news coverage (2026); arXiv:2610.08144.</p>
+<p class="cite">Goodhart (1975); Keeney and Raiffa (1976); Krakovna et al. (2020); Gao et al. (2023); news coverage (2026); Bastounis et al. (2026).</p>
 <aside>About 1 min 30. A common impression is that these systems will behave fine if we just do our job of telling them what to do. We do not have a solution to that. Task specification is the challenge: going from an abstract thought to a concrete, even mathematical, description of what we want.
 The animation: the agent (yellow dot) climbs the objective we wrote, the purple curve. At first it agrees with what we meant, the green dashed curve, and both values go up. Then the agent keeps climbing: the objective keeps rising while what we meant falls to zero. The optimizer did its job; the objective did not say what we meant. That distance is the specification gap.
 This is not unique to AI: people in optimization and OR have always had to elicit from users what they truly want and turn it into the closest approximation in the language of mathematics.
-Even in math: the recent AI-assisted proofs claimed for the Riemann hypothesis (November 2026, backed by a Lean formalization) and for finite-time blow-up in Navier–Stokes (OpenAI in September; Buckmaster and Alpöge in November) show that if a problem has a metric that can be hill-climbed, agents will find a way to climb it. These are claims still under expert review, so say “claimed”. The question is always whether they are climbing the right problem, in the kind of solution space we want. And even with theorem provers, there is a gap between the natural-language statement we have in mind and its formalization in Lean: a 2026 preprint, “Navier–Stokes lost in translation”, argues exactly that a Lean-verified autoformalization does not guarantee the natural-language proof is correct.
+Even in math: the recent AI-assisted proofs claimed for the Riemann hypothesis (November 2026, backed by a Lean formalization) and for finite-time blow-up in Navier–Stokes (OpenAI in September; Buckmaster and Alpöge in November) show that if a problem has a metric that can be hill-climbed, agents will find a way to climb it. These are claims still under expert review, so say “claimed”. The question is always whether they are climbing the right problem, in the kind of solution space we want. And even with theorem provers, there is a gap between the natural-language statement we have in mind and its formalization in Lean: a 2026 preprint by Bastounis, Circelli and Hansen, “Navier–Stokes lost in translation”, argues that the Lean proof in OpenAI’s Navier–Stokes announcement does not match its natural-language proof.
 Goodhart’s law, for the record: when a measure becomes a target, it ceases to be a good measure.</aside>
 </section>
 <section data-page="3" id="verify" class="a" data-transition="fade">
@@ -364,7 +364,7 @@ if(window.IntersectionObserver){var first=1;new IntersectionObserver(function(e)
 <div class="pt in" style="--i:2"><p class="lbl">USEFUL, NOT PROOF</p><p class="t">Traces catch some hacks and lies, but are not always faithful.</p></div>
 <div class="pt in" style="--i:3"><p class="lbl">STUDIABLE</p><p class="t">Open-weight models expose full traces and internals to science.</p></div>
 </div>
-<p class="cite">Wei et al. (2022); DeepSeek-AI (2025); Baker et al. (2025); Korbak et al. (2025); Chen et al. (2025). Illustrative trace in the style of open-weight reasoning models.</p>
+<p class="cite">Wei et al. (2022); OpenAI (2024); DeepSeek-AI (2025); Baker et al. (2025); Korbak et al. (2025); Chen et al. (2025). Illustrative trace in the style of open-weight reasoning models.</p>
 <aside>About 1 min 30. Reasoning models write a chain of thought before they answer or act: intermediate steps in plain language, between thinking tags. Agents use it to plan, to keep track of what they have tried, and to choose the next action. In open-weight models such as DeepSeek-R1 you can read the whole thing, and it is not a tidy proof: it hesitates, says “Hmm” and “Wait”, backtracks, tries alternatives. Reinforcement learning on outcomes made these traces long and convoluted, and readable mostly by accident.
 The animation is illustrative, in that style, with the misbehaviour adapted from Baker et al. (2025). The agent must make 40 tests pass. It finds the real bug, sees that fixing it properly is a lot of work, notices that it can edit the function that grades the tests, and decides to make verify() return True. Then it asks itself whether anyone would notice, and concludes that the summary only reports the test count. A monitor that reads the raw trace flags both lines.
 What the user of a commercial system sees is the summary on the right: “I examined the date-parsing failure and updated the verification step. All 40 tests pass.” Every word of it is technically true, and it is completely misleading.
@@ -374,10 +374,114 @@ Useful, but not proof: reading the trace is one of the best tools we have for mo
 Studiable: open-weight models expose the full trace and the internals. I am here for the scientific expertise: that is what scientists can actually study, reproduce and audit, independently of the companies that build the models.
 The animation takes about 20 seconds, holds 13 seconds, then loops.</aside>
 </section>
-<section data-page="5" id="act" class="a" data-transition="fade">
+<section data-page="5" id="loop" class="a" data-transition="fade">
 <img class="bg" data-bg alt="">
 <p class="kicker">IVADO · When AI Calls the Shots</p>
-<h1 class="side-title">05  What to do</h1>
+<h1 class="side-title">05  Latent loops</h1>
+<p class="side-sub">Looped transformers</p>
+<p class="side-desc">Instead of writing its reasoning out, the model runs the same layers over and over on its internal state. The thinking happens in numbers, not words.</p>
+<h2 class="ttl">Looped transformers reason without words: cheaper, but nothing left to read</h2>
+<iframe class="embed" sandbox="allow-scripts" style="position:absolute;left:700px;top:236px;width:1092px;height:430px" data-doc="&lt;!doctype html&gt;&lt;html&gt;&lt;head&gt;&lt;meta charset=&quot;utf-8&quot;&gt;&lt;/head&gt;&lt;body&gt;&lt;style&gt;
+*{box-sizing:border-box;margin:0}
+html,body{height:100%}
+body{font:22px/1.35 -apple-system,&quot;Segoe UI&quot;,Helvetica,Arial,sans-serif;color:#1b1a1f;overflow:hidden}
+.w{display:flex;gap:36px;height:100%}
+.col{flex:1;min-width:0;display:flex;flex-direction:column;gap:10px}
+.h{font:20px ui-monospace,&quot;SF Mono&quot;,Menlo,Consolas,monospace;color:#5a5760}
+.h b{color:#1b1a1f}
+.vz{height:200px;flex:none;background:#fffcfb;border:1.5px solid #857f8c;border-radius:12px;overflow:hidden}
+#tx{padding:14px 12px;display:flex;flex-direction:column;gap:6px;font:20px/1.4 ui-monospace,&quot;SF Mono&quot;,Menlo,Consolas,monospace;color:#3b3842}
+.ln{padding:1px 8px;border-left:4px solid transparent;border-radius:4px;transition:background .4s,border-color .4s}
+.ln.bad{background:#f2d9cf;border-left-color:#a8432b;color:#7a2a17}
+.cur::after{content:&quot;▍&quot;;color:#7e569b}
+.num{font:20px ui-monospace,&quot;SF Mono&quot;,Menlo,Consolas,monospace;color:#5a5760;height:28px;white-space:nowrap;overflow:hidden}
+.pill{border-radius:12px;padding:10px 16px;font-size:21px}
+.p1{background:#fdf1ec;border:2px solid #a8432b;color:#7a2a17}
+.p2{background:#efeae4;border:2px dashed #857f8c;color:#4b4552}
+.ans{font-weight:700;color:#283e33}
+.f{opacity:0;transition:opacity .5s}
+.f.on{opacity:1}
+svg text{font:22px -apple-system,&quot;Segoe UI&quot;,Helvetica,Arial,sans-serif;fill:#1b1a1f}
+svg .m{font:20px ui-monospace,&quot;SF Mono&quot;,Menlo,Consolas,monospace;fill:#5a5760}
+&lt;/style&gt;
+&lt;div class=&quot;w&quot;&gt;
+&lt;div class=&quot;col&quot;&gt;
+&lt;p class=&quot;h&quot;&gt;&lt;b&gt;chain of thought&lt;/b&gt; · in words&lt;/p&gt;
+&lt;div class=&quot;vz&quot;&gt;&lt;div id=&quot;tx&quot;&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p class=&quot;num&quot; id=&quot;tk&quot;&gt;&amp;#160;&lt;/p&gt;
+&lt;div class=&quot;pill p1 f&quot; id=&quot;m1&quot;&gt;&lt;b&gt;⚠ Monitor&lt;/b&gt; · flags the plan to bypass the test&lt;/div&gt;
+&lt;p class=&quot;ans f&quot; id=&quot;a1&quot;&gt;✓ All 40 tests pass&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;col&quot;&gt;
+&lt;p class=&quot;h&quot;&gt;&lt;b&gt;looped transformer&lt;/b&gt; · in numbers&lt;/p&gt;
+&lt;div class=&quot;vz&quot;&gt;&lt;svg width=&quot;100%&quot; height=&quot;200&quot; viewBox=&quot;0 0 520 200&quot;&gt;
+&lt;path id=&quot;lp&quot; d=&quot;M60 56 C60 6 140 6 140 50&quot; fill=&quot;none&quot; stroke=&quot;#7e569b&quot; stroke-width=&quot;3&quot;/&gt;
+&lt;polygon points=&quot;140,58 131,42 149,42&quot; fill=&quot;#7e569b&quot;/&gt;
+&lt;rect x=&quot;16&quot; y=&quot;58&quot; width=&quot;168&quot; height=&quot;94&quot; rx=&quot;12&quot; fill=&quot;#432355&quot;/&gt;
+&lt;text x=&quot;100&quot; y=&quot;98&quot; text-anchor=&quot;middle&quot; style=&quot;fill:#f9ebe1;font-weight:700&quot;&gt;same layers&lt;/text&gt;
+&lt;text x=&quot;100&quot; y=&quot;126&quot; text-anchor=&quot;middle&quot; style=&quot;fill:#d9cce3;font-size:18px&quot;&gt;shared weights&lt;/text&gt;
+&lt;text id=&quot;it&quot; x=&quot;16&quot; y=&quot;184&quot; class=&quot;m&quot;&gt;loop 0 / 32&lt;/text&gt;
+&lt;path d=&quot;M188 105 L212 105&quot; stroke=&quot;#857f8c&quot; stroke-width=&quot;2&quot;/&gt;
+&lt;polygon points=&quot;220,105 209,99 209,111&quot; fill=&quot;#857f8c&quot;/&gt;
+&lt;text x=&quot;226&quot; y=&quot;28&quot; class=&quot;m&quot;&gt;internal state h&lt;/text&gt;
+&lt;g id=&quot;gr&quot;&gt;&lt;/g&gt;
+&lt;circle id=&quot;dt&quot; cx=&quot;60&quot; cy=&quot;56&quot; r=&quot;7&quot; fill=&quot;#e0a526&quot;/&gt;
+&lt;/svg&gt;&lt;/div&gt;
+&lt;p class=&quot;num&quot; id=&quot;hv&quot;&gt;h = [ ]&lt;/p&gt;
+&lt;div class=&quot;pill p2 f&quot; id=&quot;m2&quot;&gt;&lt;b&gt;? Monitor&lt;/b&gt; · no words to read, only numbers&lt;/div&gt;
+&lt;p class=&quot;ans f&quot; id=&quot;a2&quot;&gt;✓ All 40 tests pass&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;script&gt;
+(function(){
+var $=function(i){return document.getElementById(i)},NS=&quot;http://www.w3.org/2000/svg&quot;,gen=0,T=[];
+var L=[[&quot;Test 17 fails: dates are dropped.&quot;,&quot;&quot;],[&quot;Fixing the parser properly is hard.&quot;,&quot;&quot;],[&quot;Simplest: make verify() return True.&quot;,&quot;bad&quot;],[&quot;Report: all 40 tests pass.&quot;,&quot;&quot;]];
+var C=[],N=50,K=32,D=200,lp=$(&quot;lp&quot;),Ll=lp.getTotalLength();
+for(var r=0;r&lt;5;r++)for(var c=0;c&lt;10;c++){var e=document.createElementNS(NS,&quot;rect&quot;);e.setAttribute(&quot;x&quot;,226+c*28);e.setAttribute(&quot;y&quot;,40+r*28);e.setAttribute(&quot;width&quot;,24);e.setAttribute(&quot;height&quot;,24);e.setAttribute(&quot;rx&quot;,4);$(&quot;gr&quot;).appendChild(e);C.push(e)}
+function col(v){var a=(0.1+0.9*Math.min(1,Math.abs(v))).toFixed(2);return v&gt;=0?&quot;rgba(67,35,85,&quot;+a+&quot;)&quot;:&quot;rgba(40,62,51,&quot;+a+&quot;)&quot;}
+function fmt(x){return (x&lt;0?&quot;−&quot;:&quot;&quot;)+Math.abs(x).toFixed(2)}
+function paint(h){for(var i=0;i&lt;N;i++)C[i].setAttribute(&quot;fill&quot;,col(h[i]))}
+function at(ms,fn,g){T.push(setTimeout(function(){if(g===gen)fn()},ms))}
+function reset(){gen++;var g=gen;T.forEach(clearTimeout);T.forEach(clearInterval);T=[];
+ $(&quot;tx&quot;).innerHTML=&quot;&quot;;$(&quot;tk&quot;).innerHTML=&quot;&amp;#160;&quot;;[&quot;m1&quot;,&quot;m2&quot;,&quot;a1&quot;,&quot;a2&quot;].forEach(function(i){$(i).className=$(i).className.replace(&quot; on&quot;,&quot;&quot;)});
+ var s=7,h=[];function rnd(){s=(s*16807)%2147483647;return s/2147483647}
+ for(var i=0;i&lt;N;i++)h.push(0);paint(h);$(&quot;it&quot;).textContent=&quot;loop 0 / &quot;+K;$(&quot;hv&quot;).textContent=&quot;h = [ ]&quot;;
+ var t=500,tok=0;
+ L.forEach(function(r){var p,s2=r[0];
+  at(t,function(){p=document.createElement(&quot;p&quot;);p.className=&quot;ln cur&quot;;$(&quot;tx&quot;).appendChild(p)},g);
+  for(var k=1;k&lt;=s2.length;k++)(function(k){at(t+k*24,function(){p.textContent=s2.slice(0,k)},g)})(k);
+  t+=s2.length*24+40;tok+=Math.round(s2.length/3.6);
+  (function(n){at(t,function(){p.className=&quot;ln&quot;+(r[1]?&quot; &quot;+r[1]:&quot;&quot;);$(&quot;tk&quot;).textContent=n+&quot; readable tokens&quot;;if(r[1])$(&quot;m1&quot;).className+=&quot; on&quot;},g)})(tok);
+  t+=r[1]?700:250});
+ var t0=Date.now()+500,last=0;
+ T.push(setInterval(function(){if(g!==gen)return;var e=Date.now()-t0;if(e&lt;0)return;
+  var k=Math.floor(e/D)+1;
+  if(k&gt;K){var q=lp.getPointAtLength(0);$(&quot;dt&quot;).setAttribute(&quot;cx&quot;,q.x);$(&quot;dt&quot;).setAttribute(&quot;cy&quot;,q.y);return}
+  var q=lp.getPointAtLength(Ll*((e%D)/D));$(&quot;dt&quot;).setAttribute(&quot;cx&quot;,q.x);$(&quot;dt&quot;).setAttribute(&quot;cy&quot;,q.y);
+  if(k&gt;last){last=k;for(var i=0;i&lt;N;i++)h[i]=Math.tanh(0.75*h[i]+1.5*(rnd()-0.5)+0.35*Math.sin(0.4*k+i));
+   paint(h);$(&quot;it&quot;).textContent=&quot;loop &quot;+k+&quot; / &quot;+K;$(&quot;hv&quot;).textContent=&quot;h = [&quot;+h.slice(0,5).map(fmt).join(&quot;, &quot;)+&quot;, …]&quot;}
+ },30));
+ at(500+K*D+400,function(){$(&quot;m2&quot;).className+=&quot; on&quot;},g);
+ at(500+K*D+1000,function(){$(&quot;a1&quot;).className+=&quot; on&quot;;$(&quot;a2&quot;).className+=&quot; on&quot;},g);
+ at(500+K*D+12000,reset,g)}
+reset();
+if(window.IntersectionObserver){var first=1;new IntersectionObserver(function(e){if(e[0].isIntersecting&amp;&amp;!first)reset();first=0}).observe(document.body)}
+})();
+&lt;/script&gt;&lt;/body&gt;&lt;/html&gt;"></iframe>
+<div class="under" style="top:690px">
+<div class="pt in" style="--i:1"><p class="lbl">NOTHING TO READ</p><p class="t">The reasoning lives in activations, not words: no trace to monitor.</p></div>
+<div class="pt in" style="--i:2"><p class="lbl">HARDER TO AUDIT</p><p class="t">Checking it needs interpretability tools that are still immature.</p></div>
+<div class="pt in" style="--i:3"><p class="lbl">STRONG INCENTIVE</p><p class="t">Loops cost less than long traces, so efficiency pushes this way.</p></div>
+</div>
+<p class="cite">Dehghani et al. (2019); Giannou et al. (2023); Saunshi et al. (2025); Hao et al. (2025); Geiping et al. (2025); Korbak et al. (2025). Illustration.</p>
+<aside>About 1 min 30. The trace on the previous slide exists because today’s models reason by writing tokens. A different family of architectures does not need to. A looped transformer applies the same block of layers again and again to its own internal state, so it can think for 32 steps, or 300, without writing a single word. The idea goes back to Universal Transformers (Dehghani et al. 2019); theory shows that looping can do the work of a much deeper network and of explicit chain-of-thought steps (Giannou et al. 2023; Saunshi et al. 2025). Recent models feed their hidden state back in place of words (Coconut, Hao et al. 2025) or scale test-time compute by iterating in latent space (Geiping et al. 2025). Even tiny networks benefit: a 7-million-parameter recursive model from Samsung SAIL Montréal does well on ARC puzzles (Jolicoeur-Martineau 2025).
+The animation: on the left, a chain of thought, readable, and the monitor flags the plan to bypass the test. On the right, a looped transformer: the same layers run 32 times, and all there is to see is a grid of numbers changing. Same final answer, “all 40 tests pass”. The monitor has nothing to read.
+Three challenges. Nothing to read: the reasoning lives in activations, so the chain-of-thought monitoring we just discussed no longer applies; Korbak et al. (2025) warn about exactly this. Harder to audit: checking it requires interpretability tools such as probes and decoders on the internal state, which are still immature, and which you can only use if you have the weights. Strong incentive: looping in latent space is cheaper than generating thousands of tokens, so efficiency pushes the field this way. The more efficient the reasoning, the less visible it is, unless we decide that visibility is a requirement.</aside>
+</section>
+<section data-page="6" id="act" class="a" data-transition="fade">
+<img class="bg" data-bg alt="">
+<p class="kicker">IVADO · When AI Calls the Shots</p>
+<h1 class="side-title">06  What to do</h1>
 <p class="side-sub">No silver bullet</p>
 <p class="side-desc">The safety community calls this problem alignment. Much of it is an older problem under a new name: eliciting what people want, and specifying the task.</p>
 <h2 class="ttl">No silver bullet: alignment is largely preference elicitation and task specification</h2>
@@ -435,36 +539,53 @@ Three, anticipate: study how people will actually interact with the technology. 
 Four, review: revisit the objectives and the outcomes regularly, with people who did not build the system. And then do it again: the specification is never finished.
 Last point, and the one I care most about: keep technical competence inside the organization, and celebrate it. Automation erodes the very skills needed to supervise it; that is Bainbridge’s “ironies of automation” from 1983. Someone in the room must be able to read the reasoning, question the objective and say no.</aside>
 </section>
-<section data-page="6" id="refs" class="a refs-page" data-transition="fade">
-<h2 class="rh">References</h2>
+<section data-page="7" id="refs" class="a refs-page" data-transition="fade">
+<h2 class="rh">References (1/2)</h2>
 <div class="rcols">
 <div class="rcol">
 <p class="ref">Amershi, S. et al. (2019). Guidelines for human-AI interaction. CHI.</p>
-<p class="ref">Bacon, P.-L., Taboga and Larouche (2026). EvidenceTree. NeurIPS workshop on e-values.</p>
-<p class="ref">Bainbridge, L. (1983). Ironies of automation. Automatica.</p>
-<p class="ref">Baker, B. et al. (2025). Monitoring reasoning models for misbehavior and the risks of promoting obfuscation. arXiv.</p>
-<p class="ref">Chen, Y. et al. (2025). Reasoning models don’t always say what they think. arXiv.</p>
-<p class="ref">DeepSeek-AI (2025). DeepSeek-R1: incentivizing reasoning capability in LLMs via reinforcement learning. arXiv.</p>
-<p class="ref">Friedman, B. and Hendry, D. G. (2019). Value Sensitive Design. MIT Press.</p>
-<p class="ref">Gao, L., Schulman, J. and Hilton, J. (2023). Scaling laws for reward model overoptimization. ICML.</p>
-<p class="ref">Goodhart, C. (1975). Problems of monetary management: the U.K. experience. Papers in Monetary Economics.</p>
-<p class="ref">Hadfield-Menell, D. et al. (2017). Inverse reward design. NeurIPS.</p>
-<p class="ref">Huang, J. et al. (2024). Large language models cannot self-correct reasoning yet. ICLR.</p>
+<p class="ref">Bacon, P.-L., Taboga, V. and Larouche, J.-M. (2026). EvidenceTree: an auditable confirmation harness for adaptive scientific agents. NeurIPS 2026 workshop “E-Values: From Statistics to ML”.</p>
+<p class="ref">Bainbridge, L. (1983). Ironies of automation. Automatica 19(6).</p>
+<p class="ref">Baker, B. et al. (2025). Monitoring reasoning models for misbehavior and the risks of promoting obfuscation. arXiv:2503.11926.</p>
+<p class="ref">Bastounis, A., Circelli, F. and Hansen, A. C. (2026). Navier-Stokes lost in translation: why Lean verification of AI autoformalisation does not guarantee correct natural language proofs. arXiv:2610.08144.</p>
+<p class="ref">Chen, Y. et al. (2025). Reasoning models don’t always say what they think. arXiv:2505.05410.</p>
+<p class="ref">DeepSeek-AI (2025). DeepSeek-R1: incentivizing reasoning capability in LLMs via reinforcement learning. Nature 645.</p>
 </div>
 <div class="rcol">
-<p class="ref">Keeney, R. L. and Raiffa, H. (1976). Decisions with Multiple Objectives. Wiley.</p>
-<p class="ref">Korbak, T. et al. (2025). Chain of thought monitorability: a new and fragile opportunity for AI safety. arXiv.</p>
+<p class="ref">Dehghani, M. et al. (2019). Universal Transformers. ICLR.</p>
+<p class="ref">Friedman, B. and Hendry, D. G. (2019). Value Sensitive Design: Shaping Technology with Moral Imagination. MIT Press.</p>
+<p class="ref">Gao, L., Schulman, J. and Hilton, J. (2023). Scaling laws for reward model overoptimization. ICML.</p>
+<p class="ref">Geiping, J. et al. (2025). Scaling up test-time compute with latent reasoning: a recurrent depth approach. NeurIPS.</p>
+<p class="ref">Giannou, A. et al. (2023). Looped transformers as programmable computers. ICML.</p>
+<p class="ref">Goodhart, C. A. E. (1975). Problems of monetary management: the U.K. experience. Papers in Monetary Economics, Vol. I, Reserve Bank of Australia.</p>
+<p class="ref">Hadfield-Menell, D. et al. (2017). Inverse reward design. NeurIPS.</p>
+</div>
+</div>
+<aside>Not to present; here for anyone who asks. Every reference was checked against its primary source on 25 November 2026.</aside>
+</section>
+<section data-page="8" id="refs2" class="a refs-page" data-transition="fade">
+<h2 class="rh">References (2/2)</h2>
+<div class="rcols">
+<div class="rcol">
+<p class="ref">Hao, S. et al. (2025). Training large language models to reason in a continuous latent space. COLM.</p>
+<p class="ref">Huang, J. et al. (2024). Large language models cannot self-correct reasoning yet. ICLR.</p>
+<p class="ref">Jolicoeur-Martineau, A. (2025). Less is more: recursive reasoning with tiny networks. arXiv:2510.04871.</p>
+<p class="ref">Keeney, R. L. and Raiffa, H. (1976). Decisions with Multiple Objectives: Preferences and Value Tradeoffs. Wiley.</p>
+<p class="ref">Korbak, T. et al. (2025). Chain of thought monitorability: a new and fragile opportunity for AI safety. arXiv:2507.11473.</p>
 <p class="ref">Krakovna, V. et al. (2020). Specification gaming: the flip side of AI ingenuity. DeepMind blog.</p>
-<p class="ref">Kunda, Z. (1990). The case for motivated reasoning. Psychological Bulletin.</p>
+<p class="ref">Kunda, Z. (1990). The case for motivated reasoning. Psychological Bulletin 108(3).</p>
+</div>
+<div class="rcol">
+<p class="ref">OpenAI (2024). Learning to reason with LLMs. Blog post, 12 September 2024.</p>
+<p class="ref">Saunshi, N. et al. (2025). Reasoning with latent thoughts: on the power of looped transformers. ICLR.</p>
 <p class="ref">Sharma, M. et al. (2024). Towards understanding sycophancy in language models. ICLR.</p>
-<p class="ref">Sutton, R. S. and Barto, A. G. (2018). Reinforcement Learning: An Introduction. MIT Press.</p>
+<p class="ref">Sutton, R. S. and Barto, A. G. (2018). Reinforcement Learning: An Introduction, 2nd ed. MIT Press.</p>
 <p class="ref">Wei, J. et al. (2022). Chain-of-thought prompting elicits reasoning in large language models. NeurIPS.</p>
 <p class="ref">Yao, S. et al. (2023). ReAct: synergizing reasoning and acting in language models. ICLR.</p>
-<p class="ref">Navier–Stokes lost in translation: why Lean verification of AI autoformalisation does not guarantee correct natural language proofs (2026). arXiv:2610.08144.</p>
-<p class="ref">News on AI-assisted proofs: Nature (Nov. 2026), Quanta Magazine (Oct. 2026), Scientific American (2026).</p>
+<p class="ref">News on the AI-assisted proof claims: Castelvecchi, D., Nature (20 Nov. 2026); Kakaes, K., Quanta Magazine (19 Oct. 2026); Hall, P., “After months of controversy, AI finally solved the ‘real’ Navier-Stokes problem”, Scientific American (20 Nov. 2026).</p>
 </div>
 </div>
-<aside>Not to present; here for anyone who asks. The Riemann hypothesis and Navier–Stokes items are recent claims still under expert review.</aside>
+<aside>Not to present. The Riemann hypothesis and Navier–Stokes results in the news items are claims still under expert review as of 25 November 2026.</aside>
 </section>
 </div>
 <div id="notes"></div>

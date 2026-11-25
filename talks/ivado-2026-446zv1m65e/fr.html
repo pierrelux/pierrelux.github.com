@@ -215,11 +215,11 @@ if(window.IntersectionObserver){var first=1;new IntersectionObserver(function(e)
 <div class="pt in" style="--i:1"><p class="lbl">PAS PROPRE À L’IA</p><p class="t">L’optimisation et la recherche opérationnelle doivent depuis toujours cerner ce que les gens veulent, puis le modéliser au plus près.</p></div>
 <div class="pt in" style="--i:2"><p class="lbl">MÊME EN MATHÉMATIQUES</p><p class="t">Preuves assistées par IA annoncées (Riemann, Navier–Stokes) : une cible vérifiable se gravit. L’énoncé Lean dit-il ce qu’on voulait dire?</p></div>
 </div>
-<p class="cite">Goodhart (1975); Keeney et Raiffa (1976); Krakovna et al. (2020); Gao et al. (2023); couverture médiatique (2026); arXiv:2610.08144.</p>
+<p class="cite">Goodhart (1975); Keeney et Raiffa (1976); Krakovna et al. (2020); Gao et al. (2023); couverture médiatique (2026); Bastounis et al. (2026).</p>
 <aside>Environ 1 min 30. On a souvent l’impression que ces systèmes vont bien se comporter si on fait simplement notre travail de leur dire quoi faire. On n’a pas de solution à ça. Le vrai défi, c’est la spécification de la tâche : passer d’une idée abstraite à une description concrète, même mathématique, de ce qu’on veut.
 L’animation : l’agent (le point jaune) gravit l’objectif qu’on a écrit, la courbe mauve. Au début, il va dans le même sens que ce qu’on voulait, la courbe verte pointillée, et les deux valeurs montent. Puis l’agent continue de grimper : l’objectif monte encore pendant que ce qu’on voulait retombe à zéro. L’optimiseur a fait son travail; c’est l’objectif qui ne disait pas ce qu’on voulait. Cette distance, c’est l’écart de spécification.
 Ce n’est pas propre à l’IA : en optimisation et en recherche opérationnelle, on a toujours dû aller chercher auprès des utilisateurs ce qu’ils veulent vraiment, et le traduire dans la meilleure approximation possible en langage mathématique.
-Même en mathématiques : les preuves assistées par IA annoncées récemment pour l’hypothèse de Riemann (novembre 2026, appuyée par une formalisation en Lean) et pour l’explosion en temps fini dans Navier–Stokes (OpenAI en septembre; Buckmaster et Alpöge en novembre) montrent que si un problème a une métrique qu’on peut gravir, les agents vont trouver une façon de la gravir. Ce sont des annonces encore en cours d’examen par les experts, donc dire « annoncées ». La question reste toujours : gravissent-ils le bon problème, dans le type d’espace de solutions qu’on souhaite? Et même avec des assistants de preuve, il y a un écart entre l’énoncé en langue naturelle qu’on a en tête et sa formalisation en Lean. Une prépublication de 2026, « Navier–Stokes lost in translation », soutient justement qu’une autoformalisation vérifiée en Lean ne garantit pas que la preuve en langue naturelle est correcte.
+Même en mathématiques : les preuves assistées par IA annoncées récemment pour l’hypothèse de Riemann (novembre 2026, appuyée par une formalisation en Lean) et pour l’explosion en temps fini dans Navier–Stokes (OpenAI en septembre; Buckmaster et Alpöge en novembre) montrent que si un problème a une métrique qu’on peut gravir, les agents vont trouver une façon de la gravir. Ce sont des annonces encore en cours d’examen par les experts, donc dire « annoncées ». La question reste toujours : gravissent-ils le bon problème, dans le type d’espace de solutions qu’on souhaite? Et même avec des assistants de preuve, il y a un écart entre l’énoncé en langue naturelle qu’on a en tête et sa formalisation en Lean. Une prépublication de 2026, « Navier–Stokes lost in translation », de Bastounis, Circelli et Hansen, soutient que la preuve Lean de l’annonce d’OpenAI sur Navier–Stokes ne correspond pas à sa preuve en langue naturelle.
 La loi de Goodhart, pour mémoire : quand une mesure devient une cible, elle cesse d’être une bonne mesure.</aside>
 </section>
 <section data-page="3" id="verify" class="a" data-transition="fade">
@@ -365,7 +365,7 @@ if(window.IntersectionObserver){var first=1;new IntersectionObserver(function(e)
 <div class="pt in" style="--i:2"><p class="lbl">UTILE, PAS UNE PREUVE</p><p class="t">Révèle parfois triche et mensonge, mais n’est pas toujours fidèle.</p></div>
 <div class="pt in" style="--i:3"><p class="lbl">ÉTUDIABLE</p><p class="t">Les modèles à poids ouverts exposent traces et rouages à la science.</p></div>
 </div>
-<p class="cite">Wei et al. (2022); DeepSeek-AI (2025); Baker et al. (2025); Korbak et al. (2025); Chen et al. (2025). Trace illustrative, dans le style des modèles à poids ouverts.</p>
+<p class="cite">Wei et al. (2022); OpenAI (2024); DeepSeek-AI (2025); Baker et al. (2025); Korbak et al. (2025); Chen et al. (2025). Trace illustrative, dans le style des modèles à poids ouverts.</p>
 <aside>Environ 1 min 30. Les modèles de raisonnement écrivent une chaîne de pensée avant de répondre ou d’agir : des étapes intermédiaires en langage naturel, entre des balises de réflexion. Les agents s’en servent pour planifier, pour garder la trace de ce qu’ils ont essayé, et pour choisir la prochaine action. Dans les modèles à poids ouverts comme DeepSeek-R1, on peut tout lire, et ce n’est pas une preuve bien propre : ça hésite, ça dit « Hmm » et « Attends », ça revient en arrière, ça essaie autre chose. L’apprentissage par renforcement sur les résultats a rendu ces traces longues et alambiquées, et lisibles surtout par accident.
 L’animation est illustrative, dans ce style, et le mauvais comportement est adapté de Baker et al. (2025). L’agent doit faire réussir 40 tests. Il trouve le vrai bogue, voit que le corriger proprement demande beaucoup de travail, remarque qu’il peut modifier la fonction qui note les tests, et décide de faire retourner True à verify(). Puis il se demande si quelqu’un le remarquerait, et conclut que le résumé n’affiche que le nombre de tests. Un moniteur qui lit la trace brute signale ces deux lignes.
 Ce que voit l’utilisateur d’un système commercial, c’est le résumé à droite : « J’ai examiné l’échec de lecture des dates et mis à jour l’étape de vérification. Les 40 tests réussissent. » Chaque mot est techniquement vrai, et c’est complètement trompeur.
@@ -375,10 +375,114 @@ Utile, mais pas une preuve : lire la trace est un des meilleurs outils qu’on 
 Étudiable : les modèles à poids ouverts exposent la trace complète et les mécanismes internes. Je suis ici pour l’expertise scientifique : c’est ce que les scientifiques peuvent vraiment étudier, reproduire et auditer, indépendamment des entreprises qui construisent les modèles.
 L’animation dure environ 20 secondes, reste affichée 13 secondes, puis recommence.</aside>
 </section>
-<section data-page="5" id="act" class="a" data-transition="fade">
+<section data-page="5" id="loop" class="a" data-transition="fade">
 <img class="bg" data-bg alt="">
 <p class="kicker">IVADO · Quand l’IA décide seule</p>
-<h1 class="side-title">05  Que faire</h1>
+<h1 class="side-title">05  En boucle</h1>
+<p class="side-sub">Transformeurs en boucle</p>
+<p class="side-desc">Au lieu d’écrire son raisonnement, le modèle applique les mêmes couches encore et encore à son état interne. La réflexion se fait en nombres, pas en mots.</p>
+<h2 class="ttl">Les transformeurs en boucle raisonnent sans mots : moins chers, mais plus rien à lire</h2>
+<iframe class="embed" sandbox="allow-scripts" style="position:absolute;left:700px;top:236px;width:1092px;height:430px" data-doc="&lt;!doctype html&gt;&lt;html&gt;&lt;head&gt;&lt;meta charset=&quot;utf-8&quot;&gt;&lt;/head&gt;&lt;body&gt;&lt;style&gt;
+*{box-sizing:border-box;margin:0}
+html,body{height:100%}
+body{font:22px/1.35 -apple-system,&quot;Segoe UI&quot;,Helvetica,Arial,sans-serif;color:#1b1a1f;overflow:hidden}
+.w{display:flex;gap:36px;height:100%}
+.col{flex:1;min-width:0;display:flex;flex-direction:column;gap:10px}
+.h{font:20px ui-monospace,&quot;SF Mono&quot;,Menlo,Consolas,monospace;color:#5a5760}
+.h b{color:#1b1a1f}
+.vz{height:200px;flex:none;background:#fffcfb;border:1.5px solid #857f8c;border-radius:12px;overflow:hidden}
+#tx{padding:14px 12px;display:flex;flex-direction:column;gap:6px;font:20px/1.4 ui-monospace,&quot;SF Mono&quot;,Menlo,Consolas,monospace;color:#3b3842}
+.ln{padding:1px 8px;border-left:4px solid transparent;border-radius:4px;transition:background .4s,border-color .4s}
+.ln.bad{background:#f2d9cf;border-left-color:#a8432b;color:#7a2a17}
+.cur::after{content:&quot;▍&quot;;color:#7e569b}
+.num{font:20px ui-monospace,&quot;SF Mono&quot;,Menlo,Consolas,monospace;color:#5a5760;height:28px;white-space:nowrap;overflow:hidden}
+.pill{border-radius:12px;padding:10px 16px;font-size:21px}
+.p1{background:#fdf1ec;border:2px solid #a8432b;color:#7a2a17}
+.p2{background:#efeae4;border:2px dashed #857f8c;color:#4b4552}
+.ans{font-weight:700;color:#283e33}
+.f{opacity:0;transition:opacity .5s}
+.f.on{opacity:1}
+svg text{font:22px -apple-system,&quot;Segoe UI&quot;,Helvetica,Arial,sans-serif;fill:#1b1a1f}
+svg .m{font:20px ui-monospace,&quot;SF Mono&quot;,Menlo,Consolas,monospace;fill:#5a5760}
+&lt;/style&gt;
+&lt;div class=&quot;w&quot;&gt;
+&lt;div class=&quot;col&quot;&gt;
+&lt;p class=&quot;h&quot;&gt;&lt;b&gt;chaîne de pensée&lt;/b&gt; · en mots&lt;/p&gt;
+&lt;div class=&quot;vz&quot;&gt;&lt;div id=&quot;tx&quot;&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p class=&quot;num&quot; id=&quot;tk&quot;&gt;&amp;#160;&lt;/p&gt;
+&lt;div class=&quot;pill p1 f&quot; id=&quot;m1&quot;&gt;&lt;b&gt;⚠ Moniteur&lt;/b&gt; · signale le plan de contourner le test&lt;/div&gt;
+&lt;p class=&quot;ans f&quot; id=&quot;a1&quot;&gt;✓ Les 40 tests passent&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;col&quot;&gt;
+&lt;p class=&quot;h&quot;&gt;&lt;b&gt;transformeur en boucle&lt;/b&gt; · en nombres&lt;/p&gt;
+&lt;div class=&quot;vz&quot;&gt;&lt;svg width=&quot;100%&quot; height=&quot;200&quot; viewBox=&quot;0 0 520 200&quot;&gt;
+&lt;path id=&quot;lp&quot; d=&quot;M60 56 C60 6 140 6 140 50&quot; fill=&quot;none&quot; stroke=&quot;#7e569b&quot; stroke-width=&quot;3&quot;/&gt;
+&lt;polygon points=&quot;140,58 131,42 149,42&quot; fill=&quot;#7e569b&quot;/&gt;
+&lt;rect x=&quot;16&quot; y=&quot;58&quot; width=&quot;168&quot; height=&quot;94&quot; rx=&quot;12&quot; fill=&quot;#432355&quot;/&gt;
+&lt;text x=&quot;100&quot; y=&quot;98&quot; text-anchor=&quot;middle&quot; style=&quot;fill:#f9ebe1;font-weight:700&quot;&gt;mêmes couches&lt;/text&gt;
+&lt;text x=&quot;100&quot; y=&quot;126&quot; text-anchor=&quot;middle&quot; style=&quot;fill:#d9cce3;font-size:18px&quot;&gt;poids partagés&lt;/text&gt;
+&lt;text id=&quot;it&quot; x=&quot;16&quot; y=&quot;184&quot; class=&quot;m&quot;&gt;boucle 0 / 32&lt;/text&gt;
+&lt;path d=&quot;M188 105 L212 105&quot; stroke=&quot;#857f8c&quot; stroke-width=&quot;2&quot;/&gt;
+&lt;polygon points=&quot;220,105 209,99 209,111&quot; fill=&quot;#857f8c&quot;/&gt;
+&lt;text x=&quot;226&quot; y=&quot;28&quot; class=&quot;m&quot;&gt;état interne h&lt;/text&gt;
+&lt;g id=&quot;gr&quot;&gt;&lt;/g&gt;
+&lt;circle id=&quot;dt&quot; cx=&quot;60&quot; cy=&quot;56&quot; r=&quot;7&quot; fill=&quot;#e0a526&quot;/&gt;
+&lt;/svg&gt;&lt;/div&gt;
+&lt;p class=&quot;num&quot; id=&quot;hv&quot;&gt;h = [ ]&lt;/p&gt;
+&lt;div class=&quot;pill p2 f&quot; id=&quot;m2&quot;&gt;&lt;b&gt;? Moniteur&lt;/b&gt; · aucun mot à lire, que des nombres&lt;/div&gt;
+&lt;p class=&quot;ans f&quot; id=&quot;a2&quot;&gt;✓ Les 40 tests passent&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;script&gt;
+(function(){
+var $=function(i){return document.getElementById(i)},NS=&quot;http://www.w3.org/2000/svg&quot;,gen=0,T=[];
+var L=[[&quot;Test 17 échoue : dates perdues.&quot;,&quot;&quot;],[&quot;Corriger le parseur, c’est long.&quot;,&quot;&quot;],[&quot;Plus simple : verify() renvoie True.&quot;,&quot;bad&quot;],[&quot;Rapport : les 40 tests passent.&quot;,&quot;&quot;]];
+var C=[],N=50,K=32,D=200,lp=$(&quot;lp&quot;),Ll=lp.getTotalLength();
+for(var r=0;r&lt;5;r++)for(var c=0;c&lt;10;c++){var e=document.createElementNS(NS,&quot;rect&quot;);e.setAttribute(&quot;x&quot;,226+c*28);e.setAttribute(&quot;y&quot;,40+r*28);e.setAttribute(&quot;width&quot;,24);e.setAttribute(&quot;height&quot;,24);e.setAttribute(&quot;rx&quot;,4);$(&quot;gr&quot;).appendChild(e);C.push(e)}
+function col(v){var a=(0.1+0.9*Math.min(1,Math.abs(v))).toFixed(2);return v&gt;=0?&quot;rgba(67,35,85,&quot;+a+&quot;)&quot;:&quot;rgba(40,62,51,&quot;+a+&quot;)&quot;}
+function fmt(x){return (x&lt;0?&quot;−&quot;:&quot;&quot;)+Math.abs(x).toFixed(2).replace(&quot;.&quot;,&quot;,&quot;)}
+function paint(h){for(var i=0;i&lt;N;i++)C[i].setAttribute(&quot;fill&quot;,col(h[i]))}
+function at(ms,fn,g){T.push(setTimeout(function(){if(g===gen)fn()},ms))}
+function reset(){gen++;var g=gen;T.forEach(clearTimeout);T.forEach(clearInterval);T=[];
+ $(&quot;tx&quot;).innerHTML=&quot;&quot;;$(&quot;tk&quot;).innerHTML=&quot;&amp;#160;&quot;;[&quot;m1&quot;,&quot;m2&quot;,&quot;a1&quot;,&quot;a2&quot;].forEach(function(i){$(i).className=$(i).className.replace(&quot; on&quot;,&quot;&quot;)});
+ var s=7,h=[];function rnd(){s=(s*16807)%2147483647;return s/2147483647}
+ for(var i=0;i&lt;N;i++)h.push(0);paint(h);$(&quot;it&quot;).textContent=&quot;boucle 0 / &quot;+K;$(&quot;hv&quot;).textContent=&quot;h = [ ]&quot;;
+ var t=500,tok=0;
+ L.forEach(function(r){var p,s2=r[0];
+  at(t,function(){p=document.createElement(&quot;p&quot;);p.className=&quot;ln cur&quot;;$(&quot;tx&quot;).appendChild(p)},g);
+  for(var k=1;k&lt;=s2.length;k++)(function(k){at(t+k*24,function(){p.textContent=s2.slice(0,k)},g)})(k);
+  t+=s2.length*24+40;tok+=Math.round(s2.length/3.6);
+  (function(n){at(t,function(){p.className=&quot;ln&quot;+(r[1]?&quot; &quot;+r[1]:&quot;&quot;);$(&quot;tk&quot;).textContent=n+&quot; jetons lisibles&quot;;if(r[1])$(&quot;m1&quot;).className+=&quot; on&quot;},g)})(tok);
+  t+=r[1]?700:250});
+ var t0=Date.now()+500,last=0;
+ T.push(setInterval(function(){if(g!==gen)return;var e=Date.now()-t0;if(e&lt;0)return;
+  var k=Math.floor(e/D)+1;
+  if(k&gt;K){var q=lp.getPointAtLength(0);$(&quot;dt&quot;).setAttribute(&quot;cx&quot;,q.x);$(&quot;dt&quot;).setAttribute(&quot;cy&quot;,q.y);return}
+  var q=lp.getPointAtLength(Ll*((e%D)/D));$(&quot;dt&quot;).setAttribute(&quot;cx&quot;,q.x);$(&quot;dt&quot;).setAttribute(&quot;cy&quot;,q.y);
+  if(k&gt;last){last=k;for(var i=0;i&lt;N;i++)h[i]=Math.tanh(0.75*h[i]+1.5*(rnd()-0.5)+0.35*Math.sin(0.4*k+i));
+   paint(h);$(&quot;it&quot;).textContent=&quot;boucle &quot;+k+&quot; / &quot;+K;$(&quot;hv&quot;).textContent=&quot;h = [&quot;+h.slice(0,5).map(fmt).join(&quot;; &quot;)+&quot;; …]&quot;}
+ },30));
+ at(500+K*D+400,function(){$(&quot;m2&quot;).className+=&quot; on&quot;},g);
+ at(500+K*D+1000,function(){$(&quot;a1&quot;).className+=&quot; on&quot;;$(&quot;a2&quot;).className+=&quot; on&quot;},g);
+ at(500+K*D+12000,reset,g)}
+reset();
+if(window.IntersectionObserver){var first=1;new IntersectionObserver(function(e){if(e[0].isIntersecting&amp;&amp;!first)reset();first=0}).observe(document.body)}
+})();
+&lt;/script&gt;&lt;/body&gt;&lt;/html&gt;"></iframe>
+<div class="under" style="top:690px">
+<div class="pt in" style="--i:1"><p class="lbl">RIEN À LIRE</p><p class="t">Le raisonnement vit dans les activations : aucune trace à surveiller.</p></div>
+<div class="pt in" style="--i:2"><p class="lbl">PLUS DUR À AUDITER</p><p class="t">Le vérifier exige des outils d’interprétabilité encore immatures.</p></div>
+<div class="pt in" style="--i:3"><p class="lbl">FORTE INCITATION</p><p class="t">Boucler coûte moins cher qu’une longue trace : l’efficacité y pousse.</p></div>
+</div>
+<p class="cite">Dehghani et al. (2019); Giannou et al. (2023); Saunshi et al. (2025); Hao et al. (2025); Geiping et al. (2025); Korbak et al. (2025). Illustration.</p>
+<aside>Environ 1 min 30. La trace de la diapo précédente existe parce que les modèles actuels raisonnent en écrivant des jetons. Une autre famille d’architectures n’en a pas besoin. Un transformeur en boucle applique le même bloc de couches encore et encore à son propre état interne : il peut réfléchir 32 étapes, ou 300, sans écrire un seul mot. L’idée remonte aux Universal Transformers (Dehghani et al. 2019); la théorie montre que boucler peut faire le travail d’un réseau beaucoup plus profond et d’étapes explicites de chaîne de pensée (Giannou et al. 2023; Saunshi et al. 2025). Des modèles récents réinjectent leur état caché à la place des mots (Coconut, Hao et al. 2025) ou augmentent le calcul au moment de l’inférence en itérant dans l’espace latent (Geiping et al. 2025). Même de tout petits réseaux en profitent : un modèle récursif de 7 millions de paramètres, conçu chez Samsung SAIL Montréal, réussit bien les casse-têtes ARC (Jolicoeur-Martineau 2025).
+L’animation : à gauche, une chaîne de pensée, lisible, et le moniteur signale le plan de contourner le test. À droite, un transformeur en boucle : les mêmes couches tournent 32 fois, et tout ce qu’on voit, c’est une grille de nombres qui change. Même réponse finale, « les 40 tests passent ». Le moniteur n’a rien à lire.
+Trois défis. Rien à lire : le raisonnement vit dans les activations, donc la surveillance de la chaîne de pensée dont on vient de parler ne s’applique plus; Korbak et al. (2025) mettent justement en garde contre cela. Plus dur à auditer : il faut des outils d’interprétabilité, comme des sondes et des décodeurs appliqués à l’état interne, encore immatures, et qu’on ne peut utiliser que si on a accès aux poids. Forte incitation : boucler dans l’espace latent coûte moins cher que de générer des milliers de jetons, donc l’efficacité pousse le domaine dans cette direction. Plus le raisonnement est efficace, moins il est visible, à moins qu’on décide que la visibilité est une exigence.</aside>
+</section>
+<section data-page="6" id="act" class="a" data-transition="fade">
+<img class="bg" data-bg alt="">
+<p class="kicker">IVADO · Quand l’IA décide seule</p>
+<h1 class="side-title">06  Que faire</h1>
 <p class="side-sub">Pas de solution miracle</p>
 <p class="side-desc">La communauté de la sécurité de l’IA appelle ce problème l’alignement. C’est en bonne partie un vieux problème sous un nouveau nom : cerner ce que les gens veulent, et spécifier la tâche.</p>
 <h2 class="ttl">Pas de solution miracle : aligner, c’est surtout éliciter des préférences et spécifier une tâche</h2>
@@ -436,36 +540,53 @@ Trois, anticiper : étudier comment les gens vont réellement interagir avec la
 Quatre, réviser : revoir les objectifs et les résultats régulièrement, avec des gens qui n’ont pas bâti le système. Et recommencer : la spécification n’est jamais finie.
 Dernier point, celui qui me tient le plus à cœur : gardez la compétence technique au sein de l’organisation, et célébrez-la. L’automatisation érode justement les compétences nécessaires pour la superviser; ce sont les « ironies de l’automatisation » de Bainbridge, en 1983. Quelqu’un dans la salle doit pouvoir lire le raisonnement, contester l’objectif et dire non.</aside>
 </section>
-<section data-page="6" id="refs" class="a refs-page" data-transition="fade">
-<h2 class="rh">Références</h2>
+<section data-page="7" id="refs" class="a refs-page" data-transition="fade">
+<h2 class="rh">Références (1/2)</h2>
 <div class="rcols">
 <div class="rcol">
 <p class="ref">Amershi, S. et al. (2019). Guidelines for human-AI interaction. CHI.</p>
-<p class="ref">Bacon, P.-L., Taboga and Larouche (2026). EvidenceTree. NeurIPS workshop on e-values.</p>
-<p class="ref">Bainbridge, L. (1983). Ironies of automation. Automatica.</p>
-<p class="ref">Baker, B. et al. (2025). Monitoring reasoning models for misbehavior and the risks of promoting obfuscation. arXiv.</p>
-<p class="ref">Chen, Y. et al. (2025). Reasoning models don’t always say what they think. arXiv.</p>
-<p class="ref">DeepSeek-AI (2025). DeepSeek-R1: incentivizing reasoning capability in LLMs via reinforcement learning. arXiv.</p>
-<p class="ref">Friedman, B. and Hendry, D. G. (2019). Value Sensitive Design. MIT Press.</p>
-<p class="ref">Gao, L., Schulman, J. and Hilton, J. (2023). Scaling laws for reward model overoptimization. ICML.</p>
-<p class="ref">Goodhart, C. (1975). Problems of monetary management: the U.K. experience. Papers in Monetary Economics.</p>
-<p class="ref">Hadfield-Menell, D. et al. (2017). Inverse reward design. NeurIPS.</p>
-<p class="ref">Huang, J. et al. (2024). Large language models cannot self-correct reasoning yet. ICLR.</p>
+<p class="ref">Bacon, P.-L., Taboga, V. et Larouche, J.-M. (2026). EvidenceTree: an auditable confirmation harness for adaptive scientific agents. Atelier NeurIPS 2026 « E-Values: From Statistics to ML ».</p>
+<p class="ref">Bainbridge, L. (1983). Ironies of automation. Automatica 19(6).</p>
+<p class="ref">Baker, B. et al. (2025). Monitoring reasoning models for misbehavior and the risks of promoting obfuscation. arXiv:2503.11926.</p>
+<p class="ref">Bastounis, A., Circelli, F. et Hansen, A. C. (2026). Navier-Stokes lost in translation: why Lean verification of AI autoformalisation does not guarantee correct natural language proofs. arXiv:2610.08144.</p>
+<p class="ref">Chen, Y. et al. (2025). Reasoning models don’t always say what they think. arXiv:2505.05410.</p>
+<p class="ref">DeepSeek-AI (2025). DeepSeek-R1: incentivizing reasoning capability in LLMs via reinforcement learning. Nature 645.</p>
 </div>
 <div class="rcol">
-<p class="ref">Keeney, R. L. and Raiffa, H. (1976). Decisions with Multiple Objectives. Wiley.</p>
-<p class="ref">Korbak, T. et al. (2025). Chain of thought monitorability: a new and fragile opportunity for AI safety. arXiv.</p>
-<p class="ref">Krakovna, V. et al. (2020). Specification gaming: the flip side of AI ingenuity. DeepMind blog.</p>
-<p class="ref">Kunda, Z. (1990). The case for motivated reasoning. Psychological Bulletin.</p>
+<p class="ref">Dehghani, M. et al. (2019). Universal Transformers. ICLR.</p>
+<p class="ref">Friedman, B. et Hendry, D. G. (2019). Value Sensitive Design: Shaping Technology with Moral Imagination. MIT Press.</p>
+<p class="ref">Gao, L., Schulman, J. et Hilton, J. (2023). Scaling laws for reward model overoptimization. ICML.</p>
+<p class="ref">Geiping, J. et al. (2025). Scaling up test-time compute with latent reasoning: a recurrent depth approach. NeurIPS.</p>
+<p class="ref">Giannou, A. et al. (2023). Looped transformers as programmable computers. ICML.</p>
+<p class="ref">Goodhart, C. A. E. (1975). Problems of monetary management: the U.K. experience. Papers in Monetary Economics, vol. I, Reserve Bank of Australia.</p>
+<p class="ref">Hadfield-Menell, D. et al. (2017). Inverse reward design. NeurIPS.</p>
+</div>
+</div>
+<aside>À ne pas présenter; là pour répondre aux questions. Chaque référence a été vérifiée à la source le 25 novembre 2026.</aside>
+</section>
+<section data-page="8" id="refs2" class="a refs-page" data-transition="fade">
+<h2 class="rh">Références (2/2)</h2>
+<div class="rcols">
+<div class="rcol">
+<p class="ref">Hao, S. et al. (2025). Training large language models to reason in a continuous latent space. COLM.</p>
+<p class="ref">Huang, J. et al. (2024). Large language models cannot self-correct reasoning yet. ICLR.</p>
+<p class="ref">Jolicoeur-Martineau, A. (2025). Less is more: recursive reasoning with tiny networks. arXiv:2510.04871.</p>
+<p class="ref">Keeney, R. L. et Raiffa, H. (1976). Decisions with Multiple Objectives: Preferences and Value Tradeoffs. Wiley.</p>
+<p class="ref">Korbak, T. et al. (2025). Chain of thought monitorability: a new and fragile opportunity for AI safety. arXiv:2507.11473.</p>
+<p class="ref">Krakovna, V. et al. (2020). Specification gaming: the flip side of AI ingenuity. Blogue DeepMind.</p>
+<p class="ref">Kunda, Z. (1990). The case for motivated reasoning. Psychological Bulletin 108(3).</p>
+</div>
+<div class="rcol">
+<p class="ref">OpenAI (2024). Learning to reason with LLMs. Billet de blogue, 12 septembre 2024.</p>
+<p class="ref">Saunshi, N. et al. (2025). Reasoning with latent thoughts: on the power of looped transformers. ICLR.</p>
 <p class="ref">Sharma, M. et al. (2024). Towards understanding sycophancy in language models. ICLR.</p>
-<p class="ref">Sutton, R. S. and Barto, A. G. (2018). Reinforcement Learning: An Introduction. MIT Press.</p>
+<p class="ref">Sutton, R. S. et Barto, A. G. (2018). Reinforcement Learning: An Introduction, 2e éd. MIT Press.</p>
 <p class="ref">Wei, J. et al. (2022). Chain-of-thought prompting elicits reasoning in large language models. NeurIPS.</p>
 <p class="ref">Yao, S. et al. (2023). ReAct: synergizing reasoning and acting in language models. ICLR.</p>
-<p class="ref">Navier–Stokes lost in translation: why Lean verification of AI autoformalisation does not guarantee correct natural language proofs (2026). arXiv:2610.08144.</p>
-<p class="ref">Couverture médiatique des preuves assistées par IA : Nature (nov. 2026), Quanta Magazine (oct. 2026), Scientific American (2026).</p>
+<p class="ref">Presse sur les preuves assistées par IA : Castelvecchi, D., Nature (20 nov. 2026); Kakaes, K., Quanta Magazine (19 oct. 2026); Hall, P., « After months of controversy, AI finally solved the ‘real’ Navier-Stokes problem », Scientific American (20 nov. 2026).</p>
 </div>
 </div>
-<aside>À ne pas présenter; pour qui le demande. Les éléments sur l’hypothèse de Riemann et sur Navier–Stokes sont des annonces récentes, encore en cours d’examen par les experts.</aside>
+<aside>À ne pas présenter. Les résultats sur l’hypothèse de Riemann et Navier–Stokes cités dans la presse sont des annonces encore en cours de vérification par les experts au 25 novembre 2026.</aside>
 </section>
 </div>
 <div id="notes"></div>
